@@ -18,7 +18,7 @@ Copy to your PortaPack MicroSD and open the file from the GPS Sim app.
 ## Example
 We can create a realistic movement using a NMEA GGA stream generator like https://nmeagen.org/. In this website create several multi point lines with the positions you want. Download the NMEA file clicking "Generate NMEA file".
 
-`gps-sdr-sim.exe -e brdc3540.14n -g OUTPUT.nmea -d DURATION -o BBD_NNNN.B8`
+`gps-sdr-sim.exe -e brdc3540.14n -g OUTPUT.nmea -d DURATION -o BBD_NNNN.C8`
 
 You also need to `BBD_NNNN.TXT` as specified above.
 
