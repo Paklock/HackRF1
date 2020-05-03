@@ -50,7 +50,7 @@ If the device runs Android, follow your attempts with [GPS Test](https://play.go
 | Phone      | Samsung | S8          | **Yes**               | No                 | WIFI must be off           |
 | Phone      | Huawei  | P30 lite    | No                    | Yes                |                            |
 | Phone      | Huawei  | Mate 10 Pro | No                    | Yes                |                            |
-| Smartwatch | Huawei  | Amazfit Bip | No                    | No                 |                            |
+| Smartwatch | Huawei  | Amazfit Bip | **Yes**               | No                 |                            |
 | Phone      | Apple   | iPhone 6    | **Yes**               | No                 | Works with WIFI on         |
 
 ## References
