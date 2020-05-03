@@ -37,6 +37,7 @@ If the device runs Android, follow your attempts with [GPS Test](https://play.go
 | Type       | Make    | Model       | Locks on spoofed GPS? | GPS acts "jammed"? | Comments                   |
 |------------|---------|-------------|-----------------------|--------------------|----------------------------|
 | Tablet     | Samsung | Note 7      | No                    | Yes                |                            |
+| Phone      | Samsung | S8          | **Yes**               | No                 | WIFI must be off           |
 | Phone      | Huawei  | P30 lite    | No                    | Yes                |                            |
 | Phone      | Huawei  | Mate 10 Pro | No                    | Yes                |                            |
 | Smartwatch | Huawei  | Amazfit Bip | No                    | No                 |                            |
