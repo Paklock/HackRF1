@@ -40,6 +40,7 @@ If the device runs Android, follow your attempts with [GPS Test](https://play.go
 | Phone      | Huawei  | P30 lite    | No                    | Yes                |          |
 | Phone      | Huawei  | Mate 10 Pro | No                    | Yes                |          |
 | Smartwatch | Huawei  | Amazfit Bip | No                    | No                 |          |
+| Phone      | Apple   | iPhone 6    | Yes                   | No                 | Works with WIFI on |
 
 ## References
 https://blog.csdn.net/shukebeta008/article/details/103270214
