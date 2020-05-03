@@ -22,9 +22,9 @@ Copy to your PortaPack MicroSD and open the file from the GPS Sim app.
 ## Example
 We can create a realistic movement using a NMEA GGA stream generator like https://nmeagen.org/. In this website create several multi point lines with the positions you want. Download the NMEA file clicking "Generate NMEA file".
 
-`gps-sdr-sim.exe -e brdc3540.14n -g OUTPUT.nmea -d DURATION -o SOMENAME.C8`
+`gps-sdr-sim.exe -e brdc3540.14n -g OUTPUT.nmea -d DURATION -o MYGPSWALK.C8`
 
-You also need to create `SOMENAME.TXT` as specified above, using the same filename as the C8 file but with TXT extension. This file contains the sample rate and center frequency.
+You also need to create `MYGPSWALK.TXT` as specified above, using the same filename as the .C8 file but with .TXT extension. This file contains the sample rate and center frequency.
 
 ## Compatibility
 Depending on several factors, results may vary. A modern device will use several sources and methods to validate the current position, so spoofing positions may not be possible in all situations. To improve your chances to receive simulated GPS data, try:
