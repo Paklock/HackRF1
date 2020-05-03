@@ -3,7 +3,7 @@ This app allows you to broadcast GPS baseband signal data streams.
 ## Generator
 You can use [gps-sdr-sim](https://github.com/osqzss/gps-sdr-sim) to generate data for this app.  
 
-`gps-sdr-sim -e RINEX_NAVIGATION_FILE -l LAT,LONG,HEIGHT -b 8 -o SOMENAME.C8`
+`gps-sdr-sim -e RINEX_NAVIGATION_FILE -l LAT,LONG,HEIGHT -o SOMENAME.C8`
 
 That will create `SOMENAME.C8`, but note that you also need to specify its sample rate and frequency in another file, as explained below.
 
@@ -21,7 +21,7 @@ This file should use the same filename as the .C8 file but with .TXT extension. 
 ## Example 1
 Create a rather small polygon with a path in KML format (i.e. a path you might want to simulate to walk). You can use Google Earth or another solution like https://www.doogal.co.uk/polylines.php. Load that file in the free [SatGen NMEA simulator](https://www.labsat.co.uk/index.php/en/free-gps-nmea-simulator-software). In the generator, change the frequency to 10 Hz and export the NMEA.
 
-`gps-sdr-sim.exe -e brdc1180.20n -g NMEA.txt -b 8 -o TESTGPS.C8`
+`gps-sdr-sim.exe -e brdc1180.20n -g NMEA.txt -o TESTGPS.C8`
 
 You also need to create `TESTGPS.TXT` as specified above.
 
