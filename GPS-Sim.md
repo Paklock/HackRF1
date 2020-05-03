@@ -4,13 +4,14 @@ This app allows you to broadcast GPS baseband signal data streams.
 You can use [gps-sdr-sim](https://github.com/osqzss/gps-sdr-sim) to generate data for this app.  
 
 `gps-sdr-sim -e RINEX_NAVIGATION_FILE -l LAT,LONG,HEIGHT -o BBD_NNNN.C8`
-That will create `BBD_NNNN.C8`, but note that you also need to specify its sample rate and frequency in another file, as explained below.
+
+That will create `SOMENAME.C8`, but note that you also need to specify its sample rate and frequency in another file, as explained below.
 
 ### RINEX navigation file for GPS ephemerides
 Download the latest file for this parameter directly from Nasa: https://cddis.nasa.gov/archive/gnss/data/daily/
 
 ### Sample rate and frequency specification
-Create `BBD_NNNN.TXT` with:
+Create `SOMENAME.TXT` with:
 ```
 sample_rate=2600000
 center_frequency=1575420000
@@ -21,9 +22,9 @@ Copy to your PortaPack MicroSD and open the file from the GPS Sim app.
 ## Example
 We can create a realistic movement using a NMEA GGA stream generator like https://nmeagen.org/. In this website create several multi point lines with the positions you want. Download the NMEA file clicking "Generate NMEA file".
 
-`gps-sdr-sim.exe -e brdc3540.14n -g OUTPUT.nmea -d DURATION -o BBD_NNNN.C8`
+`gps-sdr-sim.exe -e brdc3540.14n -g OUTPUT.nmea -d DURATION -o SOMENAME.C8`
 
-You also need to `BBD_NNNN.TXT` as specified above.
+You also need to `SOMENAME.TXT` as specified above.
 
 ## Compatibility
 Depending on several factors, results may vary. A modern device will use several sources and methods to validate the current position, so spoofing positions may not be possible in all situations. To improve your chances to receive simulated GPS data, try:
