@@ -25,5 +25,18 @@ We can create a realistic movement using a NMEA GGA stream generator like https:
 
 You also need to `BBD_NNNN.TXT` as specified above.
 
+## Compatibility
+Depending on several factors, results may vary. A modern device will use several sources and methods to validate the current position, so spoofing positions may not be possible in all situations. To improve your chances to receive simulated GPS data, try:
+* Turn off Wifi/BT/Cellular (airplane mode)
+* Go inside, where the device loses GPS signal
+* Reboot the device after doing the previous two steps
+
+| Type       | Make    | Model       | Locks on spoofed GPS? | GPS acts "jammed"? | Comments |
+|------------|---------|-------------|-----------------------|--------------------|----------|
+| Tablet     | Samsung | Note 7      | No                    | Yes                |          |
+| Phone      | Huawei  | P30 lite    | No                    | Yes                |          |
+| Phone      | Huawei  | Mate 10 Pro | No                    | Yes                |          |
+| Smartwatch | Huawei  | Amazfit Bip | No                    | No                 |          |
+
 ## References
 https://blog.csdn.net/shukebeta008/article/details/103270214
