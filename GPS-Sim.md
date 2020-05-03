@@ -31,6 +31,9 @@ Depending on several factors, results may vary. A modern device will use several
 * Go inside, where the device loses GPS signal
 * Reboot the device after doing the previous two steps
 
+If the device runs Android, follow your attempts with [GPS Test](https://play.google.com/store/apps/details?id=com.chartcross.gpstest).
+
+### Known results
 | Type       | Make    | Model       | Locks on spoofed GPS? | GPS acts "jammed"? | Comments |
 |------------|---------|-------------|-----------------------|--------------------|----------|
 | Tablet     | Samsung | Note 7      | No                    | Yes                |          |
