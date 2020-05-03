@@ -24,7 +24,7 @@ We can create a realistic movement using a NMEA GGA stream generator like https:
 
 `gps-sdr-sim.exe -e brdc3540.14n -g OUTPUT.nmea -d DURATION -o SOMENAME.C8`
 
-You also need to `SOMENAME.TXT` as specified above.
+You also need to create `SOMENAME.TXT` as specified above, using the same filename as the C8 file but with TXT extension. This file contains the sample rate and center frequency.
 
 ## Compatibility
 Depending on several factors, results may vary. A modern device will use several sources and methods to validate the current position, so spoofing positions may not be possible in all situations. To improve your chances to receive simulated GPS data, try:
