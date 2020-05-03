@@ -34,13 +34,13 @@ Depending on several factors, results may vary. A modern device will use several
 If the device runs Android, follow your attempts with [GPS Test](https://play.google.com/store/apps/details?id=com.chartcross.gpstest).
 
 ### Known results
-| Type       | Make    | Model       | Locks on spoofed GPS? | GPS acts "jammed"? | Comments |
-|------------|---------|-------------|-----------------------|--------------------|----------|
-| Tablet     | Samsung | Note 7      | No                    | Yes                |          |
-| Phone      | Huawei  | P30 lite    | No                    | Yes                |          |
-| Phone      | Huawei  | Mate 10 Pro | No                    | Yes                |          |
-| Smartwatch | Huawei  | Amazfit Bip | No                    | No                 |          |
-| Phone      | Apple   | iPhone 6    | Yes                   | No                 | Works with WIFI on |
+| Type       | Make    | Model       | Locks on spoofed GPS? | GPS acts "jammed"? | Comments                   |
+|------------|---------|-------------|-----------------------|--------------------|----------------------------|
+| Tablet     | Samsung | Note 7      | No                    | Yes                |                            |
+| Phone      | Huawei  | P30 lite    | No                    | Yes                |                            |
+| Phone      | Huawei  | Mate 10 Pro | No                    | Yes                |                            |
+| Smartwatch | Huawei  | Amazfit Bip | No                    | No                 |                            |
+| Phone      | Apple   | iPhone 6    | **Yes**               | No                 | Works with WIFI on         |
 
 ## References
 https://blog.csdn.net/shukebeta008/article/details/103270214
