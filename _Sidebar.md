@@ -1,4 +1,4 @@
-[Start here](.)
+[Start here](Welcome)
 ## User manual
 * Intended use and care
 * Features
