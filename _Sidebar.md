@@ -12,7 +12,7 @@
       * [GPS Sim](GPS-Sim)
    * Utilites
 ## Developer manual
-* Compile from source
+* [Compile from source](Compile-firmware)
 * Description of the structure
 * Example guides
    * Create a simple app
