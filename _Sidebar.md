@@ -10,6 +10,7 @@
    * Receivers
    * Transmitters
       * [GPS Sim](GPS-Sim)
+      * [RDS](RDS)
    * Utilites
 ## Developer manual
 * [Compile from source](Compile-firmware)
