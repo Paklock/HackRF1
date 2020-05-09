@@ -1,7 +1,7 @@
 [Start here](Home)
 ## User manual
 * Intended use and care
-* Features
+* [Features](Features)
 * [Firmware update procedure](Update-firmware)
 * Description of the hardware
    * [3d printed enclosure](H2-Enclosure)
