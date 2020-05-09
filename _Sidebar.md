@@ -17,8 +17,8 @@
 * Description of the structure
 * Tools
    * Images
-      * Create world_map.bin
-      * [Splash screen](Splash-screen)
+      * world_map.bin
+      * [converter](Splash-and-other-images)
 * Example guides
    * Create a simple app
    * Create a complex app
