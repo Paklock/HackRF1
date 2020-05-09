@@ -15,6 +15,10 @@
 ## Developer manual
 * [Compile from source](Compile-firmware)
 * Description of the structure
+* Tools
+   * Images
+      * Create world_map.bin
+      * [Splash screen](Splash-screen)
 * Example guides
    * Create a simple app
    * Create a complex app
