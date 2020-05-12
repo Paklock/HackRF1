@@ -13,7 +13,15 @@ One of the main sources of problems is the quality of the USB cable. Try with se
 
 ## DFU
 
-This is a special mode to update the firmware in case of problems. To enable this, you should reset your device holding the RESET and DFU buttons at the same time, while doing this, release RESET, and then release DFU. Now you are able to use `dfu-util-static`.
+This is a special mode to update the firmware in case of problems. To enable this, you should reset your device holding the RESET and DFU buttons at the same time, while doing this, release RESET, and then release DFU. Now you are able to use `dfu-util`. The leds should be ON and the screen wont show anything.
+
+You may use the following:
+
+`dfu-util --device 1fc9:000c --download hackrf_one_usb.dfu --reset`
+
+And after that, without disconnecting it, you can upload the firmware:
+
+`hackrf_spiflash -w new_firmware_file.bin`
 
 ## Video
 The following video explains all possible outcomes while trying to update the firmware and possible mitigations:
