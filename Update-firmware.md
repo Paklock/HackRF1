@@ -29,3 +29,29 @@ https://www.youtube.com/watch?v=_zx4ZvurgOs
 
 # Still stuck?
 If you still experience problems after reading this and checking the video, submit an [issue](https://github.com/eried/portapack-havoc/issues/new?assignees=&labels=&template=problem-upgrading-the-firmware.md&title=Problem+upgrading+the+firmware).
+
+# Using Linux to Update firmware
+
+Download http://eu2-dist.gnuradio.org/ (download latest version, this is already setup for hackrf) and burn the ISO to a USB Stick
+
+Insert the USB Stick into your Computer and boot from it, select the LIVE Image
+
+Once in the environment Open a Command Prompt and type: sudo apt-get install dfu-util (this installs the dfu utility)
+
+Now download the latest no sd card files from https://github.com/eried/portapack-havoc/releases
+
+Extract the files to your desktop
+
+Connect your Hackrf to your computer
+
+Hold down the Button Nearest to the antenna, and then press reset whilst still holding the DFU Button down
+
+With the command prompt still open browse to the location that you extracted the hackrf files to
+
+then type
+
+dfu-util --device 1fc9:000c --download hackrf_one_usb.dfu --reset
+
+hackrf_spiflash -w portapack-h1-havoc.bin
+
+This will load the firmware to your hackrf, press the reset button and you will be running the latest version
