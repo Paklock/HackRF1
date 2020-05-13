@@ -23,8 +23,9 @@ And after that, without disconnecting it, you can upload the firmware:
 
 `hackrf_spiflash -w new_firmware_file.bin`
 
-## For Windows users who want to try updating from Linux
+## Alternative environment
 
+You may be able to try in a virtual environment, completely isolated from your current OS:
 1. Download http://eu2-dist.gnuradio.org/ and burn the ISO and boot from it, select the LIVE Image
 2. Once in the environment, Open a Command Prompt and type: `sudo apt-get install dfu-util`
 3. Connect your device to your computer and follow the DFU instructions above
