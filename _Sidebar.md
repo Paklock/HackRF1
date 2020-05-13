@@ -1,5 +1,6 @@
 [Start here](Home)
 ## User manual
+* [First steps](First-steps)
 * Intended use and care
 * [Features](Features)
 * [Firmware update procedure](Update-firmware)
