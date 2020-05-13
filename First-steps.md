@@ -17,7 +17,7 @@ To power on/off the H2, you need to hold the middle button (knob or pushbutton) 
 
 # Extra functionality (H2)
 ## Charging
-This version can charge the internal lipo battery via the USB. There is a led indicator that turn off when the charging is done, but it might flicker. 
+This version can charge the internal lipo battery via the USB. There is a led indicator that turns off when the charging is done, but it might flicker. 
 
 ## Battery life
-A internal battery between 1000 and 2000 mAh should last a couple of hours of use, depending for how long you are transmitting. The standby consumption is [very low](https://github.com/eried/Research/blob/master/HackRF/PortaPack/h2_standby_consumption.jpg), around 52 uA, so you do not need to worry to remove/disconnect the battery in normal circumstances.
+An internal battery between 1000 and 2000 mAh should last a couple of hours of use, depending for how long you are transmitting. The standby consumption is [very low](https://github.com/eried/Research/blob/master/HackRF/PortaPack/h2_standby_consumption.jpg), around 52 uA, so you do not need to worry to remove/disconnect the battery in normal circumstances.
