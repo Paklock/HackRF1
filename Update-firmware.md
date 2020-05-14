@@ -3,7 +3,7 @@ In theory, it is impossible to brick the device, since you can always try the DF
 # Normal procedure
 
 1. Connect the device via USB
-2. Switch to HackRF mode via the on-screen option (in the Portapack)
+2. Switch to HackRF mode via the on-screen option (in the PortaPack)
 3. Double click `flash_portapack_mayhem.bat` and follow the instructions
 4. Reboot the device
 
@@ -15,7 +15,7 @@ One of the main sources of problems is the quality of the USB cable. Try with se
 
 This is a special mode to update the firmware in case of problems. To enable this, you should reset your device holding the RESET and DFU buttons at the same time, while doing this, release RESET, and then release DFU. The leds should be ON and the screen wont show anything.
 
-If you are in Windows, from the release package double click `dfu_hackrf_one.bat` and follow the instructions. Do not disconnect or reset your Portapack after that procedure, continue in the step 3 of the [normal procedure](Update-firmware#normal-procedure).
+If you are in Windows, from the release package double click `dfu_hackrf_one.bat` and follow the instructions. Do not disconnect or reset your PortaPack after that procedure, continue in the step 3 of the [normal procedure](Update-firmware#normal-procedure).
 
 ## Alternative environment
 
