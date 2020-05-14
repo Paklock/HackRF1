@@ -4,7 +4,7 @@
 * Intended use and care
 * [Features](Features)
 * [Firmware update procedure](Update-firmware)
-* Description of the hardware
+* [Description of the hardware](Hardware-overview)
    * [3d printed enclosure](H2-Enclosure)
 * Description of the main screen
 * Applications
