@@ -5,8 +5,8 @@
 1. Antenna (the connector is a _female SMA_, so the antenna needs to be _male SMA_, and not _RPSMA_)
 2. Encoder thumb wheel (on the H1 has a different layout, but the same functionality), notice that pushing the wheel down has the same effect as pressing the center push button
 3. Directional pushbuttons and Enter/ON/OFF in the center
-4. CLK IN
-5. CLK OUT
+4. [CLK IN](https://github.com/mossmann/hackrf/wiki/HackRF-One#external-clock-interface-clkin-and-clkout)
+5. [CLK OUT](https://github.com/mossmann/hackrf/wiki/HackRF-One#external-clock-interface-clkin-and-clkout)
 6. Micro usb port and next to it, charging led indicator (in the H2, this might flicker while charging but will _mostly_ turn off when the battery is full)
 7. Headset/Microphone (standard smartphone 4 segment 3.5mm connector)
 8. Receive and transmit leds (indicates the current operation, since the HackRF is half-duplex, only one of this will be lit at every moment)
