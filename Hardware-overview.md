@@ -1,3 +1,5 @@
+# External
+
 <img src="img/hw_overview_h2_front.png" height="500"> <img src="img/hw_overview_h2_back.png" height="500">
 
 1. Antenna (the connector is a _female SMA_, so the antenna needs to be _male SMA_, and not _RPSMA_)
@@ -12,6 +14,8 @@
 10. DFU mode button (check the [firmware update procedure](Update-firmware#dfu) for details)
 11. 3.3V rail status led
 12. Reset button
+
+# Internals
 
 <img src="img/hw_overview_h2_inside.png" height="500">
 
