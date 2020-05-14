@@ -4,7 +4,7 @@ In theory, it is impossible to brick the device, since you can always try the DF
 
 1. Connect the device
 2. Switch to HackRF mode via the on-screen option
-3. Double click `flash_portapack_mayhem.bat` and follow the instructions (_in Windows_), OR use `hackrf_update <YOUR NEW FIRMWARE>.bin`
+3. Double click `flash_portapack_mayhem.bat` and follow the instructions (_in Windows_) OR use `hackrf_update <YOUR NEW FIRMWARE>.bin`
 4. Reboot the device
 
 # Troubleshooting
