@@ -1,4 +1,5 @@
 <img src="img/hw_overview_h2_front.png" height="500"> <img src="img/hw_overview_h2_back.png" height="500">
+
 1. Antenna (the connector is a _female SMA_, so the antenna needs to be _male SMA_, and not _RPSMA_)
 2. Encoder thumb wheel (on the H1 has a different layout, but the same functionality), notice that pushing the wheel down has the same effect as pressing the center push button
 3. Directional pushbuttons and Enter/ON/OFF in the center
@@ -13,6 +14,7 @@
 12. Reset button
 
 <img src="img/hw_overview_h2_inside.png" height="500">
+
 1. MicroSD card slot (while in a case, insert the card with the contacts looking to the same direction as the screen)
 2. GPS module option (has not been implemented)
 3. Memory backup coin cell (compatible with CR1225 or CR1220 in the H2, and with the CR2032 in the H1)
