@@ -11,6 +11,9 @@
 7. Headset/Microphone (standard smartphone 4 segment 3.5mm connector)
 8. Receive and transmit leds (indicates the current operation, since the HackRF is half-duplex, only one of this will be lit at every moment)
 9. Other status leds (1.8V: rail status, RF: internal power supply, USB: connection to host is active)
+
+> **Note:** In normal operation, 3.3V, 1.8V, RF lights will be ON. 
+
 10. DFU mode button (check the [firmware update procedure](Update-firmware#dfu) for details)
 11. 3.3V rail status led
 12. Reset button
