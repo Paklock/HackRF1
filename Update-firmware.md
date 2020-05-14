@@ -2,7 +2,7 @@ In theory, it is impossible to brick the device, since you can always try the DF
 
 # Normal procedure
 
-1. Connect the device
+1. Connect the device via USB
 2. Switch to HackRF mode via the on-screen option
 3. Double click `flash_portapack_mayhem.bat` and follow the instructions
 4. Reboot the device
