@@ -36,3 +36,5 @@ https://www.youtube.com/watch?v=_zx4ZvurgOs
 
 # Still stuck?
 If you still experience problems after reading this and checking the video, submit an [issue](https://github.com/eried/portapack-havoc/issues/new?assignees=&labels=&template=problem-upgrading-the-firmware.md&title=Problem+upgrading+the+firmware).
+
+Also, there is a lot more details on the [HackRF wiki](https://github.com/mossmann/hackrf/wiki/Updating-Firmware).
