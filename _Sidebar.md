@@ -12,6 +12,11 @@
    * Transmitters
       * [GPS Sim](GPS-Sim)
       * [RDS](RDS)
+   * Capture
+      * [Features](Capture)
+      * [C16 Format](C16-format)
+   * Replay
+      * [Replay](Replay)
    * Utilites
 ## Developer manual
 * [Compile from source](Compile-firmware)
