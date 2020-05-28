@@ -14,7 +14,7 @@ There is a lot of missing documentation about all the features, so it is really 
 ## Environment setup
 
 ### Fork the repository
-1. Download and install Github desktop: https://desktop.github.com/
+1. Download and install [Github desktop](https://desktop.github.com/)
 2. Log to Github, open the [repository](https://github.com/eried/portapack-mayhem) and click **Fork** on the top right
 3. In your Fork, Click **Clone** and **Open in Desktop**
 4. Follow the rest of instructions in Github desktop
@@ -28,7 +28,7 @@ There is a lot of missing documentation about all the features, so it is really 
 For more details, check https://github.com/eried/portapack-mayhem/wiki/Compile-firmware
 
 5. In the local copy of the fork, create an empty `Build` folder (in root path)
-6. Run the image from Kitematic, the first time it will take quite long time. The result will be left on that `Build` folder
+6. Run the image from Kitematic, the first time _it might_ take a long time to finish. The result will be left on that `Build` folder
 
 ### Work on the code
 1. Install [Visual Studio Code](https://code.visualstudio.com/download)
