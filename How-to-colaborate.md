@@ -9,7 +9,7 @@ There is a lot of missing documentation about all the features, so it is really 
     * https://github.com/sharebrained/portapack-hackrf/wiki
 3. To create a new section, you have to edit the sidebar and then edit the page. To modify any actual section, just do it directly. Try to follow the same language and style used in the other articles of the Wiki.
 
-For the format, check the [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+For learning about the text formatting, check the [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 # Coding new stuff or fixing bugs
 
