@@ -20,17 +20,17 @@ There is a lot of missing documentation about all the features, so it is really 
 4. Follow the rest of instructions in Github desktop
 
 ### Prepare for compilation
-1. Install Docker Desktop
-2. Install Kitematic
+1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop)
+2. Install [Kitematic](https://github.com/docker/kitematic/releases)
 3. In Kitematic, search for PortaPack and Create an instance
 4. Inside of the PortaPack instance, set up the volume to point to the root of your local copy of the fork
 
 For more details, check https://github.com/eried/portapack-mayhem/wiki/Compile-firmware
 
-5. In the local copy of the fork, create an empty "Build" folder
-6. Run the image from Kitematic, the first time it will take quite long time. The result will be left on that "Build" folder
+5. In the local copy of the fork, create an empty `Build` folder (in root path)
+6. Run the image from Kitematic, the first time it will take quite long time. The result will be left on that `Build` folder
 
 ### Work on the code
-1. Install Visual Studio Code
+1. Install [Visual Studio Code](https://code.visualstudio.com/download)
 2. Open the root directory of your local copy of the Fork
 3. Change something and Run the image from Kitematic to compile
