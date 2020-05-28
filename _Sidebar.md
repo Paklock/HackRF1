@@ -22,7 +22,7 @@
    * Utilites
 ## Developer manual
 * [Compile from source](Compile-firmware)
-* [Using MAC OS ?](Using-MAC-OS-%3F)
+* [Using MAC OS ?](Using-MAC-OS)
 * Description of the structure
 * Tools
    * Images
