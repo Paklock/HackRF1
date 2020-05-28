@@ -13,7 +13,7 @@
 1. Open a shell window and on your command line and get into the folder where the cloned github is... (i.e. `cd /Users/enrique/Documents/GitHub/portapack-mayhem` )
 
 1. execute: `docker pull eried/portapack`
-1. Create a build folder mkdir build
+1. Create a build folder `mkdir build`
 
 ## And now for the nice steps:
 
