@@ -18,7 +18,7 @@
 11. 3.3V rail status led
 12. Reset button
 
-# Portapack internals
+# PortaPack internals
 
 <img src="img/hw_overview_h2_inside.png" height="500">
 
