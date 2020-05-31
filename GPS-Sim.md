@@ -59,6 +59,8 @@ If the device runs Android, follow your attempts with [GPS Test](https://play.go
 | Smartwatch | Huawei  | Amazfit Bip | **Yes**               | No                 |                            |
 | Phone      | Apple   | iPhone 6    | **Yes**               | No                 | Works with WIFI on         |
 | Phone      | ZTE     | Axon 7      | **Yes**               | No                 | Works with WIFI on         |
+| Phone      | Xiaomi  | Mi5         | **Yes**               | No                 | Works with WIFI on         |
+
 
 ## References
 https://blog.csdn.net/shukebeta008/article/details/103270214
