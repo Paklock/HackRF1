@@ -13,9 +13,15 @@ Download the latest file for this parameter directly from Nasa: https://cddis.na
 ### Sample rate and frequency specification
 Create `SOMENAME.TXT` with:
 ```
-sample_rate=2600000
+sample_rate=SAMPLE_RATE
 center_frequency=1575420000
 ```
+
+Known working values for the `SAMPLE_RATE`:
+* [2600000](https://www.tiktok.com/@erwinried/video/6822750940806843654?fbclid=IwAR1vMd-CCchIdbXPudxQr5mIKXJv7cL2HaGRhUSl1iaDvCufnD1D67X31IE)
+* 2500000
+* [1250000](https://www.facebook.com/groups/177623356165819/permalink/648011779126972/)
+
 This file should use the same filename as the .C8 file but with .TXT extension. It contains the sample rate and center frequency for the .C8 file. Copy the files to your PortaPack MicroSD and open the .C8 file in the GPS Sim app.
 
 ## Example 1
