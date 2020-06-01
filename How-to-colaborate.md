@@ -1,3 +1,5 @@
+There is there ain't no such thing as a [free lunch](https://en.wikipedia.org/wiki/There_ain%27t_no_such_thing_as_a_free_lunch). If you want a better portapack, there is no better way to get it than colaborating.
+
 # Write documentation
 
 There is a lot of missing documentation about all the features, so it is really important to write clean and detailed instructions for them. In this current wiki, you can modify or add new content with a normal Github account. 
@@ -16,6 +18,8 @@ For learning about the text formatting, check the [Markdown Cheatsheet](https://
 The easiest way to get a bug fixed or a new feature is to code it yourself. I know what are you thinking: "I am not an expert, I do not know C++, I am not capable, etc", but nobody really is until they do. 
 
 So, setup the environment and compile the code as instructed below. Modify something dumb: the title bar of an app, some button, ... compile again and test. Try to understand how things works; this is exactly how everyone gets involved. 
+
+> While you learn, you can add comments and rename variables if you think it will help others to understand the code. **This is also a very appreciated contribution.**
 
 ## Environment setup
 
