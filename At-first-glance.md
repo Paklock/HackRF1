@@ -1,10 +1,8 @@
-_Please help me by correcting any misunderstanding._
+# HackRF
+The **original HackRF** code can be found at `/hackrf`, it is a subproject inside the source code. It points to https://github.com/mossmann/hackrf
 
-# Original HackRF code
-The **original HackRF** code can be found at `/hackrf`
-
-## Portapack (including Chaos - Mayhem extensions) code
-The rest of the code, including the **portapack** and **chaos** / **mayhem** additions can be found at path `/firmware`
+# Portapack
+The rest of the code, including the **portapack** and **havoc/mayhem** extras can be found at `/firmware`
 
 The portapack <--> HackRF interface functions are located in `/firmware/baseband`
 
