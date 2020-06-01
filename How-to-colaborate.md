@@ -34,9 +34,27 @@ So, setup the environment and compile the code as instructed below. Modify somet
 For more details, check https://github.com/eried/portapack-mayhem/wiki/Compile-firmware
 
 5. In the local copy of the fork, create an empty `build` folder (in root path)
-6. Run the image from Kitematic, the first time _it might_ take a long time to finish. The result will be left on that `Build` folder
+6. Run the image from Kitematic, the first time _it might_ take a long time to finish. The result will be left on that `build` folder
 
 ### Work on the code
 1. Install [Visual Studio Code](https://code.visualstudio.com/download)
 2. Open the root directory of your local copy of the Fork
-3. Change something and Run the image from Kitematic to compile
+3. Change something
+4. Run the image from Kitematic to compile
+5. Go to step 3 until finished
+
+It is recommended to work in [branches](https://help.github.com/en/desktop/contributing-to-projects/creating-a-branch-for-your-work), but as a beginner, it is ok to work on your master branch. 
+
+Create [commits](https://help.github.com/en/desktop/contributing-to-projects/committing-and-reviewing-changes-to-your-project) with your changes after you complete them. 
+
+Just keep in mind:
+* Keep it simple, the fewer commits, affected files and lines, the better
+* Use a descriptive name for the commits, add the URL of the issue if you were fixing something specific
+* The project needs to compile successfully after each commit
+
+### Submit your changes
+This is the last stage. Your new feature or fix is ready and this is how you submit the changes:
+
+1. Publish the branch (if necessary) and push all the commits
+2. Do a [pull request](https://help.github.com/en/desktop/contributing-to-projects/creating-an-issue-or-pull-request). Use a descriptive title and description if you think is necessary
+3. Just follow the interaction on Github now
