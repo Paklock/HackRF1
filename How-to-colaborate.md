@@ -33,7 +33,7 @@ So, setup the environment and compile the code as instructed below. Modify somet
 
 For more details, check https://github.com/eried/portapack-mayhem/wiki/Compile-firmware
 
-5. In the local copy of the fork, create an empty `Build` folder (in root path)
+5. In the local copy of the fork, create an empty `build` folder (in root path)
 6. Run the image from Kitematic, the first time _it might_ take a long time to finish. The result will be left on that `Build` folder
 
 ### Work on the code
