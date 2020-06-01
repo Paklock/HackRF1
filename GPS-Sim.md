@@ -31,8 +31,19 @@ Create a rather small polygon with a path in KML format (i.e. a path you might w
 
 You also need to create `TESTGPS.TXT` as specified above.
 
-
 ## Example 2
+
+For a fixed position, use
+`gps-sdr-sim -e brdc1500.20n -s 1250000 -b 8 -o gpssim.bin -l 30.286502,120.032669,100 -d 100`
+
+Test with a `gpssim.txt` as follows:
+
+```
+sample_rate=1250000
+center_frequency=1575420000
+```
+
+## Example 3
 > **NOTE:** The website nmeagen may add timestamps to the output. That might be problematic for the simulation
 
 We can create a realistic movement using a NMEA GGA stream generator like https://nmeagen.org/. In this website create several multi point lines with the positions you want. Download the NMEA file clicking "Generate NMEA file".
