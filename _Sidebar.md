@@ -25,6 +25,7 @@
 * [Using MAC OS ?](Using-MAC-OS)
 * Description of the structure
    * [At first glance](At-first-glance)
+   * [Configuration Parameters](Configuration-Parameters)
 * Tools
    * Images
       * world_map.bin
