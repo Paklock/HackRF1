@@ -8,7 +8,7 @@ The data_t struct persists inside a **backup_ram region** defined in `/firmware/
 
 Found in **original portapack**, but only carrying a few configuration variables, it was later expanded by furrtek's **HAVOC** version, incorporating several new configuration parameters. 
 
-Among the new variables, there is a `uint32_t config_t` which furrtek version uses for a few storing boolean flags.
+Among those new variables, there is a `uint32_t config_t` used as storage for a few boolean flags.
 
 For MAYHEM's version, we've added two new boolean configuration parameters, particularly useful for H1 users including "**Speaker is present**" and "**Back Buttons on menues**".
 
