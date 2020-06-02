@@ -10,7 +10,7 @@ Found in **original portapack**, but only carrying a few configuration variables
 
 Among those new variables, there is a `uint32_t config_t` used as storage for a few boolean flags.
 
-For MAYHEM's version, we've added two new boolean configuration parameters, particularly useful for H1 users including "**Speaker is present**" and "**Back Buttons on menues**".
+On MAYHEM's version, we've added two new boolean configuration parameters, particularly useful for H1 users including "**Speaker is present**" and "**Back Buttons on menues**".
 
 You can find them implemented as two new configuration checkboxes inside OPTIONS->UI.
 
