@@ -18,4 +18,4 @@ From bash, the command that creates and moves the bitmap file is:
 
 ## Online editor
 
-The current icons were designed on Piskelapp. To create or update icons, the current sources ([16x16](https://www.piskelapp.com/p/agxzfnBpc2tlbC1hcHByEwsSBlBpc2tlbBiAgKC9vPncCww/view) or [8x8](https://www.piskelapp.com/p/agxzfnBpc2tlbC1hcHByEwsSBlBpc2tlbBiAgKC9vPncCww/view)) can be used.
+The current icons were designed on [Piskelapp](https://www.piskelapp.com/). To create or update icons, the current sources ([16x16](https://www.piskelapp.com/p/agxzfnBpc2tlbC1hcHByEwsSBlBpc2tlbBiAgKC9vPncCww/view) or [8x8](https://www.piskelapp.com/p/agxzfnBpc2tlbC1hcHByEwsSBlBpc2tlbBiAgKC9vPncCww/view)) can be used.
