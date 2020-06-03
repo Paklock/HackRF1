@@ -17,6 +17,12 @@ You need to configure the path to the source code from the Volumes of the contai
 
 [[img/Kitematic_VL5an8rufV.png]]
 
+In Windows, the line endings may produce some errors. If you get some `python/r` not found messages, then the easiest way to fix this is to configure git to not manipulate the line endings with:
+
+`git config --global core.autocrlf false`
+
+And subsequently, download another copy of the repository. 
+
 # Using Buddy.Works (and other CI platforms)
 
 You can use the following _yml _as your template for your CI platform (pipeline export from [buddy.works](https://buddy.works/)):
