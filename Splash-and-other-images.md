@@ -15,3 +15,7 @@ For operating that Python3 script, `Pillow` library is required: `pip install pi
 From bash, the command that creates and moves the bitmap file is:
 
 `python3 make_bitmap.py ../graphics/ && mv bitmap.hpp ../application/bitmap.hpp`
+
+## Online editor
+
+The current icons were designed on Piskelapp. To create or update icons, the current sources ([16x16](https://www.piskelapp.com/p/agxzfnBpc2tlbC1hcHByEwsSBlBpc2tlbBiAgKC9vPncCww/view) or [8x8](https://www.piskelapp.com/p/agxzfnBpc2tlbC1hcHByEwsSBlBpc2tlbBiAgKC9vPncCww/view)) can be used.
