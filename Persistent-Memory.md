@@ -9,7 +9,7 @@ The persistent memory map is defined at `/firmware/chibios-portapack/os/hal/plat
 ```
  **LPC_RTC_DOMAIN_BASE**       (0x40040000)
  **LPC_ALARM_TIMER_BASE**      (LPC_RTC_DOMAIN_BASE + 0x0000)
- **LPC_BACKUP_REG_BASE**       (LPC_RTC_DOMAIN_BASE + 0x1000)  <- backup_ram region!
+ **LPC_BACKUP_REG_BASE**       (LPC_RTC_DOMAIN_BASE + 0x1000) <- backup_ram region!
  **LPC_POWER_MODE_CTRL_BASE**  (LPC_RTC_DOMAIN_BASE + 0x2000)
  **LPC_CREG_BASE**             (LPC_RTC_DOMAIN_BASE + 0x3000)
  **LPC_EVENT_ROUTER_BASE**     (LPC_RTC_DOMAIN_BASE + 0x4000)
