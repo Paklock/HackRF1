@@ -19,7 +19,7 @@ The persistent memory map is defined at `/firmware/chibios-portapack/os/hal/plat
 
 ## backup_ram region
 
-The **backup_ram region** is a small amount of ram (only 256 bytes), defined in `/firmware/common/memory_map.hpp` and labeled as **LPC_BACKUP_REG_BASE** starting at address **0x40041000**
+The **backup_ram region** is a small amount of ram (only 256 bytes), defined in `/firmware/common/memory_map.hpp` using the **LPC_BACKUP_REG_BASE** label, thus starting at address **0x40041000**
 ### data_t struct
 
 The Portapack firmware uses the backup_ram region to store several uint32_t (and one uint64_t) variables, inside a struct, called "data_t", declared on /firmware/common/portapack_persistent_memory.cpp
