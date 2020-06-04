@@ -1,8 +1,8 @@
-This is a small amount of ram (only 256 bytes), part of the RTC (Real Time Clock) subsystem, inside the LPC43xx chip on the portapack hardware.
+This is a small amount of ram (only 256 bytes), part of the **RTC (Real Time Clock) subsystem**, inside the LPC43xx chip on the portapack hardware.
 
 # RTC Subsystem
 
-The RTC subsystem also keeps the actual clock (date / time) running, powered by a CR2032 battery, (which needs to be installed on the portapack board!), even when the portapack is not connected to an USB power source. 
+The RTC subsystem also keeps the actual clock (date / time) running, powered by a CR2032 battery, (which needs to be installed on the portapack board!), even when the unit is not connected to an USB power source. 
 
 ## backup_ram region
 
