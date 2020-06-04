@@ -1,14 +1,10 @@
-This is a small amount of ram (only 256 bytes), part of the **RTC (Real Time Clock) subsystem**, inside the LPC43xx chip on the portapack hardware.
-
 # RTC Subsystem
 
 The RTC subsystem also keeps the actual clock (date / time) running, powered by a CR2032 battery, (which needs to be installed on the portapack board!), even when the unit is not connected to an USB power source. 
 
-## backup_ram region
+This persistent memory is part of the **RTC (Real Time Clock) subsystem**, inside the LPC43xx chip on the portapack hardware.
 
-The **backup_ram region** is defined in `/firmware/common/memory_map.hpp` and labeled as "LPC_BACKUP_REG_BASE" starting at address **0x40041000**
-
-If you are curious on how exactly these 256 bytes of persistent memory are arranged, it's defined on `/firmware/chibios-portapack/os/hal/platforms/LPC43xx/lpc43xx.inc`:
+If you are curious on how exactly the whole persistent memory is arranged, it's defined on `/firmware/chibios-portapack/os/hal/platforms/LPC43xx/lpc43xx.inc`:
 
 * **LPC_RTC_DOMAIN_BASE**       (0x40040000)
 * **LPC_ALARM_TIMER_BASE**      (LPC_RTC_DOMAIN_BASE + 0x0000)
@@ -19,6 +15,9 @@ If you are curious on how exactly these 256 bytes of persistent memory are arran
 * **LPC_OTP_CTRL_BASE**         (LPC_RTC_DOMAIN_BASE + 0x5000)
 * **LPC_RTC_BASE**              (LPC_RTC_DOMAIN_BASE + 0x6000)
 
+## backup_ram region
+
+The **backup_ram region** is a small amount of ram (only 256 bytes), defined in `/firmware/common/memory_map.hpp` and labeled as "LPC_BACKUP_REG_BASE" starting at address **0x40041000**
 ### data_t struct
 
 The Portapack firmware uses the backup_ram region to store several uint32_t (and one uint64_t) variables, inside a struct, called "data_t", declared on /firmware/common/portapack_persistent_memory.cpp
