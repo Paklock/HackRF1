@@ -6,14 +6,16 @@ The RTC subsystem keeps the actual clock (date / time) running, powered by a CR2
 
 The persistent memory map is defined at `/firmware/chibios-portapack/os/hal/platforms/LPC43xx/lpc43xx.inc`:
 
-* **LPC_RTC_DOMAIN_BASE**       (0x40040000)
-* **LPC_ALARM_TIMER_BASE**      (LPC_RTC_DOMAIN_BASE + 0x0000)
-* **LPC_BACKUP_REG_BASE**       (LPC_RTC_DOMAIN_BASE + 0x1000)  <-- backup_ram region !
-* **LPC_POWER_MODE_CTRL_BASE**  (LPC_RTC_DOMAIN_BASE + 0x2000)
-* **LPC_CREG_BASE**             (LPC_RTC_DOMAIN_BASE + 0x3000)
-* **LPC_EVENT_ROUTER_BASE**     (LPC_RTC_DOMAIN_BASE + 0x4000)
-* **LPC_OTP_CTRL_BASE**         (LPC_RTC_DOMAIN_BASE + 0x5000)
-* **LPC_RTC_BASE**              (LPC_RTC_DOMAIN_BASE + 0x6000)
+```
+ **LPC_RTC_DOMAIN_BASE**       (0x40040000)
+ **LPC_ALARM_TIMER_BASE**      (LPC_RTC_DOMAIN_BASE + 0x0000)
+ **LPC_BACKUP_REG_BASE**       (LPC_RTC_DOMAIN_BASE + 0x1000)  <-- backup_ram region !
+ **LPC_POWER_MODE_CTRL_BASE**  (LPC_RTC_DOMAIN_BASE + 0x2000)
+ **LPC_CREG_BASE**             (LPC_RTC_DOMAIN_BASE + 0x3000)
+ **LPC_EVENT_ROUTER_BASE**     (LPC_RTC_DOMAIN_BASE + 0x4000)
+ **LPC_OTP_CTRL_BASE**         (LPC_RTC_DOMAIN_BASE + 0x5000)
+ **LPC_RTC_BASE**              (LPC_RTC_DOMAIN_BASE + 0x6000)
+```
 
 ## backup_ram region
 
