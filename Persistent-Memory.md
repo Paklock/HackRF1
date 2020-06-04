@@ -1,5 +1,3 @@
-# Persistent config data
-
 All configuration parameters are stored as uint32_t and int64_t variables inside **data_t Struct** declared on `/firmware/common/portapack_persistent_memory.cpp`
 
 ## data_t struct
