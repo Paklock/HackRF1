@@ -1,8 +1,29 @@
-All configuration parameters are stored as uint32_t and int64_t variables inside **data_t Struct** declared on `/firmware/common/portapack_persistent_memory.cpp`
+This is a small amount of ram (only 256 bytes), part of the RTC (Real Time Clock) subsystem, inside the LPC43xx chip on the portapack hardware.
 
-## data_t struct
+# RTC Subsystem
 
-The data_t struct persists inside a **backup_ram region** defined in `/firmware/common/memory_map.hpp`
+The RTC subsystem also keeps the actual clock (date / time) running, powered by a CR2032 battery, (which needs to be installed on the portapack board!), even when the portapack is not connected to an USB power source. 
+
+## backup_ram region
+
+The **backup_ram region** address is defined in `/firmware/common/memory_map.hpp`, starting at **0x40041000**
+
+If you are curious on how exactly these 256 bytes of persistent memory are arranged, it's defined on `/firmware/chibios-portapack/os/hal/platforms/LPC43xx/lpc43xx.inc`:
+
+```#define LPC_RTC_DOMAIN_BASE       (0x40040000)`
+#define LPC_ALARM_TIMER_BASE      (LPC_RTC_DOMAIN_BASE + 0x0000)
+#define LPC_BACKUP_REG_BASE       (LPC_RTC_DOMAIN_BASE + 0x1000)
+#define LPC_POWER_MODE_CTRL_BASE  (LPC_RTC_DOMAIN_BASE + 0x2000)
+#define LPC_CREG_BASE             (LPC_RTC_DOMAIN_BASE + 0x3000)
+#define LPC_EVENT_ROUTER_BASE     (LPC_RTC_DOMAIN_BASE + 0x4000)
+#define LPC_OTP_CTRL_BASE         (LPC_RTC_DOMAIN_BASE + 0x5000)
+#define LPC_RTC_BASE              (LPC_RTC_DOMAIN_BASE + 0x6000)```
+
+### data_t struct
+
+The Portapack firmware uses the backup_ram region to store several uint32_t (and one uint64_t) variables, inside a struct, called "data_t", declared on /firmware/common/portapack_persistent_memory.cpp
+
+### Variables stored in persistent memory
 
 Found in **original portapack**, but only carrying a few configuration variables, it was later expanded by furrtek's **HAVOC** version, incorporating several new configuration parameters. 
 
