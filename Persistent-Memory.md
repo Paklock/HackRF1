@@ -1,14 +1,14 @@
+This is part of the **RTC (Real Time Clock) subsystem**, inside the LPC43xx chip on the Portapack hardware.
+
 # RTC Subsystem
 
-The RTC subsystem also keeps the actual clock (date / time) running, powered by a CR2032 battery, (which needs to be installed on the portapack board!), even when the unit is not connected to an USB power source. 
+The RTC subsystem keeps the actual clock (date / time) running, powered by a CR2032 battery, (which needs to be installed on the portapack board!), even when the unit is not connected to an USB power source. 
 
-This persistent memory is part of the **RTC (Real Time Clock) subsystem**, inside the LPC43xx chip on the portapack hardware.
-
-If you are curious on how exactly the whole persistent memory is arranged, it's defined on `/firmware/chibios-portapack/os/hal/platforms/LPC43xx/lpc43xx.inc`:
+The persistent memory map is defined at `/firmware/chibios-portapack/os/hal/platforms/LPC43xx/lpc43xx.inc`:
 
 * **LPC_RTC_DOMAIN_BASE**       (0x40040000)
 * **LPC_ALARM_TIMER_BASE**      (LPC_RTC_DOMAIN_BASE + 0x0000)
-* **LPC_BACKUP_REG_BASE**       (LPC_RTC_DOMAIN_BASE + 0x1000)
+* **LPC_BACKUP_REG_BASE**       (LPC_RTC_DOMAIN_BASE + 0x1000)  <-- backup_ram region !
 * **LPC_POWER_MODE_CTRL_BASE**  (LPC_RTC_DOMAIN_BASE + 0x2000)
 * **LPC_CREG_BASE**             (LPC_RTC_DOMAIN_BASE + 0x3000)
 * **LPC_EVENT_ROUTER_BASE**     (LPC_RTC_DOMAIN_BASE + 0x4000)
@@ -17,7 +17,7 @@ If you are curious on how exactly the whole persistent memory is arranged, it's 
 
 ## backup_ram region
 
-The **backup_ram region** is a small amount of ram (only 256 bytes), defined in `/firmware/common/memory_map.hpp` and labeled as "LPC_BACKUP_REG_BASE" starting at address **0x40041000**
+The **backup_ram region** is a small amount of ram (only 256 bytes), defined in `/firmware/common/memory_map.hpp` and labeled as **LPC_BACKUP_REG_BASE** starting at address **0x40041000**
 ### data_t struct
 
 The Portapack firmware uses the backup_ram region to store several uint32_t (and one uint64_t) variables, inside a struct, called "data_t", declared on /firmware/common/portapack_persistent_memory.cpp
