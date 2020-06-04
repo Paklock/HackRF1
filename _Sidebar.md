@@ -25,7 +25,7 @@
 * [Using MAC OS ?](Using-MAC-OS)
 * Description of the structure
    * [At first glance](At-first-glance)
-   * [Configuration Parameters](Configuration-Parameters)
+   * [Persistent Memory](Persistent-Memory)
 * Tools
    * Images
       * world_map.bin
