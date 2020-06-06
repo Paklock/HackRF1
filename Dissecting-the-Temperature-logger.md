@@ -102,7 +102,7 @@ Right after stopping the transmission, the sensor value is 10. We give it about 
 ### Third test
 I placed my Portapack outside, where it cooled down for about 30 minutes (Temperature outside is about 15ºC).
 
-Back inside, I powered it up and got a first sensor value of 7, which would correspond to -10ºC.
+Back inside, I powered it up and got a first sensor value of 7, which would correspond to -10ºC. Portapack's case temp was about 15ºC
 
 About a minute later the sensor value increased by one, returning 8, which should correspond to -5ºC. Portapack's case temp was about 20ºC
 
