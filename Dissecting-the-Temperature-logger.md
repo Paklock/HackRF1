@@ -115,7 +115,7 @@ After more code delving, a conclusion is reached: MAX2837 documentation is faili
 
 ## MAX2837 Temperature Sensor "redefined"
 
-The sensor returns the temperature difference between ambient temperature and MAX2837 temperature!
+Apparently, the sensor returns the temperature difference between ambient temperature and MAX2837 temperature!
 
 * Which could only be positive. 
 * Which would be **at most**, 60ºC over ambient temperature (all things considered).
