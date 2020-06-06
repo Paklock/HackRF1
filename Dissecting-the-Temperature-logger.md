@@ -95,13 +95,16 @@ For our tests, we bypass the ºC conversion functionality in order to watch the 
 With our Portapack on, in iddle mode, the sensor **returns a value of 9** . If converted into ºC, such value should correspond to a temperature of about 0 / 1 ºC, which **seems to be wrong** (test room temperature is about 20ºC, and Portapack aluminium case is at about 26.7ºC). 
 
 ### Second test
-We place our Portapack in transmit mode, loop-playing a random earlier captured radio sample for about 30 minutes. The exterior aluminium case is at about 31.4ºC. 
+I placed my Portapack in transmit mode, loop-playing a random earlier captured radio sample for about 30 minutes. The exterior aluminium case is at about 31.4ºC. 
 
 Right after stopping the transmission, the sensor value is 10. We give it about 10 seconds and the value drops to 9. But Portapacks aluminium case is still abour 31.4ºC.
 
 So, our observation indicates that MAX2832 temperature sensor is NOT giving out an absolute temp value; neither the ambient temperature inside the Portapack, nor an on-chip temperature. 
 
 At first glance, this sensor value **might** be the relative temperature change (increase) between ambient temperature (Which goes up when Portapack is transmitting, as evidenced on the aluminium case external measurement) and the MAX2837 temperature itself.
+
+### Third test
+I placed my Portapack outside, where it cooled down, for 30 minutes. Back inside, when powered up the sensor value was 7. About a minute later it increased by one, giving a value of 8. Portapack's case temp was about 20ºC
 
 ### Our second analysis
 
