@@ -79,7 +79,7 @@ The temperature graph widget is defined on `/firmware/application/apps/ui_debug.
 
 It should graph the 128 temperature values, stored on the samples arrray. On the botton right side o te graph, it shows the most recent logged value.
 
-### Our first Analysis
+### First Analysis
 
 _**Warning:** Here is when things get weird (for me at least)._ The Temperature Widget **seems** to be wrong ("Spoiler": Later I learn it is ok):
 
@@ -89,10 +89,10 @@ _**Warning:** Here is when things get weird (for me at least)._ The Temperature 
 
 ## Testing the Temperature graph
 
-For our tests, we bypass the ºC conversion functionality in order to watch the **raw decimal value** being returned by the MAX2837 On-Chip Digital Temperature Sensor.
+For my tests, I bypassed the ºC conversion functionality in order to watch the **raw decimal value** being returned by the MAX2837 On-Chip Digital Temperature Sensor. My test room temperature is about 22ºC
 
 ### First test
-With our Portapack on, in iddle mode, the sensor **returns a value of 9** . If converted into ºC, such value should correspond to a temperature of about 0 / 1 ºC, which **seems to be wrong** (test room temperature is about 20ºC, and Portapack aluminium case is at about 26.7ºC). 
+Portapack is on, in iddle mode and the sensor **returns a value of 9** . If converted into ºC, such value should correspond to a temperature of about 0 / 1 ºC, which **seems to be wrong**. Portapack aluminium case is at about 26.7ºC. 
 
 ### Second test
 I placed my Portapack in transmit mode, loop-playing a random earlier captured radio sample for about 30 minutes. The exterior aluminium case is at about 31.4ºC. 
@@ -102,20 +102,20 @@ Right after stopping the transmission, the sensor value is 10. We give it about 
 ### Third test
 I placed my Portapack outside, where it cooled down for about 30 minutes (Temperature outside is about 15ºC).
 
-Back inside, when powered up I got a first sensor value of 7, which would correspond to -10ºC. Room temperature is about 22ºC
+Back inside, I powered it up and got a first sensor value of 7, which would correspond to -10ºC.
 
 About a minute later the sensor value increased by one, returning 8, which should correspond to -5ºC. Portapack's case temp was about 20ºC
 
-### Our second analysis
+### Second analysis
 
 My observation indicates that MAX2832 temperature sensor is NOT giving out an absolute temp value (It reflects neither the ambient temperature inside the Portapack, nor an on-chip temperature). 
 
 At first glance, this sensor value **might** be the relative temperature change (increase) between ambient temperature (Which goes up when Portapack is transmitting, as evidenced on the aluminium case external measurement) and the MAX2837 temperature itself.
 
-So what could be wrong ? We consider the following:
+So what could be wrong ? Consider the following:
 
 * MAX2837 Datasheet may be wrong
-* We are not correctly interpreting the MAX2837 description for the On-Chip Digital Temperature Sensor
+* I am not correctly interpreting the MAX2837 description for the On-Chip Digital Temperature Sensor
 * Portapack's code might have a bug and reading are wrong
 
 After more code delving, a conclusion is reached: MAX2837 documentation is failing to correctly explain the On-Chip Digital Temperature Sensor values.
