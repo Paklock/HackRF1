@@ -89,7 +89,7 @@ _**Warning:** Here is when things get weird (for me at least)._ The Temperature 
 
 ## Testing the Temperature graph
 
-For my tests, I bypassed the ºC conversion functionality in order to watch the **raw decimal value** being returned by the MAX2837 On-Chip Digital Temperature Sensor. My test room temperature is about 22ºC
+I bypassed the ºC conversion functionality in order to watch the **raw decimal value** being returned by the MAX2837 On-Chip Digital Temperature Sensor. My test room temperature is about 22ºC
 
 ### First test
 Portapack is on, in iddle mode and the sensor **returns a value of 9** . If converted into ºC, such value should correspond to a temperature of about 0 / 1 ºC, which **seems to be wrong**. Portapack aluminium case is at about 26.7ºC. 
