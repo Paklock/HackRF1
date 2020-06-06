@@ -97,16 +97,20 @@ With our Portapack on, in iddle mode, the sensor **returns a value of 9** . If c
 ### Second test
 I placed my Portapack in transmit mode, loop-playing a random earlier captured radio sample for about 30 minutes. The exterior aluminium case is at about 31.4ºC. 
 
-Right after stopping the transmission, the sensor value is 10. We give it about 10 seconds and the value drops to 9. But Portapacks aluminium case is still abour 31.4ºC.
-
-So, our observation indicates that MAX2832 temperature sensor is NOT giving out an absolute temp value; neither the ambient temperature inside the Portapack, nor an on-chip temperature. 
-
-At first glance, this sensor value **might** be the relative temperature change (increase) between ambient temperature (Which goes up when Portapack is transmitting, as evidenced on the aluminium case external measurement) and the MAX2837 temperature itself.
+Right after stopping the transmission, the sensor value is 10. We give it about 10 seconds and the value drops to 9. But Portapacks aluminium case is still about 31.4ºC.
 
 ### Third test
-I placed my Portapack outside, where it cooled down, for 30 minutes. Back inside, when powered up the sensor value was 7. About a minute later it increased by one, giving a value of 8. Portapack's case temp was about 20ºC
+I placed my Portapack outside, where it cooled down for about 30 minutes (Temperature outside is about 15ºC).
+
+Back inside, when powered up I got a first sensor value of 7, which would correspond to -10ºC. Room temperature is about 22ºC
+
+About a minute later the sensor value increased by one, returning 8, which should correspond to -5ºC. Portapack's case temp was about 20ºC
 
 ### Our second analysis
+
+My observation indicates that MAX2832 temperature sensor is NOT giving out an absolute temp value (It reflects neither the ambient temperature inside the Portapack, nor an on-chip temperature). 
+
+At first glance, this sensor value **might** be the relative temperature change (increase) between ambient temperature (Which goes up when Portapack is transmitting, as evidenced on the aluminium case external measurement) and the MAX2837 temperature itself.
 
 So what could be wrong ? We consider the following:
 
