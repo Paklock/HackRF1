@@ -91,9 +91,11 @@ _**Warning:** Here is when things get weird (for me at least)._ The Temperature 
 
 For our tests, we bypass the ºC conversion functionality in order to watch the **raw decimal value** being returned by the MAX2837 On-Chip Digital Temperature Sensor.
 
+* **First test**
 With our Portapack on, in iddle mode, the sensor **returns a value of 9** . If converted into ºC, such value should correspond to a temperature of about 0 / 1 ºC, which **seems to be wrong** (test room temperature is about 20ºC, and Portapack aluminium case is at about 26.7ºC). 
 
-As a second test, we put our Portapack in transmit mode, loop-playing a random earlier captured radio sample for about 30 minutes. The exterior aluminium case is at about 31.4ºC. 
+* **Second test**
+Now, we put our Portapack in transmit mode, loop-playing a random earlier captured radio sample for about 30 minutes. The exterior aluminium case is at about 31.4ºC. 
 
 Right after stopping the transmission, the sensor value is 10. We give it about 10 seconds and the value drops to 9. But Portapacks aluminium case is still abour 31.4ºC.
 
