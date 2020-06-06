@@ -31,6 +31,7 @@
       * world_map.bin
       * [converter](Splash-and-other-images)
 * Example guides
-   * [Dissecting the Temperature Logger](Dissecting-the-Temperature-logger)
    * Create a simple app
    * Create a complex app
+* Research
+   * [Dissecting the Temperature Logger](Dissecting-the-Temperature-logger)
