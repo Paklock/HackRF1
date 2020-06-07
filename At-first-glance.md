@@ -22,9 +22,9 @@ Common protocols functionality: `/firmware/application/protocols`
 
 # User Interface
 
-## Menues and Widgets
+## Menus and Widgets
 
-**MOST menues** (excluding OPTIONS and DEBUG, which are actually apps) and **pop-up boxes** (yes/no, yes/cancel, ok) are defined in `/firmware/application/ui_navigation.cpp`
+**MOST menus** (excluding OPTIONS and DEBUG, which are actually apps) and **pop-up boxes** (yes/no, yes/cancel, ok) are defined in `/firmware/application/ui_navigation.cpp`
 
 The **Options menu** is actually an "app" defined at `/firmware/application/apps/ui_settings.cpp`
 
