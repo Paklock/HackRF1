@@ -77,7 +77,7 @@ The m0 events dispatcher **handle_rtc_tick** located at `/fimrware/application/e
 ## Temperature Graphic
 The temperature graph widget is defined on `/firmware/application/apps/ui_debug.cpp`.
 
-It should graph the 128 temperature values, stored on the samples arrray. On the botton right side o te graph, it shows the most recent logged value.
+It should graph the 128 temperature values, stored on the samples arrray. On the botton right side of the graph, it shows the most recent logged value.
 
 ### First Analysis
 
