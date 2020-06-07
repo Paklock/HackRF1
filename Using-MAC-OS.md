@@ -1,3 +1,5 @@
+> This guide is a temporal entry.
+
 1. Navigate into **github.com** (Create account if not have already) get your own fork of **eried/portapack-mayhem**
 
 1. Download and install Github Desktop  **https://desktop.github.com**
@@ -30,6 +32,8 @@
 `Successfully tagged portapackccache:latest`
 
 ### TO COMPILE
+
+Also check: https://github.com/sharebrained/portapack-hackrf/issues/160#issuecomment-640237943
 
 `docker run -it -v ${PWD}:/havoc portapackccache`
 
