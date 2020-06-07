@@ -1,6 +1,6 @@
 [Start here](Home)
 
-[**How to colaborate**](How-to-colaborate)
+[**How to collaborate**](How-to-collaborate)
 ## User manual
 * [First steps](First-steps)
 * Intended use and care
