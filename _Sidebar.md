@@ -19,6 +19,9 @@
       * [C16 Format](C16-format)
    * Replay
       * [Features](Replay)
+   * Calls
+   * Scanner
+      * [Features](Scanner)
    * Utilites
 ## Developer manual
 * [Compile from source](Compile-firmware)
