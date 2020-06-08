@@ -28,7 +28,7 @@ Common protocols functionality: `/firmware/application/protocols`
 
 The **Options menu** is actually an "app" defined at `/firmware/application/apps/ui_settings.cpp`
 
-The **Debug menu** is defined at `/firmware/application/apps/ui_debug.cpp`
+The **Debug menu** (also an app) is defined at `/firmware/application/apps/ui_debug.cpp`
 
 The widgets used in the UI, as **buttons, texts, checkboxes, input fields**, etc. are to be found at `/firmware/common/ui_widget.cpp`
 
