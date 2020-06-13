@@ -20,6 +20,7 @@
    * Replay
       * [Features](Replay)
    * Calls
+      * [Features](Calls)
    * Scanner
       * [Features](Scanner)
    * Utilites
