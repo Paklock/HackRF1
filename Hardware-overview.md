@@ -2,7 +2,7 @@
 
 <img src="img/hw_overview_h2_front.png" height="500"> <img src="img/hw_overview_h2_back.png" height="500">
 
-1. Antenna (the connector is a _female SMA_, so the antenna needs to be _male SMA_, and not _RPSMA_)
+1. [Antenna](https://github.com/eried/portapack-mayhem/wiki/Antennas) (the connector is a _female SMA_, so the antenna needs to be _male SMA_, and not _RPSMA_)
 2. Encoder thumb wheel (on the H1 has a different layout, but the same functionality), notice that pushing the wheel down has the same effect as pressing the center push button
 3. Directional pushbuttons and Enter/ON/OFF in the center
 4. [CLK IN](https://github.com/mossmann/hackrf/wiki/HackRF-One#external-clock-interface-clkin-and-clkout)
