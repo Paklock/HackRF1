@@ -23,7 +23,13 @@
       * [Features](Calls)
    * Scanner
       * [Features](Scanner)
-   * Utilites
+   * Tools
+      * Freq manager
+      * File manager
+      * Signal gen
+      * Wave viewer
+      * [Antenna length](antennas)
+      * Wipe SD card
 ## Developer manual
 * [Compile from source](Compile-firmware)
 * [Using MAC OS ?](Using-MAC-OS)
