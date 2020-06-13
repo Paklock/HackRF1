@@ -40,6 +40,10 @@ For more details, check https://github.com/eried/portapack-mayhem/wiki/Compile-f
 5. In the local copy of the fork, create an empty `build` folder (in root path)
 6. Run the image from Kitematic, the first time _it might_ take a long time to finish. The result will be left on that `build` folder
 
+## Start coding
+
+You can check the following [brief video](https://youtu.be/cYLzmMFe7-E) that shows the most of the steps described below.
+
 ### Work on the code
 1. Install [Visual Studio Code](https://code.visualstudio.com/download)
 2. Open the root directory of your local copy of the Fork
