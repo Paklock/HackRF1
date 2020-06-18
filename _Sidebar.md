@@ -45,3 +45,4 @@
    * Create a complex app
 * Research
    * [Dissecting the Temperature Logger](Dissecting-the-Temperature-logger)
+   * [Differences between H1 and H2](Differences-Between-H1-and-H2-models)
