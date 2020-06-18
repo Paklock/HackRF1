@@ -4,10 +4,8 @@ At a glance, hardware-side, both models feature a **headphone connector** and th
 
 The AK4951 includes separate pins for speaker and headphone output:
 
-*  Pins 20 (**SPP**) and 19 (**SPN**) labeled as **SP**eaker **P**ositive and **SP**eaker **N**egative 
-(Supported speaker: 1W)
-* Pins 22 (**HPL**) and 23 (**HPR**) as in (**H**ead**P**hones **L**eft, **H**ead**P**ones **R**ight)
-(Supported headphones: 16 ohm)
+*  Pins 20 (**SPP**) and 19 (**SPN**) labeled as **SP**eaker **P**ositive and **SP**eaker **N**egative (1W 8ohm)
+* Pins 22 (**HPL**) and 23 (**HPR**) as in (**H**ead**P**hones **L**eft, **H**ead**P**ones **R**ight) (16 ohm)
 
 Upon close inspection, several differences arise:
 
