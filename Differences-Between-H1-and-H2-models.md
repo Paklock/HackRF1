@@ -18,7 +18,7 @@ The speaker audio header is switched on/off by the headphone female connector, w
 
 ## Audio in H1 model
 
-The soldering pads for an internal speaker connector header are present. The speaker +/GND signals on the pad are routed directly into AK4951 pins.
+Only the soldering pads for an internal speaker connector header are present. The speaker +/GND signals on the pad are routed directly into AK4951 pins.
 
 **NOTE:** _There is no extra amplifier IC between the speaker pad and the AK4951. The AK4951 includes a speaker amplifier capable of 1W, when powered @5v._
 
