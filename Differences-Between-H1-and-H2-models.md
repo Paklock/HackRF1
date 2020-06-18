@@ -2,7 +2,7 @@
 
 At a glance, hardware-side, both models feature a **headphone connector** and the same **AK4951 AUDIO / CODEC IC** (You can get the datasheet [following this link](https://www.akm.com/content/dam/documents/products/audio/audio-codec/ak4951aen/ak4951aen-en-datasheet.pdf)).
 
-After close inspection over each model's circuit, several differences are noticed:
+Upon close inspection, several differences arise:
 
 ## Audio in H2 model
 Portapack H2 circuitboard includes a connector header for easily adding an internal speaker. 
