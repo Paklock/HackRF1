@@ -2,7 +2,11 @@
 
 At a glance, hardware-side, both models feature a **headphone connector** and the same **AK4951 AUDIO / CODEC IC** (You can get the datasheet [following this link](https://www.akm.com/content/dam/documents/products/audio/audio-codec/ak4951aen/ak4951aen-en-datasheet.pdf)).
 
-The AK4951 includes separate pins for speaker and headphone output.
+The AK4951 includes separate pins for speaker and headphone output:
+
+*  Pins 20 (SPP) and 19 (SPN) labeled as **SP**eaker **P**ositive and **SP**eaker **N**egative
+* Pins 22 (HPL) and 23 (HPR) as in (**H**ead**P**hones **L**eft, **H**ead**P**ones **R**ight).
+
 
 Upon close inspection, several differences arise:
 
@@ -15,7 +19,7 @@ The speaker audio header is switched on/off by the headphone female connector, w
 
 ## Audio in H1 model
 
-The soldering pads for an internal speaker connector header are present. The speaker +/GND signals on the pad are routed into AK4951 pins 20 (SPP) and 19 (SPN) which are labeled as SPeaker Positive and SPeaker Negative.
+The soldering pads for an internal speaker connector header are present. The speaker +/GND signals on the pad are routed directly into AK4951 pins.
 
 **NOTE:** _There is no extra amplifier IC between the speaker pad and the AK4951. The AK4951 includes a speaker amplifier capable of 1W, when powered @5v._
 
