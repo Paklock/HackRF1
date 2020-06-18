@@ -15,5 +15,5 @@ The speaker audio header is switched on/off by the headphone female connector, w
 
 The soldering pads for an internal speaker connector header are present. The speaker +/GND signals on the pad are routed into AK4951 pins 20 (SPP) and 19 (SPN) which are labeled as SPeaker Positive and SPeaker Negative.
 
-**NOTE:** _There is no extra amplifier IC in the middle._
+**NOTE:** _There is no extra amplifier IC between the speaker pad and the AK4951. The AK4951 includes a 1W, 8ohm Speaker amplifier_
 
