@@ -1,6 +1,4 @@
-Portapack H1 hardware represents the original design, which is well documented, placed in the public domain. 
-
-Portapack H2 hardware is a custom modification of the original design, made by unknown fans (which at this time are keeping their design notes / documents for themselves) including some upgrades:
+The H1 is the [original](https://github.com/eried/portapack-mayhem/tree/master/hardware/portapack_h1) design, which is well documented and in the public domain. PortaPack H2 is a modification based on the last, from an unknown origin (without public sources) with some upgrades:
 
 * Bigger screen
 * Different navigation buttons
@@ -8,11 +6,11 @@ Portapack H2 hardware is a custom modification of the original design, made by u
 * Battery charging circuitry
 * Better internal Speaker integration
 
-Note: _There is also an hybrid H1 / H2 model, called the 2020 H1 Model, which is an H1 but with a bigger screen._
+Note: _There is also an hybrid model, called the 2020 H1 Model, which is an H1 but with a bigger screen._
 
 # Audio
 
-At a glance, hardware-side, both models feature a **headphone connector** and the same **AK4951 AUDIO / CODEC IC** (You can get the datasheet [following this link](https://www.akm.com/content/dam/documents/products/audio/audio-codec/ak4951aen/ak4951aen-en-datasheet.pdf)).
+Both feature a **headphone connector** and the **AK4951 AUDIO / CODEC IC** ([datasheet](https://www.akm.com/content/dam/documents/products/audio/audio-codec/ak4951aen/ak4951aen-en-datasheet.pdf)).
 
 The AK4951 includes separate pins for speaker and headphone output:
 
@@ -21,14 +19,7 @@ The AK4951 includes separate pins for speaker and headphone output:
 
 Upon close inspection, several differences arise:
 
-## H2 Portapack audio
-Portapack H2 circuitboard includes a connector header for easily adding an internal speaker. 
-
-The **AK4951 IC** has been rotated by 180º and placed more into the middle of the circuit board, allowing for the addition of an extra IC: The ChipStar brand **CS8122S** ultra-low EMI, filter-free, class-D amplifier, for driving the speaker output with up to 3W. 
-
-The speaker audio header is switched on/off by the headphone female connector, which includes the usual mechanical switch, detecting the insertion of a male plug in it.
-
-##  H1 Portapack audio
+##  H1
 
 Only the soldering pads for an internal speaker connector header are present. The speaker +/GND signals on the pad are routed directly into AK4951 pins.
 
@@ -36,18 +27,25 @@ Only the soldering pads for an internal speaker connector header are present. Th
 
 **You can solder a laptop / tablet speaker in H1 speaker pads.** In order to enable it, you will need to install MAYHEM firmware, where you can also configure under **OPTIONS -> INTERFACE** the addition of a SPEAKER button on your top status bar.
 
-### "Audio devil may be in the details"
-Since the firmware is shared between H1 and H2, on Portapack H2 you end up powering TWO speaker amplifiers: The one inside AK4951 IC, and the extra CS8122S one.
+## H2
+PortaPack H2 circuitboard includes a connector header for easily adding an internal speaker. 
+
+The **AK4951 IC** has been rotated by 180º and placed more into the middle of the circuit board, allowing for the addition of an extra IC: The ChipStar brand **CS8122S** ultra-low EMI, filter-free, class-D amplifier, for driving the speaker output with up to 3W. 
+
+The speaker audio header is switched on/off by the headphone female connector, which includes the usual mechanical switch, detecting the insertion of a male plug in it.
+
+### Known issues
+Since the firmware is shared between H1 and H2, on PortaPack H2 you end up powering TWO speaker amplifiers: The one inside AK4951 IC, and the extra CS8122S one.
 
 # Power Supply
 
-## H1 Portapack
-There is no internal battery on your H1 Portapack: You will need to power it up externally, from your computer or an USB powerbank.
+## H1 
+There is no internal battery on your H1 PortaPack: You will need to power it up externally, from your computer or an USB powerbank.
 
-H1 Portapack design does NOT include any battery charging circuit, nor a provision for a power on/off switch.
+H1 PortaPack design does NOT include any battery charging circuit, nor a provision for a power on/off switch.
 
-Having said that, some enthusiasts managed to MOD their H1's by adding a standard usb powerbank management circuit board with the corresponding Li-ion battery and placing a manual power switch on their cases.
+Some enthusiasts managed to MOD their H1's by adding a standard usb powerbank management circuit board with the corresponding Li-ion battery and placing a manual power switch on their cases.
 
-## H2 Portapack internal battery
+## H2
 
-H2 includes an internal Li-Ion battery, standard battery charging / managment IC (located at the side of the speakerphone connector) and power switch.
+H2 includes an internal Li-Ion battery, standard battery charging / management IC (located at the side of the speakerphone connector) and power switch.
