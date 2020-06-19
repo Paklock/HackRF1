@@ -37,7 +37,7 @@ Only the soldering pads for an internal speaker connector header are present. Th
 **You can solder a laptop / tablet speaker in H1 speaker pads.** In order to enable it, you will need to install MAYHEM firmware, where you can also configure under **OPTIONS -> INTERFACE** the addition of a SPEAKER button on your top status bar.
 
 ### "Audio devil may be in the details"
-Since the firmware is shared between H1 and H2, on Portapack H2 you end up powering up TWO speaker amplifiers: The one inside AK4951 IC, and the extra CS8122S one.
+Since the firmware is shared between H1 and H2, on Portapack H2 you end up powering TWO speaker amplifiers: The one inside AK4951 IC, and the extra CS8122S one.
 
 # Power Supply
 
