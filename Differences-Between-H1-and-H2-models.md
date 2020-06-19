@@ -26,7 +26,7 @@ Portapack H2 circuitboard includes a connector header for easily adding an inter
 
 The **AK4951 IC** has been rotated by 180º and placed more into the middle of the circuit board, allowing for the addition of an extra IC: The ChipStar brand **CS8122S** ultra-low EMI, filter-free, class-D amplifier, for driving the speaker output with up to 3W. 
 
-The speaker audio header is switched on/off by the headphone female connector, which includes the usual switch, detecting the insertion of a male plug in it.
+The speaker audio header is switched on/off by the headphone female connector, which includes the usual mechanical switch, detecting the insertion of a male plug in it.
 
 ##  H1 Portapack audio
 
