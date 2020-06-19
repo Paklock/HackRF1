@@ -41,7 +41,7 @@
       * world_map.bin
       * [converter](Splash-and-other-images)
 * Example guides
-   * [Create a simple app](Create a simple app)
+   * [Create a simple app](Create-a-simple-app)
    * Create a complex app
 * Research
    * [Dissecting the Temperature Logger](Dissecting-the-Temperature-logger)
