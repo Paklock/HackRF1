@@ -4,9 +4,9 @@ Portapack H2 hardware is a custom modification of the original design, made by u
 
 * Bigger screen
 * Different navigation buttons
-* internal battery
-* battery charging circuitry
-* better internal Speaker integration
+* Internal battery
+* Battery charging circuitry
+* Better internal Speaker integration
 
 Note: _There is also an hybrid H1 / H2 model, called the 2020 H1 Model, which is an H1 but with a bigger screen._
 
