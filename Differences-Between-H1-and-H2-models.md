@@ -42,6 +42,8 @@ Since the firmware is shared between H1 and H2, on Portapack H2 you end up power
 # Power Supply
 
 ## H1 Portapack
+There is no internal battery on your H1 Portapack: You will need to power it up externally, from your computer or an USB powerbank.
+
 H1 Portapack design does NOT include any battery charging circuit, nor a provision for a power on/off switch.
 
 Having said that, some enthusiasts managed to MOD their H1's by adding a standard usb powerbank management circuit board with the corresponding Li-ion battery and placing a manual power switch on their cases.
