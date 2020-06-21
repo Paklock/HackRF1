@@ -1,5 +1,3 @@
-A regular question that occurs is
-"what is the pinout for the PortaPack speaker port"?
 ![HackRF Portapack speaker connector J1](https://media.discordapp.net/attachments/719669765253365763/723224990182277270/Captura_de_Pantalla_2020-06-18_a_las_14.17.35.png)
 
 The pinout is quite simple.
