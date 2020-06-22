@@ -34,6 +34,8 @@ The **AK4951 IC** has been rotated by 180º and placed more into the middle of t
 
 The speaker audio header is switched on/off by the headphone female connector, which includes the usual mechanical switch, detecting the insertion of a male plug in it.
 
+This is a non trivial difference, compared against H1 design where the speaker out pads are routed to the actual speaker out pins on the AK4951. On H2, the audio comes from the Headphones output pins of that IC.
+
 ### Known issues
 Since the firmware is shared between H1 and H2, on PortaPack H2 you end up powering TWO speaker amplifiers: The one inside AK4951 IC, and the extra CS8122S one.
 
