@@ -15,7 +15,7 @@ For learning about the text formatting, check the [Markdown Cheatsheet](https://
 
 # Coding new stuff or fixing bugs
 
-The easiest way to get a bug fixed or a new feature is to code it yourself. I know what are you thinking: "I am not an expert, I do not know C++, I am not capable, etc", but nobody really is until they do. 
+I know what are you thinking: "I am not an expert, I do not know C++, I am not capable, etc", but nobody really is until they do. The easiest way to get a bug fixed or a new feature is to code it yourself.
 
 So, setup the environment and compile the code as instructed below. Modify something dumb: the title bar of an app, some button, ... compile again and test. Try to understand how things works; this is exactly how everyone gets involved. 
 
