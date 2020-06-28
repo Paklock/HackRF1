@@ -31,6 +31,9 @@ You may be able to try in a virtual environment, completely isolated from your c
 The following video explains all possible outcomes while trying to update the firmware and possible mitigations:
 https://www.youtube.com/watch?v=_zx4ZvurgOs
 
+There is another very good video about the general overview, also including the update procedure:
+https://www.youtube.com/watch?v=kjFB58Y1TAo
+
 # Still stuck?
 If you still experience problems after reading this and checking the video, submit an [issue](https://github.com/eried/portapack-havoc/issues/new?assignees=&labels=&template=problem-upgrading-the-firmware.md&title=Problem+upgrading+the+firmware).
 
