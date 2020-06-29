@@ -2,7 +2,7 @@ This application calculates the optimal antenna length for any specific frequenc
 
 You can also change the wave type from a preset list of divisors including full, half, quarter waves (and other divisors) which is handy for choosing an appropriate antenna (if not the best one -a.k.a full wave one-).
 
-**NEWBIE NOTE**: The need for selecting the right, ("tuned" or "matched") antenna for each frequency is of paramount importance, otherwise the RX or TX will be less than optimal, and under some circumstances (such as grossly mismatched antenna under high power TX) you could even  end up damaging your equipment.
+**NEWBIE NOTE**: The need for selecting the right, ("tuned" or "matched") antenna for each frequency is of paramount importance, otherwise the RX or TX will be less than optimal, and under some circumstances (such as grossly mismatched antenna under high power TX) you could even  end up damaging your equipment (this is true for all radio TX equipment).
 
 ## Adding your own antennas
 
