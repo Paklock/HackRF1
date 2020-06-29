@@ -7,6 +7,7 @@ You can also change the wave type from a preset list of divisors including full,
 ## Adding your own antennas
 
 This Antenna calculator app goes a step further, by calculating and displaying in simple terms how much you should extend any pre-defined telescopic antenna you may own, which is of great help while doing some field work and having to resource to whatever Antennas you included on your kit.
+
 For this to work, you will need a microSD card inserted on your Portapack. A simple text file with the antennas you use needs to be present under /WHIPCALC/ANTENNAS.TXT
 
 ### ANTENNAS.TXT example
