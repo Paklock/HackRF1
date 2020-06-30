@@ -47,6 +47,19 @@
       * Wave viewer
       * [Antenna length](antennas)
       * Wipe SD card
+   * Options
+      * Audio
+      * Radio
+      * Interface
+      * Date/Time
+      * Touchscreen
+   * Debug
+      * Memory
+      * SD Card
+      * Peripherals
+      * Temperature
+      * Buttons Test
+    * HackRF
 ## Developer manual
 * [Compile from source](Compile-firmware)
 * [Using MAC OS ?](Using-MAC-OS)
