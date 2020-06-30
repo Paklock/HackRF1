@@ -10,7 +10,7 @@
    * [3d printed enclosure](H2-Enclosure)
    * [Internal speaker](Internal-speaker)
 * Description of the main screen
-* [Applications] (Applications)
+* [Applications](Applications)
    * Receivers
       * ADS-B
       * ACARS
