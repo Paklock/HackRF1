@@ -18,7 +18,11 @@
       * AFSK
       * BTLE
       * NRF
-      * Audio
+      * Audio 
+        * SPEC
+        * WFM
+        * NFM
+        * AM
       * Analog TV
       * ERT Meter
       * POCSAG
