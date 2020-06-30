@@ -12,6 +12,18 @@
 * Description of the main screen
 * Applications
    * Receivers
+      * ADS-B
+      * ACARS
+      * AIS Boats
+      * AFSK
+      * BTLE
+      * NRF
+      * Audio
+      * Analog TV
+      * ERT Meter
+      * POCSAG
+      * Radiosnde
+      * TPMS Cars    
    * Transmitters
       * [GPS Sim](GPS-Sim)
       * [RDS](RDS)
