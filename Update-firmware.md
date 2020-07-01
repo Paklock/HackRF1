@@ -1,11 +1,19 @@
 In theory, it is impossible to brick the device, since you can always try the DFU recovery procedure. However, the updating might become fiddly in certain conditions.
 
-# Normal procedure
+# Normal procedure (Windows)
 
 1. Connect the device via USB
 2. Switch to HackRF mode via the on-screen option (in the PortaPack)
 3. Double click `flash_portapack_mayhem.bat` and follow the instructions
 4. Reboot the device
+
+# Normal procedure (Linux)
+
+1. Connect the device via USB
+2. Switch to HackRF mode via the on-screen option (in the PortaPack)
+3. Upload the firmware with `hackrf_spiflash -w new_firmware_file.bin` 
+4. Reboot the device
+
 
 # Troubleshooting
 
