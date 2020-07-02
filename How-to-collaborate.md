@@ -1,4 +1,4 @@
-There is there ain't no such thing as a [free lunch](https://en.wikipedia.org/wiki/There_ain%27t_no_such_thing_as_a_free_lunch). If you want a better portapack, there is no better way to get it than collaborating.
+There is no such thing as a [free lunch](https://en.wikipedia.org/wiki/There_ain%27t_no_such_thing_as_a_free_lunch). If you want a better portapack, there is no better way to get it than collaborating.
 
 # Write documentation
 
