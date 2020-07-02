@@ -11,13 +11,13 @@ The HackRF One can be seen as a logical progression from these devices, extendin
 The Portapack was originally designed and created by Security Researcher and Hardware Hacker Jared Boone as a way to provide portable operating capabilities for the HackRF One.
 
 # Open Source Hardware and Software
-All of the original source code, documentation and design files for HackRF One are copyright Michael Ossmann and licensed under the GNU GPL 2.0.
+All of the original source code, documentation and design files for HackRF One are copyright Michael Ossmann and licensed under the [GNU GPL 2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html).
 
 All of the original source code, documentation and design files for Portapack H1 are copyright Jared Boone and licensed under the GNU GPL 2.0.
 
-The implications of the above are that anyone can take any of these source files and add, modify, extend and release their work, providing they make avaialble on request, any additions, modifications and extensions they have made and license this under the GPL 2.0. 
+The implications of the above are that anyone can take any of these source files and add, modify, extend and release their work, providing they make available on request, any additions, modifications and extensions they have made and license this under the GPL 2.0. 
 
-There is no restriction on using any of this for commercial gain. That being said, there is also no implication or warranty of fitness made by either the original authors or any subsequent contributors or vendors. Do your research and Caveat Emptor.
+There is no restriction on using any of this for commercial gain. That being said, there is also no implication or warranty of fitness made by either the original authors or any subsequent contributors or vendors. Do your research and [Caveat Emptor](https://en.wikipedia.org/wiki/Caveat_emptor).
 
 # Intended Use
 The HackRF One was originally designed as a tool for RF analysis and research, particularly in the domain of Information Security.
