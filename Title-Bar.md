@@ -8,12 +8,12 @@ The sections of Title Bar, along with functionality are (from left to right):
 |-----|--------|----------|
 |Back |Back to previous screen/Return to menu| Yes |
 |Name|Application or Firmware name & version| No |
-|Stealth    |Activate [Stealth Mode](stealth-mode)  | Yes|
-|Camera    |Take [Screenshot](screenshots)  | Yes|
-|Moon|Activate [Sleep Mode](sleep-mode)| Yes|
-|DC|Activate/Deactivate DC Power on Antenna port| Yes |
-|Ext Clk|Indicate status of external clock|No|
-|SD Card|Indicate presence of SD Card|No|
+|![StealthIcon](https://github.com/eried/portapack-mayhem/blob/master/firmware/graphics/icon_stealth.png)    |Activate [Stealth Mode](stealth-mode)  | Yes|
+|![CameraIcon](https://github.com/eried/portapack-mayhem/blob/master/firmware/graphics/icon_camera.png)    |Take [Screenshot](screenshots)  | Yes|
+|![MoonIcon](https://github.com/eried/portapack-mayhem/blob/master/firmware/graphics/icon_sleep.png)|Activate [Sleep Mode](sleep-mode)| Yes|
+|![BlastOffIcon](https://github.com/eried/portapack-mayhem/blob/master/firmware/graphics/icon_biast_off.png)|Activate/Deactivate DC Power on Antenna port| Yes |
+|![ExtClockOffIcon](https://github.com/eried/portapack-mayhem/blob/master/firmware/graphics/icon_clk_ext.png)|Indicate status of external clock|No|
+|![SDCardOKIcon](https://github.com/eried/portapack-mayhem/blob/master/firmware/graphics/sd_card_ok.png)|Indicate presence of SD Card|No|
 
 
     
