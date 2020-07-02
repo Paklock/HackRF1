@@ -9,7 +9,7 @@
 * [Description of the hardware](Hardware-overview)
    * [3d printed enclosure](H2-Enclosure)
    * [Internal speaker](Internal-speaker)
-* Description of the main screen
+* [Description of the main screen]
 * [Applications](Applications)
    * Receivers
       * ADS-B
