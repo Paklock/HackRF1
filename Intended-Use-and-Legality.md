@@ -1,5 +1,5 @@
 # Disclaimer
-I am not a lawyer, nor do I play one on TV. This is not intended to be legal advice and should not be construed as authoritative, accurate or complete for your or any jurisdiction.
+I am not a lawyer. This is not intended to be legal advice and should not be construed as authoritative, accurate or complete for your or any jurisdiction. You should seek the advice of a local legal professional to clarify the legality of your usage of HackRF One, Portapack and Mayhem for your jurisdiction.
 
 # Background
 ## HackRF One
@@ -27,15 +27,15 @@ The Portapack was originally designed to facilitate the portable use of HackRF O
 However, the HackRF One is fundamentally a general purpose Software Defined Radio. As such, it can be put to any use that a radio with similar characteristics can be. The Portapack is fundamentally a control surface for the HackRF One, and as such can be used for any general control of the SDR.
 
 # Unauthorised Access
-Since much of the software and use-cases for the HackRF One and Portapack centres around Information Security Research, there is plenty of opportunity for getting into legal hot-water. The area of Security Research is as yet a legal grey-area, with many of the laws governing it being quite antiquated, and often not relevant to the technology of. As such, it is asdvised that you only ever transmit where explicitly permitted, and when doing Security Research, that you only access or act upon devices you own or are explicitly permitted to access. 
+Since much of the software and use-cases for the HackRF One and Portapack centres around Information Security Research, there is plenty of opportunity for getting into legal hot-water. The area of Security Research is as yet a legal grey-area, with many of the laws governing it being quite antiquated, and often not relevant to the technology of today. As such, it is advised that you only ever transmit where explicitly permitted, and when doing Security Research, that you only access or act upon devices you own or are explicitly permitted to access or act upon.
 
 # Transmitting
 In general, it should be assumed that transmitting radio signals is not legal. Transmitting radio signals with intent, or lack of duty-of-care to cause interference, disruption or min-information even more so.
 
-That being said, there are transmissions that are not illegal. Transmissions in the ISM bands are license-free in most jurisdictions, once certain power levels are adhered to. This is, of course, bearing the second part of my above statement in mind.
+That being said, there are transmissions that are not illegal. Transmissions in the [ISM bands](https://en.wikipedia.org/wiki/ISM_band) are license-free in most jurisdictions, once certain power levels are adhered to. This is bearing the section on causing interference, above, in mind.
 
 Amateur Radio Operators, depending on jurisdiction, license category, adherence to terms-of-license, local laws etc. have access to far more spectrum, and far higher power levels. Again, without causing interference through intent or lack of care.
 
 # Receiving
-In general, in most jurisdictions, receiving radio signals is not illegal. Your specific case should be verified with a local legal advisor, of course.
+In general, in most jurisdictions, receiving radio signals is not illegal. Your specific case should be verified with a local legal professional.
 
