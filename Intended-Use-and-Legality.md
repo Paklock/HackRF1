@@ -1,5 +1,5 @@
 # Disclaimer
-I am not a lawyer. This is not intended to be legal advice and should not be construed as authoritative, accurate or complete for your or any jurisdiction. You should seek the advice of a local legal professional to clarify the legality of your usage of HackRF One, Portapack and Mayhem for your jurisdiction.
+This is not intended to be legal advice and should not be construed as authoritative, accurate or complete for your or any jurisdiction. You should seek the advice of a local legal professional to clarify the legality of your usage of HackRF One, Portapack and Mayhem for your jurisdiction.
 
 # Background
 ## HackRF One
