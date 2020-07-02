@@ -3,7 +3,7 @@
 [**How to collaborate**](How-to-collaborate)
 ## User manual
 * [First steps](First-steps)
-* [Intended use and Legality](use-and-legality)
+* [Intended use and Legality](Intended-Use-and-Legality)
 * [Features](Features)
 * [Firmware update procedure](Update-firmware)
 * [Description of the hardware](Hardware-overview)
