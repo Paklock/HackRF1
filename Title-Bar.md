@@ -4,7 +4,18 @@ Icons that may be actioned can be accessed by touch, or by using the directional
 
 The sections of Title Bar, along with functionality are (from left to right):
 
-!Image!Function!Actionable!
+|Image|Function|Actionable|
+|-----|--------|----------|
+|Back |Back to previous screen/Return to menu| Yes |
+|Name|Firmware name & version| No |
+|    |  | Yes|
+|Camera    |Take Screenshot  | Yes|
+|Moon|Turn off screen| Yes|
+|DC|Activate/Deactivate DC Power on Antenna port| Yes |
+|Ext Clk|Indicate status of external clock|No|
+|SD Card|Indicate presence of SD Card|No|
+
+
     
 
 
