@@ -1,4 +1,5 @@
-[img/main-menu.png]]
+[[img/main-menu.png]]
+
 The Main Menu of Mayhem comprises a number of buttons to access the various functionality groups of the firmware.
 
 |Button|Functional Group|
