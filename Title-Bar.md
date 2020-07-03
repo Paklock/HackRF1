@@ -1,4 +1,4 @@
-TODO: Image Header
+[[img/title-bar.png]]
 
 The Portapack Mayhem Title Bar consists of a number of icons some of which trigger actions and some of which are used to indicate the status of certain subsystems. The Title Bar also contains the either the Application Name or Firmware name and Version in the form **MAYHEM vX.Y.Z** where the versioning is consistent with standard semantic versioning (major.minor.release) format.
 
