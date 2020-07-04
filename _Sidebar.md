@@ -71,6 +71,7 @@
       * world_map.bin
       * [converter](Splash-and-other-images)
 * Example guides
+   * [Create a custom splash screen](Create-a-custom-splash-screen)
    * [Create a simple app](Create-a-simple-app)
    * Create a complex app
 * Research
