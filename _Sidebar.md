@@ -12,7 +12,7 @@
 * [Description of the main screen](Main-screen-overview)
 * [Applications](Applications)
    * Receivers
-      * ADS-B
+      * [ADS-B](ADS-B)
       * ACARS
       * AIS Boats
       * AFSK
