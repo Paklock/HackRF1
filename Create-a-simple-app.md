@@ -32,6 +32,10 @@ The following structure is the base of any application. Following the general st
 
 In this moment you should be able to compile and test the app in your device. It should appear in the main menu and show an empty app upon entry.
 
-## Adding some simple functionality
+# Adding functionality
 
-## Wrap up
+## Widgets
+
+## Dialogs
+
+# Wrap up
