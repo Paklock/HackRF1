@@ -1,4 +1,4 @@
-With this app you can receive real-time ADS-B is used now for air traffic control.
+With this app you can receive real-time ADS-B used for air traffic control.
 
 # Functionality
 
