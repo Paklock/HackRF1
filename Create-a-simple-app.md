@@ -8,7 +8,7 @@ There is a lot of flexibility, but for now we are going to follow patterns alrea
 
 ## Application code
 
-The following structure is the base of any application. Following the general structure, this files will be created on `\firmware\application\apps\`
+The following structure is the base of any application. Following the general structure, this files in this example will be created on `\firmware\application\apps\`
 
 ### ui_newapp.hpp
 
@@ -24,4 +24,14 @@ The following structure is the base of any application. Following the general st
     using namespace portapack;
     namespace ui { }
 
-## Main class
+## Main structure
+
+## Entry in the main menu
+
+## Early test
+
+In this moment you should be able to compile and test the app in your device. It should appear in the main menu and show an empty app upon entry.
+
+## Adding some simple functionality
+
+## Wrap up
