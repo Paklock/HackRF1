@@ -18,11 +18,11 @@
       * AFSK
       * BTLE
       * NRF
-      * Audio 
-        * SPEC
-        * WFM
-        * NFM
-        * AM
+      * [Audio](Audio-Receivers)
+        * [SPEC](Spectrum-Analyser-Receiver)
+        * [WFM](Wide-FM-Receiver)
+        * [NFM](Narrow-FM-Receiver)
+        * [AM](AM-Receiver)
       * Analog TV
       * ERT Meter
       * POCSAG
