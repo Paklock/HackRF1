@@ -1,7 +1,7 @@
 # General Style Guidelines
-* 1. Language should be English
-* 1. Style should tend more toward "user manual" than "blog post".
-* 1. Images should (where possible) be located in the wiki git repository in 'img/'.
+* Language should be English
+* Style should tend more toward "user manual" than "blog post".
+* Images should (where possible) be located in the wiki git repository in 'img/'.
 
 # Page Structure
 ## Applications Pages
