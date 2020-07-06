@@ -4,7 +4,7 @@ The Sub-Applications are as follows:
 
 |Application Name|Functionality|
 |----------------|-------------|
-|[SPEC](Spectrum-Analyser-Receiver)|General-purpose RF Spectrum viewer/recorder|
+|[SPEC](Spectrum-Analyser-Receiver)|General-purpose RF Spectrum viewer|
 |[WFM](Wide-FM-Receiver)|Wide Frequency-Modulation (inc. Stereo FM) demodulator|
 |[NFM](Narrow-FM-Receiver)|Narrow Frequency-Modulation demodulator|
 |[AM](AM-Receiver)|Amplitude Modulation (inc. Single-Sideband, Double-Sideband) demodulator|
