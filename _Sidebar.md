@@ -16,7 +16,7 @@
       * ACARS
       * AIS Boats
       * AFSK
-      * BTLE
+      * [BTLE](Bluetooth-Low-Energy-Receiver)
       * NRF
       * [Audio](Audio-Receivers)
         * [SPEC](Spectrum-Analyser-Receiver)
