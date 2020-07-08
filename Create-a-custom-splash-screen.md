@@ -39,14 +39,14 @@ Finally, rebuild the source and flash the HackRF One and PortaPack.
 ----------------------
 Someone asked whether it would be possible to just load a .PNG or .JPG image into the device.
 
-A quick solution to this would be to use the [ImageMagick](https://imagemagick.org/script/download.php) ```convert``` function which would take an image, resize it to fit the screen and change the filetype to a 4 bit RLE .BMP image in one step, meaning you just create a suitable image, save it as a .JPG or .PNG (or whatever type you prefer).
+A quick solution to this would be to use the [ImageMagick](https://imagemagick.org/script/download.php) `convert` function which would take an image, resize it to fit the screen and change the filetype to a 4 bit RLE .BMP image in one step, meaning you just create a suitable image, save it as a .JPG or .PNG (or whatever type you prefer).
 
 If the file is already the correct resolution:
-```convert filename.jpg -type Palette -compress RLE -colors 16 BMP3:splash.bmp
-xxd -i splash.bmp bmp_splash.hpp```
+`convert filename.jpg -type Palette -compress RLE -colors 16 BMP3:splash.bmp
+xxd -i splash.bmp bmp_splash.hpp`
 
 If the file needs resizing to fit:
-```convert -resize 240x304 filename.jpg -type Palette -compress RLE -colors 16 BMP3:splash.bmp
-xxd -i splash.bmp bmp_splash.hpp```
+`convert -resize 240x304 filename.jpg -type Palette -compress RLE -colors 16 BMP3:splash.bmp
+xxd -i splash.bmp bmp_splash.hpp`
 
-Note that the ```-resize 240x304``` part of the line will not necessarily resize the new image to exactly 240x304px, it will keep the aspect ratio so that one of the sides will be correct and the other one will scale properly.
+Note that the `-resize 240x304` part of the line will not necessarily resize the new image to exactly 240x304px, it will keep the aspect ratio so that one of the sides will be correct and the other one will scale properly.
