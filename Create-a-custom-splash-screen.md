@@ -22,14 +22,17 @@ Save it as splash.bmp to a directory such as ~/Pictures
 Open a terminal window
 
 Change directory to where the image was saved (for example ~/Pictures):
+
 `cd ~/Pictures`
 
 Convert the image to a c++ header file:
+
 `xxd -i splash.bmp bmp_splash.hpp`
 
 
 Make a backup of the existing splash screen
 Change directory to the path to where you downloaded the Mayhem source eg ~/src/portapack_mayhem
+
 `cd ~/src/portapack_mayhem`
 
 
@@ -37,6 +40,7 @@ Change directory to the path to where you downloaded the Mayhem source eg ~/src/
 
 
 Copy the new splash screen to here
+
 `cp ~/Pictures/bmp_splash.hpp firmware/application/bitmaps/bmp_splash.hpp`
 
 
