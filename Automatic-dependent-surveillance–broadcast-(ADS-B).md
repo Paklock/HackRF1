@@ -13,7 +13,7 @@ The ADSB RX app will log each frame including the following columns:
 * **(RAW PACKET IN HEX)**
 * ICAO: **(ICAO)**
 * **(CALLSIGN)**
-* Alt:**(ALTITUDE)**
+* Alt: **(ALTITUDE)**
 * Lat: **(LATITUDE)**
 * Lon: **(LONGITUDE)**
 
