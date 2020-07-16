@@ -14,8 +14,9 @@ You can turn on logging the received data into the microSD card. The ADSB RX wil
 * ICAO:**(ICAO)**
 * **(CALLSIGN)**
 * Alt:**(ALTITUDE)**
-* Lat**(LATITUDE)**
-* Lon**(LONGITUDE)**
+* Lat **(LATITUDE)**
+* Lon **(LONGITUDE)**
 
 Example:
+
 `20171103100227 8DADBEEFDEADBEEFDEADBEEFDEADBEEF ICAO:nnnnnn callsign Alt:nnnnnn Latnnn.nn Lonnnn.nn`
