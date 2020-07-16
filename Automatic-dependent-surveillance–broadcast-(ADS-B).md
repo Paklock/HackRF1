@@ -7,7 +7,7 @@ With this app you can receive real-time ADS-B used for air traffic control.
 ## Airlines
 
 ### Log into microSD
-You can turn on logging the received data into the microSD card. The ADSB RX will log each frame including the following columns:
+The ADSB RX app will log each frame including the following columns:
 
 * **(YEAR MONTH DAY HOUR MIN SEC)**
 * **(RAW PACKET IN HEXA)**
