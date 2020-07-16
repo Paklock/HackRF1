@@ -10,12 +10,12 @@ With this app you can receive real-time ADS-B used for air traffic control.
 The ADSB RX app will log each frame including the following columns:
 
 * **(YEAR MONTH DAY HOUR MIN SEC)**
-* **(RAW PACKET IN HEXA)**
-* ICAO:**(ICAO)**
+* **(RAW PACKET IN HEX)**
+* ICAO: **(ICAO)**
 * **(CALLSIGN)**
 * Alt:**(ALTITUDE)**
-* Lat **(LATITUDE)**
-* Lon **(LONGITUDE)**
+* Lat: **(LATITUDE)**
+* Lon: **(LONGITUDE)**
 
 Example:
 
