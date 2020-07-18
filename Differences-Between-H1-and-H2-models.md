@@ -6,7 +6,7 @@ The H1 is the [original](https://github.com/eried/portapack-mayhem/tree/master/h
 * Battery charging circuitry
 * Better internal Speaker integration
 
-Note: _There are several H1 hybrid models, out there; some of them called the **2020 H1 Model** including one or more of different enhancements and modifications as in: Bigger screen, charging circuit (and either the connector for a Li-Ion battery, or the battery itself also included), soldered head for speaker output, etc.
+Note: _There are several H1 hybrid models, out there; some of them called the **2020 H1 Model** including one or more of different enhancements and modifications as in: Bigger screen, charging circuit (and either the connector for a Li-Ion battery, or the battery itself also included), soldered head for speaker output, etc._
 
 # Audio
 
