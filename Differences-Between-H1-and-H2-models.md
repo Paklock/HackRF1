@@ -1,4 +1,6 @@
-The H1 is the [original](https://github.com/eried/portapack-mayhem/tree/master/hardware/portapack_h1) design, which is well documented and in the public domain. PortaPack H2 is a modification based on the last, from an unknown origin (without public sources) with some upgrades:
+The **H1** is the [original](https://github.com/eried/portapack-mayhem/tree/master/hardware/portapack_h1) design, which is well documented and in the public domain. 
+
+PortaPack **H2** is a modification based on the last (from an unknown origin, no public design documentation available) incorporating some enhancements:
 
 * Bigger screen
 * Different navigation buttons
@@ -6,7 +8,7 @@ The H1 is the [original](https://github.com/eried/portapack-mayhem/tree/master/h
 * Battery charging circuitry
 * Better internal Speaker integration
 
-Note: _There are several H1 hybrid models, out there; some of them called the **2020 H1 Model** including one or more of different enhancements and modifications as in: Bigger screen, charging circuit (and either the connector for a Li-Ion battery, or the battery itself also included), soldered head for speaker output, etc._
+Note: _There are several H1 hybrid models out there which include some of the enhancements from the H2, but keeping the H1 selector wheel. Some of these H1 hybrids are called the **2020 H1 Model**_
 
 # Audio
 
