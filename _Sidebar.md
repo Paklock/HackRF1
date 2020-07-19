@@ -26,7 +26,7 @@
       * Analog TV
       * ERT Meter
       * POCSAG
-      * [Radiosnde](Radiosonde)
+      * [Radiosonde](Radiosonde)
       * TPMS Cars    
    * Transmitters
       * [GPS Sim](GPS-Sim)
