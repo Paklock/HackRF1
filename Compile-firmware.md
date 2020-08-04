@@ -35,7 +35,7 @@ You need to configure the path to the source code from the Volumes of the contai
 
 Everytime you run the container you prepared in the previous step, it will compile the source and (if successful) leave the results in `build/firmware/`
 
-[[img/Kitematic_uvIvGXRbFR.png]]
+<img src="img/Kitematic_uvIvGXRbFR.png" width="600">
 
 # Docker - Command line reference
 
