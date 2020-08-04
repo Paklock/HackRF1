@@ -16,9 +16,12 @@ https://desktop.github.com/
 
 If you are using Windows, line endings may produce some errors. For example: `'python/r' not found` messages are product of a problem with the line endings. To prevent this, configure git to not manipulate these line endings, open a terminal and execute:
 
+`git config --global core.autocrlf false`
+
+You can also check the current configuration by omitting the `false` at the end of the command:
+
 <img src="img/git_linefeed.png" width="600">
 
-`git config --global core.autocrlf false`
 
 Open Github Desktop, and click "Open with Github Desktop" from the main page of the repository, under the button "Code". Next, create a "build" folder inside of the repository.
 
