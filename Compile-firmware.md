@@ -23,9 +23,11 @@ You can also check the current configuration by omitting the `false` at the end 
 <img src="img/git_linefeed.png" width="600">
 
 
-Open Github Desktop, and click "Open with Github Desktop" from the main page of the repository, under the button "Code". Next, create a "build" folder inside of the repository.
+Open Github Desktop, and click "Open with Github Desktop" from the main page of the repository, under the button "Code". 
 
 <img src="img/github_clone.png" width="400">
+
+Finally, create a "build" folder inside of the repository. From Github Desktop, just click "Repository / Show in Explorer" and create an empty folder named "build". This folder will be used for the compilation output.
 
 ## Step 3: Prepare the Docker container
 [[img/Kitematic_MChWCyp6g1.png]]
