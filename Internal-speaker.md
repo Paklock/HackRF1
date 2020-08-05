@@ -13,6 +13,9 @@ https://s.click.aliexpress.com/e/_dWBRFr2
 
 Connect `SPK+` and `SPK-` to the speaker and use double sided tape to fix it to the PCB.
 
+Tests of the speaker:
+https://www.youtube.com/watch?v=XkaGV9muvbg
+
 ## Additional details
 A speaker has two wires, `SPK+` and `SPK-`. While there is no sound, the speaker floats on a magnetic field in the middle of its range. When `SPK+` is high the speaker moves forward. When `SPK-` is high the speaker moves backwards. The distance forward and backwards depends entirely on the voltage level.
 
