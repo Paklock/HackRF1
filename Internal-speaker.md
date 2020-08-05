@@ -4,7 +4,7 @@ Both versions have a similar layout for the pins you need to use. In the H1, the
 
 [[img/hw_h1_speaker_pinout.png]]
 
-On the H2, normally the connector and cable is included as seen here:
+On the H2, normally the connector and cable (use the red and yellow wires, isolate the black one) is included as seen here:
 
 [[img/hw_h2_speaker_pinout.png]]
 
