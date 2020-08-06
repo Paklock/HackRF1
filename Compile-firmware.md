@@ -42,6 +42,8 @@ Everytime you run the container you prepared in the previous step, it will compi
 
 <img src="img/Kitematic_uvIvGXRbFR.png" width="600">
 
+If you have additional questions, please check [this guide](Using-MAC-OS).
+
 # Docker - Command line reference
 
 If you are inclined for using the command line, you can try the following:
