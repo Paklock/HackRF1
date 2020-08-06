@@ -63,7 +63,6 @@
     * HackRF
 ## Developer manual
 * [Compile from source](Compile-firmware)
-* [Using MAC OS ?](Using-MAC-OS)
 * Description of the structure
    * [At first glance](At-first-glance)
    * [Persistent Memory](Persistent-Memory)
