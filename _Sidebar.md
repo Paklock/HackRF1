@@ -13,7 +13,6 @@
 * [Applications](Applications)
    * Receivers
       * [ADS-B](Automatic-dependent-surveillance–broadcast-(ADS-B))
-      * ACARS
       * AIS Boats
       * AFSK
       * [BTLE](Bluetooth-Low-Energy-Receiver)
