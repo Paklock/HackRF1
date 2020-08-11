@@ -25,6 +25,8 @@ You can also check the current configuration by omitting the `false` at the end 
 
 Open Github Desktop, and click "Open with Github Desktop" from the main page of the repository, under the button "Code". 
 
+**Important:** If you want to collaborate to the project, before continuing, check how to [Fork the repository](How-to-collaborate#fork-the-repository) to your own account and continue from your own fork.
+
 <img src="img/github_clone.png" width="400">
 
 Finally, create a `build` folder inside of the repository. From Github Desktop, just click "Repository / Show in Explorer" and create an empty folder named `build`. This folder will be used for the compilation output.
