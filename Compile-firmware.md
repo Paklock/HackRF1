@@ -17,10 +17,9 @@ You can also check the current configuration by omitting the `false` at the end 
 
 <img src="img/git_linefeed.png" width="600">
 
-
-Open Github Desktop, and click "Open with Github Desktop" from the main page of the repository, under the button "Code". 
-
 **Important:** If you want to collaborate to the project, [Fork the repository](How-to-collaborate#fork-the-repository) to your own account and continue this instructions from your own fork.
+
+Open Github Desktop, and click "Open with Github Desktop" from the main page of the repository (or your fork), under the button "Code". 
 
 <img src="img/github_clone.png" width="400">
 
