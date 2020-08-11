@@ -8,7 +8,7 @@ The H2 is a slightly improved version, but the people making this copy never pub
 
 [[img/device_h2.png]]
 
-The main difference are the controls and the screen, but the H2 usually has extra circuitry to manage the battery charging and powering on/off.
+The main difference are the controls and the screen, but the H2 usually has extra circuitry to manage the battery charging and powering on/off. In this document, there is a brief description about the details. Check a more technical comparison [here](Differences-Between-H1-and-H2-models).
 
 # Power on/off
 The original H1 powers instantly when you plug a power supply to the USB port. To turn it off, just unplug it. Similar to the issues with some USB cables while [upgrading the firmware](Update-firmware), the quality of your cable might affect the performance. 
