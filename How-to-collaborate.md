@@ -30,15 +30,8 @@ So, setup the environment and compile the code as instructed below. Modify somet
 4. Follow the rest of instructions in Github desktop
 
 ### Prepare for compilation
-1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop)
-2. Install [Kitematic](https://github.com/docker/kitematic/releases)
-3. In Kitematic, search for PortaPack and Create an instance
-4. Inside of the PortaPack instance, set up the volume to point to the root of your local copy of the fork
-
-For more details, check https://github.com/eried/portapack-mayhem/wiki/Compile-firmware
-
-5. In the local copy of the fork, create an empty `build` folder (in root path)
-6. Run the image from Kitematic, the first time _it might_ take a long time to finish. The result will be left on that `build` folder
+1. [Compile your fork](Compile-firmware)
+2. As noted in the details on the previous step, the first time _it might_ take a long time to finish. The result will be left on the `build` folder, on the root of your fork
 
 ## Start coding
 
