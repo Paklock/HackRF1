@@ -3,14 +3,9 @@ There are severals ways to compile the firmware. As the traditional way, check t
 # Using Docker Hub and Kitematic
 
 ## Step 1: Prepare environment
-1. Install Docker
-https://docs.docker.com/get-docker/
-
-2. Get Kitematic
-https://github.com/docker/kitematic/releases/
-
-3. Install GitHub Desktop
-https://desktop.github.com/
+1. Install [Docker](https://docs.docker.com/get-docker/)
+2. Get [Kitematic](https://github.com/docker/kitematic/releases/)
+3. Install [GitHub Desktop](https://desktop.github.com/)
 
 ## Step 2: Clone the repository
 
@@ -25,7 +20,7 @@ You can also check the current configuration by omitting the `false` at the end 
 
 Open Github Desktop, and click "Open with Github Desktop" from the main page of the repository, under the button "Code". 
 
-**Important:** If you want to collaborate to the project, before continuing, check how to [Fork the repository](How-to-collaborate#fork-the-repository) to your own account and continue from your own fork.
+**Important:** If you want to collaborate to the project, before continuing, check how to [Fork the repository](How-to-collaborate#fork-the-repository) to your own account, and continue this instructions from your own fork.
 
 <img src="img/github_clone.png" width="400">
 
