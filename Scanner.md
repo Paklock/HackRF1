@@ -1,5 +1,8 @@
-Please check https://www.youtube.com/watch?v=BmNW8oX4E3M for a detailed tutorial.
-
 # Frequencies to scan
 
-The application by default parses `FREQMAN\SCANNER.TXT`. You can use the Frequency manager app to add more entries to that list.
+The application by default parses `FREQMAN\SCANNER.TXT`. You can use the Frequency manager app (Tools -> **Freq managern**) to add more entries to that list. 
+
+Alternatively, you are able to manually input a scanning range "on the fly" by keying in START and END frequencies, while adjusting the STEP selector. 
+
+# Modulation Mode
+You can select between **AM** (DSB / USB / LSB), **NFM** and **WFM** modulation modes.
