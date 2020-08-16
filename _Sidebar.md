@@ -38,8 +38,7 @@
       * [Features](Replay)
    * Calls
       * [Features](Calls)
-   * Scanner
-      * [Features](Scanner)
+   * [Scanner](Scanner)
    * Tools
       * Freq manager
       * File manager
