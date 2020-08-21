@@ -15,7 +15,7 @@ https://radiosondy.info/index.php
 * Altitude
 * Battery Voltage
 
-### Vaisala RS41
+### Vaisala RS41-SG
 * Signature
 * Serial
 * Battery Voltage
