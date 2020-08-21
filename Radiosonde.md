@@ -16,4 +16,10 @@ https://radiosondy.info/index.php
 * Battery Voltage
 
 ### Vaisala RS41
-* No Values Decoded
+* Signature
+* Latitude
+* Longitude
+* Altitude
+* Serial
+* Battery Voltage
+
