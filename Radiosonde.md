@@ -17,9 +17,12 @@ https://radiosondy.info/index.php
 
 ### Vaisala RS41
 * Signature
-* Latitude
-* Longitude
-* Altitude
 * Serial
 * Battery Voltage
+* N.Frames
+* Altitude
+* Latitude
+* Longitude
+
+
 
