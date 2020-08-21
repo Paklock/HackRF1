@@ -19,7 +19,7 @@ https://radiosondy.info/index.php
 * Signature
 * Serial
 * Battery Voltage
-* N.Frames
+* Frame Number
 * Altitude
 * Latitude
 * Longitude
