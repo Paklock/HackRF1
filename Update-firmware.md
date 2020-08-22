@@ -14,6 +14,15 @@ In theory, it is impossible to brick the device, since you can always try the DF
 3. Upload the firmware with `hackrf_spiflash -w new_firmware_file.bin` 
 4. Reboot the device
 
+# Normal procedure (MacOS)
+
+_HackRF CLI tools for MacOS available through MacPorts or Homebrew_
+
+1. Connect the device via USB
+2. Switch to HackRF mode via the on-screen option (in the PortaPack)
+3. Upload the firmware with `hackrf_spiflash -w new_firmware_file.bin` 
+4. Reboot the device
+
 
 # Troubleshooting
 
