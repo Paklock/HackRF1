@@ -43,7 +43,12 @@ If you have additional questions, please check [this guide](Using-MAC-OS).
 # Docker - Command line reference
 
 If you are inclined for using the command line, you can try the following:
-
+* Clone the repository and submodules:
+```
+git clone https://github.com/eried/portapack-mayhem.git
+cd portapack-mayhem
+https://github.com/eried/portapack-mayhem.git
+```
 * For building:
 `docker build -t portapackccache -f dockerfile-nogit .`
 
