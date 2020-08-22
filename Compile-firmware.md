@@ -47,7 +47,7 @@ If you are inclined for using the command line, you can try the following:
 ```
 git clone https://github.com/eried/portapack-mayhem.git
 cd portapack-mayhem
-https://github.com/eried/portapack-mayhem.git
+git submodule update --init --recursive
 ```
 * For building:
 `docker build -t portapackccache -f dockerfile-nogit .`
