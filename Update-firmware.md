@@ -44,6 +44,13 @@ You may be able to try in a virtual environment, completely isolated from your c
 5. Open a terminal and type `dfu-util --device 1fc9:000c --download hackrf_one_usb.dfu --reset`
 6. After that, without disconnecting it, you can upload the firmware with `hackrf_spiflash -w new_firmware_file.bin`
 
+## Notes
+
+If you have an existing HackRF One and you've acquired a Portapack separately (from third party suppliers), do the following:
+1. Make sure you flash the HackRF One first before attempting anything with the HackRF One + Portapack combo. The code to run Portpack comes from the HackRF One firmware as flashed. 
+2. If you don't flash the HackRF One and just plugged in the Portapack and powered up the setup, the screen on the Portapack will flash and nothing else will be seen. This does not mean that the Portapack is faulty.
+3. After flashing the HackRF One, you can plug in the Portapack and when the setup is powered up. you will see the screen show the UI for the version of the firmware that was flashed into the HackRF One. 
+
 ## Video
 The following video explains all possible outcomes while trying to update the firmware and possible mitigations:
 https://www.youtube.com/watch?v=_zx4ZvurgOs
