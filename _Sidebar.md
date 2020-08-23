@@ -31,6 +31,7 @@
       * [GPS Sim](GPS-Sim)
       * [RDS](RDS)
       * [OOK](OOK)
+      * [Soundboard](Soundboard)
    * Capture
       * [Features](Capture)
       * [C16 Format](C16-format)
