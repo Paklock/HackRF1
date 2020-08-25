@@ -67,7 +67,7 @@
    * [Persistent Memory](Persistent-Memory)
 * Tools
    * Images
-      * world_map.bin
+      * [world_map.bin](World-map-generation)
       * [converter](Splash-and-other-images)
 * Example guides
    * [Create a custom splash screen](Create-a-custom-splash-screen)
