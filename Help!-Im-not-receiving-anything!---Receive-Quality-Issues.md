@@ -24,7 +24,7 @@ There are many devices that can cause wideband noise: Screens, USB hubs, poorly 
 ### Power Banks
 Many power banks can be a local noise source, try different power banks if you can.
 ### H2 Internal Battery Charger
-A few people have noted that the internal battery charger on some h2 models can cause noise when plugged in. there isn't really a fix for this unless you want to go about putting in a new charger.
+A few people have reported that the internal battery charger on some H2 models can cause noise when plugged in. There isn't really a fix for this unless you want to go about putting another charger. Please report as an issue if you find this issue, with detailed photos of the PCB of your H2. Check the following [video](https://www.youtube.com/watch?v=a_7Xc1_6-l4) to see how a normal functioning H2 does not produce extra noise related to the battery charger.
 ## Broken RF Chain
 It may be entirely possible that something in the RF front end is broken, commonly the TX amp. The best way to go about troubleshooting this is to open up an issue on the [HackRF Github](https://github.com/mossmann/hackrf) explaining the issue, they'll try their best to guide you through it, and if you have a genuine GSG HackRF you might be able to get it replaced.
 
@@ -36,6 +36,6 @@ As stated before, check you cable connections and antenna. Wiggle things around 
 ## Nearby Transmitters
 Nearby transmitter can also cause intermittent signal loss, the culprit is almost always pager traffic as those signals can be very strong and transmit intermittently. A nearby trunking repeater could also be to blame.
 ## H2 Internal Battery Charger
-The H2 Internal Battery Charger can also intermittently cause noise when plugged in.
+The H2 Internal Battery Charger can also intermittently cause noise when plugged in. Check [this](#h2-internal-battery-charger).
 ## Local Noise Sources
 There are many devices that can cause intermittent wideband noise: Screens, USB hubs, poorly designed cables, power supplies, faulty wiring, etc.. You can go around unplugging things or flipping breakers to figure out what might be the source of noise. Simply walking outside might help as well.
