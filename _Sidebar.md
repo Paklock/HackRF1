@@ -10,6 +10,8 @@
    * [3d printed enclosure](H2-Enclosure)
    * [Internal speaker](Internal-speaker)
 * [Description of the main screen](Main-screen-overview)
+* Troubleshooting
+   * [Receive Quality Issues](https://github.com/eried/portapack-mayhem/wiki/Help!-Im-not-receiving-anything!---Receive-Quality-Issues)
 * [Applications](Applications)
    * Receivers
       * [ADS-B](Automatic-dependent-surveillance–broadcast-(ADS-B))
