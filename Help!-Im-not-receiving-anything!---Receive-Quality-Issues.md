@@ -3,11 +3,10 @@
 ## Antennas
 Are you using the correct antenna? Is it plugged in correctly? this sounds silly, but It could be as simple as that
 ## Gain settings
-The gain settings are always arranged the same, VGA gain on the right and LNA on the left.
+The gain settings are always arranged the same, VGA gain on the right and LNA on the left (both with value "40" in the image below).
 
 [[img/screenshots/Receive_Audio.png]]
 
-(the two numbers in the top rightish)
 ### Description of the gain settings
 The VGA or **V**ariable **G**ain **A**mplifier can be set to any number between 0-62. It amplifies pretty much everything and is basically a fine-tuning adjustment, I find it works best between 8-16.
 
