@@ -17,3 +17,5 @@ Check the `assembly.pdf` from the [case files](https://www.thingiverse.com/thing
 
 You can easily place a small 8ohm 1.5W (14x21x5.5 mm) speaker inside. There is no holes in the case but it seems that the sound quality actually improves with the case:
 https://www.youtube.com/watch?v=XkaGV9muvbg
+
+Check more details about the speaker wiring [here](Internal-speaker).
