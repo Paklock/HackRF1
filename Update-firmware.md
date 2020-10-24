@@ -17,6 +17,7 @@ In theory, it is impossible to brick the device, since you can always try the DF
 # Normal procedure (MacOS)
 
 _HackRF CLI tools for MacOS available through MacPorts or Homebrew_
+
 0. If necessary, install the HackRF tools: `brew install hackrf`
 1. Connect the device via USB
 2. Switch to HackRF mode via the on-screen option (in the PortaPack)
@@ -34,8 +35,9 @@ This is a special mode to update the firmware in case of problems. To enable thi
 ### Windows
 If you are in Windows, from the release package double click `dfu_hackrf_one.bat` and follow the instructions. Do not disconnect or reset your PortaPack after that procedure, continue in the step 3 of the [normal procedure](Update-firmware#normal-procedure).
 
-### MACOS
+### MacOS
 _DFU Utils CLI tools for MacOS available through MacPorts or Homebrew_
+
 0. If necessary, install the DFU tools: `brew install dfu-util`
 1. Connect the device via USB
 2. Switch to DFU mode as per the section above: *DFU*
