@@ -18,11 +18,11 @@ In theory, it is impossible to brick the device, since you can always try the DF
 
 _HackRF CLI tools for MacOS available through MacPorts or Homebrew_
 
-0. If necessary, install the HackRF tools: `brew install hackrf`
-1. Connect the device via USB
-2. Switch to HackRF mode via the on-screen option (in the PortaPack)
-3. Upload the firmware with `hackrf_spiflash -w new_firmware_file.bin` 
-4. Reboot the device
+1. If necessary, install the HackRF tools: `brew install hackrf`
+2. Connect the device via USB
+3. Switch to HackRF mode via the on-screen option (in the PortaPack)
+4. Upload the firmware with `hackrf_spiflash -w new_firmware_file.bin` 
+5. Reboot the device
 
 # Troubleshooting
 
@@ -38,22 +38,22 @@ If you are in Windows, from the release package double click `dfu_hackrf_one.bat
 ### MacOS
 _DFU Utils CLI tools for MacOS available through MacPorts or Homebrew_
 
-0. If necessary, install the DFU tools: `brew install dfu-util`
-1. Connect the device via USB
-2. Switch to DFU mode as per the section above: *DFU*
-3. Upload the firmware with `dfu-util --device 1fc9:000c --download hackrf_one_usb.dfu --reset` 
-4. Reboot the device
+1. If necessary, install the DFU tools: `brew install dfu-util`
+2. Connect the device via USB
+3. Switch to DFU mode as per the section above: *DFU*
+4. Upload the firmware with `dfu-util --device 1fc9:000c --download hackrf_one_usb.dfu --reset` 
+5. Reboot the device
 
 ### Linux
 _DFU Utils CLI tools for Linux available in standard repositories_
-0. If necessary, install the DFU tools (example for Debian/Ubuntu variants): `sudo apt install dfu-util`
-1. Connect the device via USB
-2. Switch to DFU mode as per the section above: *DFU*
-3. Upload the firmware with `dfu-util --device 1fc9:000c --download hackrf_one_usb.dfu --reset` 
-4. Reboot the device
 
+1. If necessary, install the DFU tools (example for Debian/Ubuntu variants): `sudo apt install dfu-util`
+2. Connect the device via USB
+3. Switch to DFU mode as per the section above: *DFU*
+4. Upload the firmware with `dfu-util --device 1fc9:000c --download hackrf_one_usb.dfu --reset` 
+5. Reboot the device
 
-## Alternative environment
+### Alternative environment
 
 You may be able to try in a virtual environment, completely isolated from your current OS:
 1. Download http://eu2-dist.gnuradio.org/ and burn the ISO and boot from it, select the LIVE Image
