@@ -17,12 +17,11 @@ In theory, it is impossible to brick the device, since you can always try the DF
 # Normal procedure (MacOS)
 
 _HackRF CLI tools for MacOS available through MacPorts or Homebrew_
-
+0. If necessary, install the HackRF tools: `brew install hackrf`
 1. Connect the device via USB
 2. Switch to HackRF mode via the on-screen option (in the PortaPack)
 3. Upload the firmware with `hackrf_spiflash -w new_firmware_file.bin` 
 4. Reboot the device
-
 
 # Troubleshooting
 
@@ -32,7 +31,25 @@ One of the main sources of problems is the quality of the USB cable. Try with se
 
 This is a special mode to update the firmware in case of problems. To enable this, you should reset your device holding the RESET and DFU buttons at the same time, while doing this, release RESET, and then release DFU. The leds should be ON and the screen wont show anything.
 
+### Windows
 If you are in Windows, from the release package double click `dfu_hackrf_one.bat` and follow the instructions. Do not disconnect or reset your PortaPack after that procedure, continue in the step 3 of the [normal procedure](Update-firmware#normal-procedure).
+
+### MACOS
+_DFU Utils CLI tools for MacOS available through MacPorts or Homebrew_
+0. If necessary, install the DFU tools: `brew install dfu-util`
+1. Connect the device via USB
+2. Switch to DFU mode as per the section above: *DFU*
+3. Upload the firmware with `dfu-util --device 1fc9:000c --download hackrf_one_usb.dfu --reset` 
+4. Reboot the device
+
+### Linux
+_DFU Utils CLI tools for Linux available in standard repositories_
+0. If necessary, install the DFU tools (example for Debian/Ubuntu variants): `sudo apt install dfu-util`
+1. Connect the device via USB
+2. Switch to DFU mode as per the section above: *DFU*
+3. Upload the firmware with `dfu-util --device 1fc9:000c --download hackrf_one_usb.dfu --reset` 
+4. Reboot the device
+
 
 ## Alternative environment
 
