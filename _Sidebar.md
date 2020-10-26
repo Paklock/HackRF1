@@ -43,7 +43,7 @@
    * Calls
       * [Features](Calls)
    * [Scanner](Scanner)
-   * Tools
+   * [Tools](Tools)
       * Freq manager
       * File manager
       * Signal gen
