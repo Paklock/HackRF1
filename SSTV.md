@@ -1,5 +1,3 @@
-# SSTV
-
 The SSTV app allows you to send .bmp images that you have loaded onto the SD card. The current supported modes include Scottie 1, Scottie 2, Scottie DX, Martian 1, Martian 2, and SC2-180 modes. Currently, FM is the only modulation supported. 
 
 ## Sending
