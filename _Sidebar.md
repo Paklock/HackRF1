@@ -40,7 +40,7 @@
       * Morse
       * Burger Pager
       * POCSAG
-      * SSTV
+      * [SSTV](https://github.com/eried/portapack-mayhem/wiki/SSTV)
       * TEDI/LCR
       * TouchTune
       * [RDS](RDS)
