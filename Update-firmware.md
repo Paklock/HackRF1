@@ -4,7 +4,7 @@ In theory, it is impossible to brick the device, since you can always try the DF
 
 ## Firmware
 
-Get the latest firmware from the [Releases](https://github.com/eried/portapack-mayhem/releases) page. Please check the [FAQ](https://github.com/eried/portapack-mayhem#frequently-asked-questions) if you have any additional question.
+Get the latest firmware from the [![GitHub release (latest by date)](https://img.shields.io/github/v/release/eried/portapack-mayhem?label=Releases&style=social)](https://github.com/eried/portapack-mayhem/releases/latest) page. Please check the [FAQ](https://github.com/eried/portapack-mayhem#frequently-asked-questions) if you have any additional question.
 
 ### Windows
 
@@ -34,7 +34,7 @@ _HackRF CLI tools for MacOS available through MacPorts or Homebrew_
 
 Your PortaPack has a slot for a memory card. This is necessary for certain functionality, like the world map, GPS simulator, and others. You need to uncompress (using [7-zip](https://www.7-zip.org/download.html)) the files from `mayhem_vX.Y.Z_COPY_TO_SDCARD.7z` to a FAT32 formatted MicroSD card. 
 
-Get these files from the [Releases](https://github.com/eried/portapack-mayhem/releases) page. 
+Get the latest files from the [![GitHub release (latest by date)](https://img.shields.io/github/v/release/eried/portapack-mayhem?label=Releases&style=social)](https://github.com/eried/portapack-mayhem/releases/latest) page. 
 
 # Troubleshooting
 
