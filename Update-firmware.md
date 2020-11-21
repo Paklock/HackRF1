@@ -1,20 +1,22 @@
 In theory, it is impossible to brick the device, since you can always try the DFU recovery procedure. However, the updating might become fiddly in certain conditions.
 
-# Normal procedure (Windows)
+# Normal procedure
+
+## Windows
 
 1. Connect the device via USB
 2. Switch to HackRF mode via the on-screen option (in the PortaPack)
 3. Double click `flash_portapack_mayhem.bat` and follow the instructions
 4. Reboot the device
 
-# Normal procedure (Linux)
+## Linux
 
 1. Connect the device via USB
 2. Switch to HackRF mode via the on-screen option (in the PortaPack)
 3. Upload the firmware with `hackrf_spiflash -w new_firmware_file.bin` 
 4. Reboot the device
 
-# Normal procedure (MacOS)
+## MacOS
 
 _HackRF CLI tools for MacOS available through MacPorts or Homebrew_
 
@@ -23,6 +25,12 @@ _HackRF CLI tools for MacOS available through MacPorts or Homebrew_
 3. Switch to HackRF mode via the on-screen option (in the PortaPack)
 4. Upload the firmware with `hackrf_spiflash -w new_firmware_file.bin` 
 5. Reboot the device
+
+# MicroSD card files
+
+Your PortaPack has a slot for a memory card. This is necessary for certain functionality, like the world map, GPS simulator, and others. You need to uncompress (using [7-zip](https://www.7-zip.org/download.html)) the files from `mayhem_vX.Y.Z_COPY_TO_SDCARD.7z` to a FAT32 formatted MicroSD card. 
+
+Get these files from the [Releases](https://github.com/eried/portapack-mayhem/releases) page. 
 
 # Troubleshooting
 
