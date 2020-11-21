@@ -4,6 +4,8 @@ In theory, it is impossible to brick the device, since you can always try the DF
 
 ## Firmware
 
+Get the latest firmware from the [Releases](https://github.com/eried/portapack-mayhem/releases) page. Please check the [FAQ](https://github.com/eried/portapack-mayhem#frequently-asked-questions) if you have any additional question.
+
 ### Windows
 
 1. Connect the device via USB
