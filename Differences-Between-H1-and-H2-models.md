@@ -8,7 +8,7 @@ PortaPack **H2** is a modification based on the last (from an unknown origin, no
 * Battery charging circuitry
 * Better internal Speaker integration
 
-Note: _There are several H1 hybrid models on the global market including **some** of the H2 enhancements but keeping the H1 selector wheel. Some of these H1 hybrids are called the **2020 H1 Model**_
+Note: _There are several H1 hybrid models on the global market including **some** of the H2 enhancements but keeping the H1 selector wheel. Some of these H1 hybrids have names similar to **2020 H1 Model**, **H1 plus**, **H2+**_
 
 # Audio
 
