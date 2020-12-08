@@ -11,6 +11,7 @@
    * [Internal speaker](Internal-speaker)
 * [Description of the main screen](Main-screen-overview)
 * Troubleshooting
+   * [Firmware upgrade](https://github.com/eried/portapack-mayhem/wiki/Update-firmware-troubleshooting)
    * [Receive Quality Issues](https://github.com/eried/portapack-mayhem/wiki/Help!-Im-not-receiving-anything!---Receive-Quality-Issues)
 * [Applications](Applications)
    * Receivers
