@@ -1,3 +1,6 @@
+# Buying
+There is a lot of options for cases. As a starting point check these in [Aliexpress](https://www.aliexpress.com/wholesale?SearchText=portapack+case).
+
 # Printing
 You can 3d print the following enclosure for your Portapack:
 
@@ -8,7 +11,9 @@ And the following magnetic cover:
 
 [<img src="https://raw.githubusercontent.com/eried/portapack-mayhem/master/docs/images/h2_cover.jpg" height="400">](https://www.thingiverse.com/thing:4278961)
 
-If you do not own a 3d printer, you could use a service like https://www.weerg.com for a high quality print, or https://www.3dhubs.com/ for a low cost alternative. 
+If you do not own a 3d printer, you could use a service like https://www.weerg.com for a high quality print, or https://www.3dhubs.com/ for a low cost alternative using the design from the section below. Additionally, you can buy a [mass-produced](https://s.click.aliexpress.com/e/_9ybXDz) version of the case.
+
+For a comparison between the results of the different fabrication techniques, check: https://youtu.be/lB-vc-Y13PM
 
 # Assembly
 Check the `assembly.pdf` from the [case files](https://www.thingiverse.com/thing:4260973/files) for instructions.
