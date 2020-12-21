@@ -19,7 +19,7 @@
       * AIS Boats
       * AFSK
       * [BTLE](Bluetooth-Low-Energy-Receiver)
-      * [NRF](decoder for NRF24L01)
+      * [NRF](https://github.com/eried/portapack-mayhem/wiki/decoder-for-NRF24L01)
       * [Audio](Audio-Receivers)
         * [SPEC](Spectrum-Analyser-Receiver)
         * [WFM](Wide-FM-Receiver)
