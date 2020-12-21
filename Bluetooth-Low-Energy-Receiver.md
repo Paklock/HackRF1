@@ -8,3 +8,7 @@ You don't need to change the frequency, since all Bluetooth device will broadcas
 You might need to adjust gain though.
 
 Theoretically, it's possible to decode some data in the ble packets, like temperature, but it doesn't make sense if there is bit error. 
+
+## References:
+
+https://blog.csdn.net/shukebeta008/article/details/105024278
