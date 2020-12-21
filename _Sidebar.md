@@ -19,13 +19,13 @@
       * AIS Boats
       * AFSK
       * [BTLE](Bluetooth-Low-Energy-Receiver)
-      * NRF
+      * [NRF](decoder for NRF24L01)
       * [Audio](Audio-Receivers)
         * [SPEC](Spectrum-Analyser-Receiver)
         * [WFM](Wide-FM-Receiver)
         * [NFM](Narrow-FM-Receiver)
         * [AM](AM-Receiver)
-      * Analog TV
+      * [Analog TV](PAL video receiver)
       * ERT Meter
       * POCSAG
       * [Radiosonde](Radiosonde)
