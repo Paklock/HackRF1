@@ -1,0 +1,2 @@
+NRF24L01 is produced by nordic semiconductor. It is popular to be used in radio control of mini-drone.
+Right now, you can use portapack to decode the data sent from NRF24L01. But it only support 1 of 3 data rates.
