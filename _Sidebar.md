@@ -25,7 +25,7 @@
         * [WFM](Wide-FM-Receiver)
         * [NFM](Narrow-FM-Receiver)
         * [AM](AM-Receiver)
-      * [Analog TV](PAL video receiver)
+      * [Analog TV](https://github.com/eried/portapack-mayhem/wiki/Analog-TV-Receiver)
       * ERT Meter
       * POCSAG
       * [Radiosonde](Radiosonde)
