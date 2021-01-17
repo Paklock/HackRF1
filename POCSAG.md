@@ -1,0 +1,1 @@
+POCSAG is a pager protocol used commercially and by Amateur Radio. Amateur Radio DAPNET alphanumeric POCSAG is transmitted on UHF Narrow FM 439.9875 MHz at 1200 baud. See the DAPNET wiki for more info: [hampager.de/dokuwiki/doku.php](https://hampager.de/dokuwiki/doku.php)
