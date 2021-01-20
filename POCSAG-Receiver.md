@@ -13,7 +13,7 @@ Description of displayed information, starting from top-left:
 - Ignore address checkbox and address
 - The lower area of the display will show the latest received messages.
 
-# Settings
+## Settings
 
 - **Frequency**: Sets the frequency to receive pager messages on. Can be adjusted with the [encoder thumb wheel](Hardware-overview), on-screen numpad, or loaded from frequencies saved on an SD card.
 - **RF amplifier**: (0 or 1): Enables/disables the internal RF amplifier.
@@ -24,7 +24,7 @@ Description of displayed information, starting from top-left:
 - **Log checkbox**: Enable/disable logging of received messages to an SD card. This log can be found on the SD card root directory, filename: `pocsag.txt`.
 - **Ignore address checkbox**: Used to ignore messages sent to the address set.
 
-# Message display
+## Message display
 
 Typical received message:
 
@@ -41,7 +41,7 @@ Description (from top-left):
 - `F2` - **Function**: (0 to 3) Indicates the type or source of message sent (can be used to provide a category of sorts).
 - `This is a test message` - **Message**: The message data displayed as ASCII.
 
-## References
+# References
 
 The following resources provide more technical information about the POCSAG protocol:
 
