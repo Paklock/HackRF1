@@ -8,7 +8,7 @@ This protocol operates in the VHF/UHF bands using FSK modulation. More technical
 
 Description of displayed information, starting from top-left:
 
-- Receiver frequency, RF amplifier, VGA, LNA, RSSI and Channel indicators
+- Receiver frequency, RF amplifier, LNA, VGA, RSSI and Channel indicators
 - Phase, Bit/baud rate, Log checkbox
 - Ignore address checkbox and address
 - The lower area of the display will show the latest received messages.
