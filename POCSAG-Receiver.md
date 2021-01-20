@@ -2,9 +2,9 @@ With this app you can receive pager messages using the POCSAG protocol.
 
 This protocol operates in the VHF/UHF bands using FSK modulation. More technical details can be found by following the links in the References section.
 
-[[img/screenshots/Receive_POCSAG.png]]
-
 # Display summary
+
+[[img/screenshots/Receive_POCSAG.png]]
 
 Description of displayed information, starting from top-left:
 
@@ -20,7 +20,7 @@ Description of displayed information, starting from top-left:
 - **LNA gain** (0, 8, 16, 24, 32, 40): Sets the LNA gain. Further information: [Description of the gain settings](Help!-Im-not-receiving-anything!---Receive-Quality-Issues#description-of-the-gain-settings)
 - **VGA gain** (0 to 62): Sets the VGA gain. Further information: [Description of the gain settings](Help!-Im-not-receiving-anything!---Receive-Quality-Issues#description-of-the-gain-settings)
 - **Phase** (Positive or Negative): Usually set to positive. Typically the FSK lower frequency designates a high bit. Setting the phase polarity to negative will invert this, so the FSK lower frequency now designates a low bit.
-- **Data rate** (512pbs, 1200bps, 2400bps): Sets the baud rate (bits per second) of the transmitted data. Typically older paging systems use 512bps, while newer systems use 1200bps or 2400bps.
+- **Data rate** (512pbs, 1200bps, 2400bps): Sets the baud rate (bits per second) of the received data. Typically older paging systems use 512bps, while newer systems use 1200bps or 2400bps.
 - **Log checkbox**: Enable/disable logging of received messages to an SD card. This log can be found on the SD card root directory, filename: `pocsag.txt`.
 - **Ignore address checkbox**: Used to ignore messages sent to the address set.
 
