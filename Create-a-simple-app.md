@@ -107,10 +107,43 @@ Text hellow_world_text_widget(
 ```
 #### Buttons
 
+Buttons allows you to do something when you press them. Here you can find it's declaration and prototype:
+```
+Button my_button_widget{
+    Rect parent_rect,
+    std::string text
+};
 
+```
+Be aware that every time you create e button, you then have to implement this method: `my_button_widget.on_select = [&nav](Button &){}`. You can leave it empy (even though it should not, as here you define what action the button should perform), but it must be present in your code.
 
+For exaple, let's say you want a button called `my_button`, with the same diension as the previous widget. You will then do:
+```
+Button my_button(
+  {10, 10, 100, 24}, // be aware that thoose cordinates are: int:x, int:y, int:width, int:height
+  "my_button_text"
+);
+```
 
+#### Labels
 
+#### LiveDateTime
+
+#### BigFrequency
+
+#### ProgressBar
+
+#### Console
+
+#### Checkbox
+
+#### Image
+
+#### OptionsField
+
+#### Waveform
+
+#### VuMeter
 
 
 ## Dialogs
