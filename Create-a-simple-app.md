@@ -156,13 +156,13 @@ OptionsField my_optionsField{
     {10,10}, 
     3, 
     {
-      {"GSM450",0},  
-      {"GSM480",1},
-      {"GSM750",2}
+      {"option1",0},  
+      {"option2",1},
+      {"option3",2}
     }
 };
 ```
-
+Note that the number following the "option_x" string value, should be the value that you could retrive from the optionField with the function `selected_index_value();`
 #### Waveform
 
 #### VuMeter
