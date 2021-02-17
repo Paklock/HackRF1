@@ -67,6 +67,51 @@ In this moment you should be able to compile and test the app in your device. It
 # Adding functionality
 
 ## Widgets
+Widgets are the elements that compose the UI of your custom app. Widgets are defined inside `firmware\common\ui_widget.hpp.txt`, so in order to be able to use them, you must `#include "ui_widget.hpp"` into your app .hpp file.
+There are different type of widget. here you will find a list of available widget, with their respecting constructor. For all the methods available, you should go and see the ui_widget.hpp file.
+
+### Attach a generic widget to you application
+
+In order to display a widget into your app, you can either use the function `add_child()` or `add_children()`. 
+Both thoose functions shall be called whithin the code of your `NewAppGameView(NavigationView &nav){}` constructor. The difference between the two function is simple: the first one allows you to add a single widget, while the secon one allows you to add an undefined number of widgets.
+Widgets must be passed as pointers to the functions. A coorect way of calling the two functions would then be: 
+```
+add_child(&my_widget);
+```
+or
+```
+add_children({
+    &widget_1,
+    &widget_2
+});
+```
+
+### Available widgets
+There are several different widgets, and more might be added, so you sholud allways go and chech whether new widgets have been added or not. Here you will find a list of most basic widgets.
+
+#### Text
+The text widgets add a simple text area to your app. Here you can find it's declaration and prototype:
+```
+Text my_text_widget{
+    Rect parent_rect,
+    std::string text
+};
+
+```
+To be noted that `Rect parent_rect` has it's own definition inside another file, but let's say that you would like to add a text widget with the text "Hwllo World", positioned at the top left corner (spaced 10 from both top margin and left margin), with width 100 and height 24, you cold do it in this way:
+```
+Text hellow_world_text_widget(
+  {10, 10, 100, 24}, // be aware that thoose cordinates are: int:x, int:y, int:width, int:height
+  "Hellow world!"
+);
+```
+#### Buttons
+
+
+
+
+
+
 
 ## Dialogs
 
