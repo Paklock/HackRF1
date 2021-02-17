@@ -167,6 +167,7 @@ Note that the number following the "option_x" string value, should be the value 
 
 #### VuMeter
 
+## Access radio hardware
 
 ## Dialogs
 
