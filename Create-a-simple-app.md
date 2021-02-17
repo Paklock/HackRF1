@@ -162,7 +162,7 @@ OptionsField my_optionsField{
     }
 };
 ```
-Note that the number following the "option_x" string value, should be the value that you could retrive from the optionField with the function `selected_index_value();`
+Note that the number following the "option_x" string value, should be the value that you could retrive from the optionField with the function `my_optionsField.selected_index_value();`
 #### Waveform
 
 #### VuMeter
