@@ -141,6 +141,28 @@ Button my_button(
 
 #### OptionsField
 
+OptionsField is a widget that allows you to create a fiked, in wich you can change its value with the wheel on your portapack. Here you can find it's declaration and prototype:
+```
+ OptionsField my_OptionsField_widget{
+   Point parent_pos, 
+   int length, 
+   options_t options
+};
+```
+parent_pos is an array of two integer wich tells where the top left corner of the widget should be positioned. The lenght is an integer wich tells how many options you have into your options parameter. The options_t field is an array of options in wich your portapack can choose to display. 
+For exaple, let's say you want an optionsFild called `my_optionsField`, with 3 options, positioned at 10 from top and 10 from left:
+```
+OptionsField bandSelector{
+    {10,10}, 
+    3, 
+    {
+      {"GSM450",0},  
+      {"GSM480",1},
+      {"GSM750",2}
+    }
+};
+```
+
 #### Waveform
 
 #### VuMeter
