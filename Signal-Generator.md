@@ -9,7 +9,7 @@ The signal generator found under Utilities can be used to generate a carrier whi
 
 Tone defines the frequency of modulation.
 
-Update. When unchecked, the user is required to drop carrier, then re-start carrier in order for a change of modulation shape or tone frequency to take effect. When checked, values will update on the fly.
+Update when unchecked requires the user to drop carrier, then re-start carrier in order for a change of modulation Shape or Tone frequency to take effect. When checked, values will update on the fly.
 
 Stop after 1s limits carrier duration to 1 second
 
