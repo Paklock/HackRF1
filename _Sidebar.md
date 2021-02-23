@@ -58,7 +58,7 @@
    * [Tools](Tools)
       * Freq manager
       * File manager
-      * Signal gen
+      * [Signal gen](Signal-Generator)
       * Wave viewer
       * [Antenna length](antennas)
       * Wipe SD card
