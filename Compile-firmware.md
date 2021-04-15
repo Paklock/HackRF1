@@ -93,3 +93,12 @@ You can use the following _yml _as your template for your CI platform (pipeline 
     `trigger_condition: "ALWAYS"`
     `shell: "SH"
 ```
+
+
+## Notes
+
+
+
+If you decide to [ignore this guide](https://github.com/eried/portapack-mayhem/issues/75) and use the command line instead, you will need to include submodules
+
+    git clone --recurse-submodules --remote-submodules <url>
