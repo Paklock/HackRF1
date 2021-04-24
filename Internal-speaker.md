@@ -13,8 +13,7 @@ https://s.click.aliexpress.com/e/_dWBRFr2
 
 Connect `SPK+` and `SPK-` to the speaker and use double sided tape to fix it to the PCB.
 
-Tests of the speaker:
-
+Speaker test:
 https://www.youtube.com/watch?v=XkaGV9muvbg
 
 ## Additional details

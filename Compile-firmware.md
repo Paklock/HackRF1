@@ -43,7 +43,12 @@ If you have additional questions, please check [this guide](Using-MAC-OS).
 # Docker - Command line reference
 
 If you are inclined for using the command line, you can try the following:
-
+* Clone the repository and submodules:
+```
+git clone https://github.com/eried/portapack-mayhem.git
+cd portapack-mayhem
+git submodule update --init --recursive
+```
 * For building:
 `docker build -t portapackccache -f dockerfile-nogit .`
 
@@ -88,3 +93,12 @@ You can use the following _yml _as your template for your CI platform (pipeline 
     `trigger_condition: "ALWAYS"`
     `shell: "SH"
 ```
+
+
+## Notes
+
+
+
+If you decide to [ignore this guide](https://github.com/eried/portapack-mayhem/issues/75) and use the command line instead, you will need to include submodules
+
+    git clone --recurse-submodules --remote-submodules <url>

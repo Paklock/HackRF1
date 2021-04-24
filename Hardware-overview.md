@@ -22,9 +22,9 @@
 
 <img src="img/hw_overview_h2_inside.png" height="500">
 
-1. MicroSD card slot (while in a case, insert the card with the contacts looking to the same direction as the screen)
+1. MicroSD card slot (insert the card with the contacts looking to the same direction as the screen)
 2. GPS module option (has not been implemented)
-3. Memory backup coin cell (compatible with CR1225 or CR1220 in the H2, and with the CR2032 in the H1)
+3. Memory backup coin cell (compatible with CR1225 or CR1220 in the H2, and with the CR2032 or CR2025 in the H1)
 4. [Speaker connector](Internal-speaker) (yellow and red go to the speaker coil, black is ground and can be left disconnected)
 5. Battery connector
 6. TCXO clock (it might be populated with SMD components like in the upper image, unpopulated or populated with a shielded module)

@@ -5,7 +5,7 @@ Its purpose is to Demodulate and Record RF Signals modulated using the [Amplitud
 # User Interface 
 The AM Receiver uses the Standard UI Layout, which has the following features (in UI order). Some features only become available when the Parent item is selected.
 * Switch Sub-Application (AM, WFM, NFM, SPEC)
-  * Switch Modulation type (USB/LBS/DSB)
+  * Switch Modulation type (DSB/USB/LBS/CW)
 * Change Frequency
   * Change tuning step-size
 * Increase/Decrease Baseband Gain

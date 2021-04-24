@@ -1,5 +1,7 @@
 # Radio Types + Values Implemented
 
+https://radiosondy.info/index.php
+
 ### MeteoModem M10 
 * Latitude
 * Longitude
@@ -13,5 +15,14 @@
 * Altitude
 * Battery Voltage
 
-### Vaisala RS41
-* No Values Decoded
+### Vaisala RS41-SG
+* Signature
+* Serial
+* Battery Voltage
+* Frame Number
+* Altitude
+* Latitude
+* Longitude
+
+
+
