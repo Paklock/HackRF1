@@ -9,6 +9,7 @@
 * [Description of the hardware](Hardware-overview)
    * [3d printed enclosure](H2-Enclosure)
    * [Internal speaker](Internal-speaker)
+   * [SMD buttons and caps](Push-buttons-and-button-caps)
 * [Description of the main screen](Main-screen-overview)
 * Troubleshooting
    * [Firmware upgrade](https://github.com/eried/portapack-mayhem/wiki/Update-firmware-troubleshooting)
