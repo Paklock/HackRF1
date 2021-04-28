@@ -15,7 +15,7 @@ Description of displayed information, starting from top-left:
 
 ## Settings
 
-- **Frequency**: Sets the frequency to receive pager messages on. Can be adjusted with the [encoder thumb wheel](Hardware-overview), on-screen numpad, or loaded from frequencies saved on an SD card. 439.9875 MHz is the most popular worldwide frequency used by Amateur radio for POCSAG. Amateur radio POCSAG uses 1200 baud.
+- **Frequency**: Sets the frequency to receive pager messages on. Can be adjusted with the [encoder thumb wheel](Hardware-overview), on-screen numpad, or loaded from frequencies saved on an SD card. 439.9875 MHz is the most popular worldwide frequency used by Amateur radio for POCSAG. Amateur radio POCSAG uses 1200bps.
 - **RF amplifier**: (0 or 1): Enables/disables the internal RF amplifier.
 - **LNA gain** (0, 8, 16, 24, 32, 40): Sets the LNA gain. Further information: [Description of the gain settings](Help!-Im-not-receiving-anything!---Receive-Quality-Issues#description-of-the-gain-settings)
 - **VGA gain** (0 to 62): Sets the VGA gain. Further information: [Description of the gain settings](Help!-Im-not-receiving-anything!---Receive-Quality-Issues#description-of-the-gain-settings)
