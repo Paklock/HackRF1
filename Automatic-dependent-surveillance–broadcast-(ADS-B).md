@@ -1,8 +1,10 @@
 With this app you can receive real-time ADS-B used for air traffic control.
 
 # Functionality
+Select a received aircraft and more detail will be shown. Select "Show on map" to see the aircraft location.
 
 ## Map
+For map functionality a world map must be loaded on the SD card.
 
 ## Airlines
 
