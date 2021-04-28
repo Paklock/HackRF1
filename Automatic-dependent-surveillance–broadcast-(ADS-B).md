@@ -1,10 +1,10 @@
 With this app you can receive real-time ADS-B used for air traffic control.
 
 # Functionality
-Select a received aircraft and more detail will be shown. Select "Show on map" to see the aircraft location.
+Select a received aircraft and more detail will be shown. Select "Show on map" to see the aircraft location. ADS-B operates on 978 to 1090 MHz. Even a short antenna attached directly to the Portapack will receive ADS-B when the receive preamp is enabled ("1" displayed).
 
 ## Map
-For map functionality a world map must be loaded on the SD card.
+For map functionality a world map must be loaded on the SD card. The map image and other SD card content is available from the portapack-mayhem github download page.
 
 ## Airlines
 
