@@ -73,8 +73,8 @@ There are different type of widget. here you will find a list of available widge
 ### Attach a generic widget to you application
 
 In order to display a widget into your app, you can either use the function `add_child()` or `add_children()`. 
-Both thoose functions shall be called whithin the code of your `NewAppGameView(NavigationView &nav){}` constructor. The difference between the two function is simple: the first one allows you to add a single widget, while the secon one allows you to add an undefined number of widgets.
-Widgets must be passed as pointers to the functions. A coorect way of calling the two functions would then be: 
+Both those functions shall be called within the code of your `NewAppGameView(NavigationView &nav){}` constructor. The difference between the two function is simple: the first one allows you to add a single widget, while the second one allows you to add an undefined number of widgets.
+Widgets must be passed as pointers to the functions. A correct way of calling the two functions would then be: 
 ```
 add_child(&my_widget);
 ```
@@ -87,7 +87,7 @@ add_children({
 ```
 
 ### Available widgets
-There are several different widgets, and more might be added, so you sholud allways go and chech whether new widgets have been added or not. Here you will find a list of most basic widgets.
+There are several different widgets, and more might be added, so you should always go and check whether new widgets have been added or not. Here you will find a list of most basic widgets.
 
 #### Text
 The text widgets add a simple text area to your app. Here you can find it's declaration and prototype:
@@ -98,11 +98,11 @@ Text my_text_widget{
 };
 
 ```
-To be noted that `Rect parent_rect` has it's own definition inside another file, but let's say that you would like to add a text widget with the text "Hwllo World", positioned at the top left corner (spaced 10 from both top margin and left margin), with width 100 and height 24, you cold do it in this way:
+To be noted that `Rect parent_rect` has it's own definition inside another file, but let's say that you would like to add a text widget with the text "Hello World", positioned at the top left corner (spaced 10 from both top margin and left margin), with width 100 and height 24, you cold do it in this way:
 ```
-Text hellow_world_text_widget(
-  {10, 10, 100, 24}, // be aware that thoose cordinates are: int:x, int:y, int:width, int:height
-  "Hellow world!"
+Text hello_world_text_widget(
+  {10, 10, 100, 24}, // be aware that the coordinates are: int:x, int:y, int:width, int:height
+  "Hello world!"
 );
 ```
 #### Buttons
@@ -115,12 +115,12 @@ Button my_button_widget{
 };
 
 ```
-Be aware that every time you create e button, you then have to implement this method: `my_button_widget.on_select = [&nav](Button &){}`. You can leave it empy (even though it should not, as here you define what action the button should perform), but it must be present in your code.
+Be aware that every time you create e button, you then have to implement this method: `my_button_widget.on_select = [&nav](Button &){}`. You can leave it empty (even though it should not, as here you define what action the button should perform), but it must be present in your code.
 
-For exaple, let's say you want a button called `my_button`, with the same diension as the previous widget. You will then do:
+For example, let's say you want a button called `my_button`, with the same dimensions as the previous widget. You will then do:
 ```
 Button my_button(
-  {10, 10, 100, 24}, // be aware that thoose cordinates are: int:x, int:y, int:width, int:height
+  {10, 10, 100, 24}, // be aware that the coordinates are: int:x, int:y, int:width, int:height
   "my_button_text"
 );
 ```
@@ -141,7 +141,7 @@ Button my_button(
 
 #### OptionsField
 
-OptionsField is a widget that allows you to create a fiked, in wich you can change its value with the wheel on your portapack. Here you can find it's declaration and prototype:
+OptionsField is a widget that allows you to create a field, in which you can change its value with the wheel on your portapack. Here you can find it's declaration and prototype:
 ```
  OptionsField my_OptionsField_widget{
    Point parent_pos, 
@@ -149,8 +149,8 @@ OptionsField is a widget that allows you to create a fiked, in wich you can chan
    options_t options
 };
 ```
-parent_pos is an array of two integer wich tells where the top left corner of the widget should be positioned. The lenght is an integer wich tells how many options you have into your options parameter. The options_t field is an array of options in wich your portapack can choose to display. 
-For exaple, let's say you want an optionsFild called `my_optionsField`, with 3 options, positioned at 10 from top and 10 from left:
+parent_pos is an array of two integer which tells where the top left corner of the widget should be positioned. The length is an integer which tells how many options you have into your options parameter. The options_t field is an array of options in which your portapack can choose to display. 
+For example, let's say you want an optionsFild called `my_optionsField`, with 3 options, positioned at 10 from top and 10 from left:
 ```
 OptionsField my_optionsField{
     {10,10}, 
@@ -162,7 +162,7 @@ OptionsField my_optionsField{
     }
 };
 ```
-Note that the number following the "option_x" string value, should be the value that you could retrive from the optionField with the function `my_optionsField.selected_index_value();`
+Note that the number following the "option_x" string value, should be the value that you could retrieve from the optionField with the function `my_optionsField.selected_index_value();`
 #### Waveform
 
 #### VuMeter
