@@ -1,5 +1,17 @@
 There are severals ways to compile the firmware. As the traditional way, check the original [Building from Source](https://github.com/furrtek/portapack-havoc/wiki/Building-from-source) document, however, Docker is recommended because it provides a very clean way to go from source to a `.bin` file.
 
+[Using Docker and Kinematic](https://github.com/eried/portapack-mayhem/wiki/Compile-firmware#using-docker-hub-and-kitematic)
+
+[Docker command-line reference](https://github.com/eried/portapack-mayhem/wiki/Compile-firmware#docker---command-line-reference)
+
+[Using Buddyworks and other CI platforms](https://github.com/eried/portapack-mayhem/wiki/Compile-firmware#using-buddyworks-and-other-ci-platforms)
+
+[Notes](https://github.com/eried/portapack-mayhem/wiki/Compile-firmware#notes)
+
+[Using ARM on Debian host](https://github.com/eried/portapack-mayhem/wiki/Compile-firmware#using-arm-on-debian)
+
+[Debian setup script repository](https://github.com/eried/portapack-mayhem/wiki/Compile-firmware#debian-setup-script-repository)
+
 # Using Docker Hub and Kitematic
 
 ## Step 1: Prepare environment
