@@ -153,7 +153,7 @@ some compiling errors to check it's better to call it without '-j 8')
 
 ## 3. Create portapack-mayhem directory and give permission to your user
 
-    mkdir /opt/portapack-mahem
+    mkdir /opt/portapack-mayhem
     chown -R my_user:my_usergroup /opt/portapack-mayhem
 
 ## 4. Clone the eried's mayhem repository from GitHub (as user) (if not done before)
