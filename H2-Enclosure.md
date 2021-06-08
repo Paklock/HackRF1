@@ -1,13 +1,19 @@
 You can 3d print the following enclosure for your Portapack:
 
-[<img src="https://raw.githubusercontent.com/eried/portapack-mayhem/master/docs/images/h2_front.jpg" height="400">
+[<img src="https://raw.githubusercontent.com/eried/portapack-mayhem/master/docs/images/h2_front.jpg" height="300">
 ](https://www.thingiverse.com/thing:4260973)
 
 And the following magnetic cover:
 
-[<img src="https://raw.githubusercontent.com/eried/portapack-mayhem/master/docs/images/h2_cover.jpg" height="400">](https://www.thingiverse.com/thing:4278961)
+[<img src="https://raw.githubusercontent.com/eried/portapack-mayhem/master/docs/images/h2_cover.jpg" height="300">](https://www.thingiverse.com/thing:4278961)
 
-If you do not own a 3d printer, you could use a service like https://www.weerg.com for a high quality print, or https://www.3dhubs.com/ for a low cost alternative using the design from the section below. Additionally, you can buy a [mass-produced](https://s.click.aliexpress.com/e/_9ybXDz) version of the case. If you need a different design, or material, check more options directly in [Aliexpress](https://www.aliexpress.com/wholesale?SearchText=portapack+case).
+If you do not own a 3d printer, you have other options:
+
+* https://www.weerg.com for a high quality print
+* https://www.3dhubs.com/ for a low cost alternative using the design files from the links on top
+* https://www.tindie.com/products/daddy-makes-stuff-and-things/hackrf-portapack-h2-case/ another alternative, with a lot of customization options
+
+Additionally, you can buy a [mass-produced](https://s.click.aliexpress.com/e/_9ybXDz) version of the case. If you need a different design, or material, check more options directly in [Aliexpress](https://www.aliexpress.com/wholesale?SearchText=portapack+case).
 
 For a comparison between the results of the different fabrication techniques, check: https://youtu.be/lB-vc-Y13PM
 
