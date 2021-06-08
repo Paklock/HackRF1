@@ -1,4 +1,4 @@
-You can 3d print the following enclosure for your Portapack:
+You can 3d print the following enclosure for your Portapack (click the pictures to get the design files):
 
 [<img src="https://raw.githubusercontent.com/eried/portapack-mayhem/master/docs/images/h2_front.jpg" height="300">
 ](https://www.thingiverse.com/thing:4260973)
@@ -10,7 +10,7 @@ And the following magnetic cover:
 If you do not own a 3d printer, you have other options:
 
 * [Weerg](https://www.weerg.com) for a high quality print
-* [3DHubs](https://www.3dhubs.com/) for a low cost alternative using the design files from the links on top
+* [3DHubs](https://www.3dhubs.com/) for a low cost alternative
 * [Tindie](https://www.tindie.com/products/daddy-makes-stuff-and-things/hackrf-portapack-h2-case/) another alternative, with a lot of customization options
 * [Injection moulded](https://s.click.aliexpress.com/e/_9ybXDz) version of the case
 
