@@ -54,7 +54,7 @@ You also need to create `MYGPSWALK.TXT` as specified above.
 
 ## Compatibility
 Depending on several factors, results may vary. A modern device will use several sources and methods to validate the current position, so spoofing positions may not be possible in all situations. To improve your chances to receive simulated GPS data, try:
-* Turn off Wifi/BT/Cellular (airplane mode)
+* Turn off Wifi/BT/Cellular and positioning-enhancements (best airplane mode)
 * Go inside, where the device loses GPS signal
 * Reboot the device after doing the previous two steps
 
