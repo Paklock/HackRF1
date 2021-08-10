@@ -61,16 +61,18 @@ Depending on several factors, results may vary. A modern device will use several
 If the device runs Android, follow your attempts with [GPS Test](https://play.google.com/store/apps/details?id=com.chartcross.gpstest).
 
 ### Known results
-| Type       | Make    | Model       | Locks on spoofed GPS? | GPS acts "jammed"? | Comments                   |
-|------------|---------|-------------|-----------------------|--------------------|----------------------------|
-| Tablet     | Samsung | Note 7      | No                    | Yes                |                            |
-| Phone      | Samsung | S8          | **Yes**               | No                 | WIFI must be off           |
-| Phone      | Huawei  | P30 lite    | No                    | Yes                |                            |
-| Phone      | Huawei  | Mate 10 Pro | No                    | NO                 | 6 or 7 satelites: No fix   |
-| Smartwatch | Huawei  | Amazfit Bip | **Yes**               | No                 |                            |
-| Phone      | Apple   | iPhone 6    | **Yes**               | No                 | Works with WIFI on         |
-| Phone      | ZTE     | Axon 7      | **Yes**               | No                 | Works with WIFI on         |
-| Phone      | Xiaomi  | Mi5         | **Yes**               | No                 | Works with WIFI on         |
+| Type       | Make    | Model        | Locks on spoofed GPS? | GPS acts "jammed"? | Comments                   |
+|------------|---------|--------------|-----------------------|--------------------|----------------------------|
+| Tablet     | Samsung | Note 7       | No                    | Yes                |                            |
+| Phone      | Samsung | S8           | **Yes**               | No                 | WIFI must be off           |
+| Phone      | Huawei  | P30 lite     | No                    | Yes                |                            |
+| Phone      | Huawei  | Mate 10 Pro  | No                    | NO                 | 6 or 7 satelites: No fix   |
+| Smartwatch | Huawei  | Amazfit Bip  | **Yes**               | No                 |                            |
+| Phone      | Apple   | iPhone 6     | **Yes**               | No                 | Works with WIFI on         |
+| Phone      | ZTE     | Axon 7       | **Yes**               | No                 | Works with WIFI on         |
+| Phone      | Xiaomi  | Mi5          | **Yes**               | No                 | Works with WIFI on         |
+| Phone      | Samsung | S20+ 4G      | **Yes**               | No                 | WIFI must be off           |
+| Smartwatch | Samsung | Gear S3 WiFi | **Yes**               | No                 | Location over GPS only     |
 
 
 ## References
