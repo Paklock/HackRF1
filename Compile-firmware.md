@@ -21,8 +21,8 @@ There are severals ways to compile the firmware. As the traditional way, check t
 
 ## Step 2: Clone the repository
 
-If you are using Windows, line endings may produce some errors. For example: `'python/r' not found` messages are product of a problem with the line endings. To prevent this, configure git to not manipulate these line endings, open a terminal and execute:
-
+If you are using Windows, line endings may produce some errors. For example: `'python/r' not found` messages are product of a problem with the line endings. This must be done prior to cloning the repository for compilation to succeed. To prevent this, configure git to not manipulate these line endings, open a terminal and execute:
+y
 `git config --global core.autocrlf false`
 
 You can also check the current configuration by omitting the `false` at the end of the command.
