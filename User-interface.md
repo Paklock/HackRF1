@@ -1,8 +1,8 @@
 # Boot splash screen
 
-From version 1.4.2, you can set a custom boot splash screen.
+From version 1.4.2, you can set a custom boot splash screen. 
 
-# Main Screen
+# Main screen
 
 [[img/main-screen.png]]
 
