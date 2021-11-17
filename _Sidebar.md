@@ -10,7 +10,7 @@
    * [3d printed enclosure](H2-Enclosure)
    * [Internal speaker](Internal-speaker)
    * [SMD buttons and caps](Push-buttons-and-button-caps)
-* [User Interface](Main-screen-overview)
+* [User interface](Main-screen-overview)
 * Troubleshooting
    * [Firmware upgrade](https://github.com/eried/portapack-mayhem/wiki/Update-firmware-troubleshooting)
    * [Receive Quality Issues](https://github.com/eried/portapack-mayhem/wiki/Help!-Im-not-receiving-anything!---Receive-Quality-Issues)
