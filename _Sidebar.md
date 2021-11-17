@@ -11,9 +11,8 @@
    * [Internal speaker](Internal-speaker)
    * [SMD buttons and caps](Push-buttons-and-button-caps)
 * [User interface](User-interface)
-   * Main screen
-       * [Title bar](title-bar)
-       * [Main menu](main-menu)
+   * [Title bar](title-bar)
+   * [Main menu](main-menu)
 * Troubleshooting
    * [Firmware upgrade](https://github.com/eried/portapack-mayhem/wiki/Update-firmware-troubleshooting)
    * [Receive Quality Issues](https://github.com/eried/portapack-mayhem/wiki/Help!-Im-not-receiving-anything!---Receive-Quality-Issues)
