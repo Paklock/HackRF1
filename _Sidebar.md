@@ -85,9 +85,9 @@
    * [At first glance](At-first-glance)
    * [Persistent Memory](Persistent-Memory)
 * Tools
-   * Images
-      * [world_map.bin](World-map-generation)
-      * [converter](Splash-and-other-images)
+   * [make_airlines_db.py](Make-airlines-db)
+   * [world_map.bin](World-map-generation)
+   * [converter](Splash-and-other-images)
 * Example guides
    * [Create a custom splash screen](Create-a-custom-splash-screen)
    * [Create a simple app](Create-a-simple-app)
