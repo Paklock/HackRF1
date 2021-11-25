@@ -11,7 +11,7 @@
    * [Internal speaker](Internal-speaker)
    * [SMD buttons and caps](Push-buttons-and-button-caps)
 * [User interface](User-interface)
-   * [Splash screen](User-interface#boot-splash-screen)
+   * [Splash screen](Create-a-custom-splash-screen)
    * [Title bar](title-bar)
    * [Main menu](main-menu)
 * Troubleshooting
