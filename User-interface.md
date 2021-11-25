@@ -1,7 +1,6 @@
 # Boot splash screen
 
-From version 1.4.2, you can [set a custom boot splash screen](Create-a-custom-splash-screen). The file `splash.bmp` will be loaded from the root of the sd card.
-
+From version 1.4.2, you can [set a custom boot splash screen](Create-a-custom-splash-screen).
 
 # Main screen
 
