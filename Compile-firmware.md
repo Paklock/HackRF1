@@ -170,9 +170,9 @@ some compiling errors to check it's better to call it without '-j 8')
     mkdir build; cd build
     PATH=/opt/build/armbin/bin:/opt/build/armbin/lib:$PATH
 
-## 7. Create makefile through cmake and compile (as user) (it's important to call the PATH cmd in step 5 just before making the cmake)
+## 7. Create makefile through cmake and compile (as user) (it's important to call the PATH cmd in step 6 just before making the cmake)
 
-    cmake -B./ -S../../
+    cmake -B./ -S../../../
     make firmware
 
 ## 8. Flash the firmware to HackRF
