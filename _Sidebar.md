@@ -80,6 +80,7 @@
       * Temperature
       * Buttons Test
     * HackRF
+      * [Updating the CPLD](Updating-the-CPLD)
 ## Developer manual
 * [Compile from source](Compile-firmware)
 * Description of the structure
