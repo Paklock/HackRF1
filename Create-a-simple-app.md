@@ -115,7 +115,7 @@ Button my_button_widget{
 };
 
 ```
-Be aware that every time you create e button, you then have to implement this method: `my_button_widget.on_select = [&nav](Button &){}`. You can leave it empty (even though it should not, as here you define what action the button should perform), but it must be present in your code.
+Be aware that every time you create a button, you then have to implement this method: `my_button_widget.on_select = [&nav](Button &){}`. You can leave it empty (even though it should not, as here you define what action the button should perform), but it must be present in your code.
 
 For example, let's say you want a button called `my_button`, with the same dimensions as the previous widget. You will then do:
 ```
