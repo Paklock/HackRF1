@@ -166,7 +166,7 @@ some compiling errors to check it's better to call it without '-j 8')
 
 ## 6. Setup environmental variables for compiler (as user)
 
-    cd /opt/portapack-mayhem/hackrf/firmware
+    cd /opt/portapack-mayhem/firmware
     mkdir build; cd build
     PATH=/opt/build/armbin/bin:/opt/build/armbin/lib:$PATH
 
