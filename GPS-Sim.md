@@ -34,7 +34,7 @@ You also need to create `TESTGPS.TXT` as specified above.
 ## Example 2
 
 For a fixed position, use
-`gps-sdr-sim -e brdc1500.20n -s 1250000 -b 8 -o gpssim.bin -l 30.286502,120.032669,100 -d 100`
+`gps-sdr-sim -e brdc1500.20n -s 1250000 -b 8 -o gpssim.C8 -l 30.286502,120.032669,100 -d 100`
 
 Test with a `gpssim.txt` as follows:
 
