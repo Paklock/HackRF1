@@ -6,6 +6,8 @@ TouchTunes Jukebox’s (Gen2 and above) use a wireless remote that transmits NEC
 
 This application emulates TouchTunes wireless remotes (Gen2 and newer) and has the ability to brute force addresses.
 
+Original research can be found [Here](https://github.com/notpike/The-Fonz) and on NotPike's [Blog](https://bad-radio.solutions/notes).
+
 # How To Use
 
 * **Start the application:** Go to Transmit→TouchTune.
