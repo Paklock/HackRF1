@@ -10,6 +10,8 @@ This application emulates TouchTunes wireless remotes (Gen2 and newer) and has t
 
 * **Start the application:** Go to Transmit→TouchTune.
 
+[[img/screenshots/Transmit_TouchTune.png]]
+
 * **Transmit a command:** Simply press the button on the touch screen or highlight/select the button with the physical controls.
 
 * **Change the PIN:** Highlight the 3 digits in the top left hand corner and use the jog wheel to change the value. (Default is 000)
@@ -30,60 +32,54 @@ Below is all the technical data regarding the wireless message structure.
 
 ### NEC Format
 
-* Short(0): 10 (OOK: ON OFF)
-* Long (1): 1000 (OOK: ON OFF OFF OFF)
-* Structure: {SYNC} {PREAMBLE} {PIN} {COMMAND} {TAIL}
-* Sync (Literal Symbols): 0xFFFF00
-* Preamble (Decoded NEC): 0x5D
-* PIN 000-255 (Decoded NEC): 0x00-0xFF (LSB)
-* Tail (Literal Symbols): 0x8
+* **Short(0):** 10 (OOK: ON OFF)
+* **Long (1):** 1000 (OOK: ON OFF OFF OFF)
 
-### Commands
+### Message Structure
 
-**Note:** Commands are doubled with the 2nd half being reversed. For example, Pause 0x32 will translate to 0x3223 before being encoded to the literal symbols. \xA8\x8A\x8A\xA2\xA8\x80.
+* **Structure:** {SYNC} {PREAMBLE} {PIN} {COMMAND} {TAIL}
+* **Sync (Literal Symbols):** 0xFFFF00
+* **Preamble (Decoded NEC):** 0x5D
+* **PIN 000-255 (Decoded NEC):** 0x00-0xFF (LSB)
+* **Tail (Literal Symbols):** 0x8
 
+### Commands (Pre NEC Encode)
+
+**Note:** Commands are doubled with the 2nd half being reversed. For example, Pause 0x32 will translate to 0x3223 before being encoded to the literal symbols 0xA88A8AA2A880.
 
 * 0x32: Pause
 * 0x78: On/Off
 * 0x70: P1
-* 0x60, // P2 Edit Queue                           ||
-||                               0xCA, // P3 Skip                                 ||
-||                               0x20, // F1 Restart                              ||
-||                               0xF2, // Up                                      ||
-||                               0xA0, // F2 Key                                  ||
-||                               0x84, // Left                                    ||
-||                               0x44, // OK                                      ||
-||                               0xC4, // Right                                   ||
-||                               0x30, // F3 Mic A Mute                           ||
-||                               0x80, // Down                                    ||
-||                               0xB0, // F4 Mic B Mute                           ||
-||                               0xF0, // 1                                       ||
-||                               0x08, // 2                                       ||
-||                               0x88, // 3                                       ||
-||                               0x48, // 4                                       ||
-||                               0xC8, // 5                                       ||
-||                               0x28, // 6                                       ||
-||                               0xA8, // 7                                       ||
-||                               0x68, // 8                                       ||
-||                               0xE8, // 9                                       ||
-||                               0x18, // * Music_Karaoke                         ||
-||                               0x98, // 0                                       ||
-||                               0x58, // # Lock_Queue                            ||
-||                               0xD0, // Zone 1 Vol+                             ||
-||                               0x90, // Zone 2 Vol+                             ||
-||                               0xC0, // Zone 3 Vol+                             ||
-||                               0x50, // Zone 1 Vol-                             ||
-||                               0x10, // Zone 2 Vol-                             ||
-||                               0x40, // Zone 3 Vol-                             ||
-||                                                                                ||
-||       ==Example==                                                              ||
-||     * Command:             Pin 000 - On/Off                                    ||
-||     * Literal Symbols HEX: ffff00 a2888a2 aaaa 8888aa2aa2220                   ||
-||     * Literal Symbols BIN: 11111111111111110000 10 1000 10 1000 1000 1000      ||
-||                            10 1000 10 10 10 10 10 10 10 10 10 1000 1000        ||
-||                            1000 1000 10 10 10 1000 10 10 10 10 1000 1000       ||
-||                            1000 100000                                         ||
-||                                                                                ||
-||     * Decoded Symbols:     SYNC         S  L    S  L    L    L    S  L         ||
-||                            S  S  S  S  S  S  S  S  S  L    L    L    L         ||
-||                            S  S  S  L    S  S  S  S  L    L    L    TAIL       ||
+* 0x60: P2 Edit Queue
+* 0x20: F1 Restart
+* 0xF2: Up
+* 0xA0: F2 Key
+* 0x84: Left           
+* 0x44: OK             
+* 0xC4: Right          
+* 0x30: F3 Mic A Mute  
+* 0x80: Down           
+* 0xB0: F4 Mic B Mute  
+* 0xF0: 1              
+* 0x08: 2              
+* 0x88: 3              
+* 0x48: 4              
+* 0xC8: 5              
+* 0x28: 6              
+* 0xA8: 7              
+* 0x68: 8              
+* 0xE8: 9              
+* 0x18: * Music_Karaoke
+* 0x98: 0              
+* 0x58: # Lock_Queue   
+* 0xD0: Zone 1 Vol+    
+* 0x90: Zone 2 Vol+    
+* 0xC0: Zone 3 Vol+    
+* 0x50: Zone 1 Vol-    
+* 0x10: Zone 2 Vol-    
+* 0x40: Zone 3 Vol- 
+
+### Example
+* **Command:** Pin 000 - On/Off
+* **Literal Symbols (HEX):** ffff00 a2888a2 aaaa 8888aa2aa2220 (SYNC PREAMBLE PIN COMMAND TAIL)
+* **Literal Symbols (BIN):** 11111111111111110000 10 1000 10 1000 1000 1000 10 1000 10 10 10 10 10 10 10 10 10 1000 1000 1000 1000 10 10 10 1000 10 10 10 10 1000 1000 1000 100000
