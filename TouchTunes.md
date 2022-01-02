@@ -1,5 +1,7 @@
 # About
 
+TouchTunes is a popular Jukebox company that can be found in various bars, pubs, and restaurants all over North America.  
+
 TouchTunes Jukebox’s (Gen2 and above) use a wireless remote that transmits NEC encoded messages using ASK/OOK at 433.92MHz. These remotes are used for basic Jukebox functions such as On/Off, Skip Song, Volume, Etc. The wireless messages are addressed using PINs 000-255 to prevent mutable units from interfering with each other. 
 
 **Most of the time the remote’s PIN is left as default 000**
