@@ -105,7 +105,7 @@ Text hello_world_text_widget(
   "Hello world!"
 );
 ```
-#### Buttons
+#### Button
 
 Buttons allows you to do something when you press them. Here you can find it's declaration and prototype:
 ```
@@ -113,15 +113,14 @@ Button my_button_widget{
     Rect parent_rect,
     std::string text
 };
-
 ```
 Be aware that every time you create a button, you then have to implement this method: `my_button_widget.on_select = [&nav](Button &){}`. You can leave it empty (even though it should not, as here you define what action the button should perform), but it must be present in your code.
 
 For example, let's say you want a button called `my_button`, with the same dimensions as the previous widget. You will then do:
 ```
 Button my_button(
-  {10, 10, 100, 24}, // be aware that the coordinates are: int:x, int:y, int:width, int:height
-  "my_button_text"
+   {10, 10, 100, 24}, // be aware that the coordinates are: int:x, int:y, int:width, int:height
+   "my_button_text"
 );
 ```
 
@@ -136,6 +135,80 @@ Button my_button(
 #### Console
 
 #### Checkbox
+
+Checkboxs are a boolean (True/False) widget that allows you chose between one of two options . Here you can find it's declaration and prototype:
+```
+Checkbox my_checkbox_widget{
+    Point parent_pos,
+    size_t length,
+    std::string text,
+    bool small
+};
+```
+
+For example, let's say you want a checkbox called `my_checkbox`. You will need to add this to `apps/ui_newapp.hpp`:
+```
+Checkbox my_checkbox(
+    {10, 20},           // Coordinates are: int:x, int:y
+    4,                  // Length
+    "my_checkbox_text", // Title
+    false               // Checkbox Size: true == small(16X16px), false == regular(24X24px) 
+);
+```
+
+In `apps/ui_newapp.cpp` you'll need to add the `my_checkbox` pointer to add_child() or add_children():
+```
+NewAppView::NewAppView(NavigationView &nav) {
+
+    // Widget pointers
+    add_children({
+        &my_checkbox,
+    });
+
+}
+```
+
+Functions within `apps/ui_newapp.cpp` are able to lookup the value of `my_checkbox` with Checkbox's `value()` function:
+```
+if(my_checkbox.value()) {
+    do_a();                // If checkbox is selected (green check mark)
+} else {
+    do_b();                // If checkbox is NOT selected (red X)
+}
+```
+
+You can also set the value for `my_checkbox` with the `set_value(const bool value)` function:
+```
+my_checkbox.set_value(true);  // Checkbox selected (green check mark)
+my_checkbox.set_value(false); // Checkbox deselected (red X)
+``` 
+
+If you want your checkbox to automatically perform an action when toggled you can add the following to `apps/ui_newapp.cpp`:  
+```
+NewAppView::NewAppView(NavigationView &nav) {
+
+    // Add widget pointers
+    add_children({
+        &my_checkbox,
+    });
+
+    // When checkbox is toggled do...
+    my_checkbox.on_select = [this](Checkbox&, bool v) {
+        if(v){                                           // If checkbox is selected (green check mark) 
+            do_a();
+        } else {
+            do_b();                                      // If checkbox is NOT selected (red X)  
+        }
+    };
+
+}
+```
+
+
+
+
+
+
 
 #### Image
 
