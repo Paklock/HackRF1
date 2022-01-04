@@ -56,7 +56,7 @@ The following structure is the base of any application. Following the general st
 
 ## Entry in the main menu
 
-For triggering your new app, you need to add an entry on the main menu. This menu resides on [`firmware\application\ui_navigation.cpp`](https://github.com/sharebrained/portapack-hackrf/blob/master/firmware/application/ui_navigation.cpp). Check the current entries, and add a new one in a section you think is suitable for your new app. 
+For triggering your new app, you need to add an entry on the main menu. This menu resides on [`firmware\application\ui_navigation.cpp`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/ui_navigation.cpp). Check the current entries, and add a new one in a section you think is suitable for your new app. 
 
 ## Early test
 
@@ -67,8 +67,8 @@ In this moment you should be able to compile and test the app in your device. It
 # Adding functionality
 
 ## Widgets
-Widgets are the elements that compose the UI of your custom app. Widgets are defined inside [`firmware\common\ui_widget.hpp`](https://github.com/sharebrained/portapack-hackrf/blob/master/firmware/common/ui_widget.hpp) and widget functions can be found inside [`firmware\common\ui_widget.cpp`](https://github.com/sharebrained/portapack-hackrf/blob/master/firmware/common/ui_widget.cpp). In order to be able to use them, you must `#include "ui_widget.hpp"` into your app .hpp file.
-There are different type of widget. here you will find a list of available widget, with their respecting constructor. For all the methods available, you should go and see the [ui_widget.hpp](https://github.com/sharebrained/portapack-hackrf/blob/master/firmware/common/ui_widget.hpp) file.
+Widgets are the elements that compose the UI of your custom app. Widgets are defined inside [`firmware\common\ui_widget.hpp`](https://github.com/eried/portapack-mayhem/blob/next/firmware/common/ui_widget.hpp) and widget functions can be found inside [`firmware\common\ui_widget.cpp`](https://github.com/eried/portapack-mayhem/blob/next/firmware/common/ui_widget.cpp). In order to be able to use them, you must `#include "ui_widget.hpp"` into your app .hpp file.
+There are different type of widget. here you will find a list of available widget, with their respecting constructor. For all the methods available, you should go and see the [ui_widget.hpp](https://github.com/eried/portapack-mayhem/blob/next/firmware/common/ui_widget.hpp) file.
 
 ### Attach a generic widget to you application
 
@@ -125,6 +125,57 @@ Button my_button(
 ```
 
 #### Labels
+
+Labels are a text element that can be used to describe other widgets. Here you can find it's declaration and prototype:
+```
+Labels my_label {
+    Point pos,
+    std::string text,
+    ui::Color color
+};
+```
+
+For example, let's say you want a label called `my_label`. You will need to add this to `apps/ui_newapp.hpp`:
+```
+Labels my_label(
+    {10, 10},           // Coordinates are: int:x, int:y
+    "my_label_text:",   // Label text
+    Color::light_grey() // Label color
+);
+```
+
+Colors are defined in [`firmware/common/ui.hpp`](https://github.com/eried/portapack-mayhem/blob/next/firmware/common/ui.hpp) and the predefined colors include...  
+* Color::black()
+* Color::red()
+* Color::dark_red()
+* Color::orange()
+* Color::dark_orange()
+* Color::yellow()
+* Color::dark_yellow()
+* Color::green()
+* Color::dark_green()
+* Color::blue()
+* Color::dark_blue()
+* Color::cyan()
+* Color::magenta()
+* Color::dark_magenta()
+* Color::white()
+* Color::light_grey()
+* Color::gray()
+* Color::dark_gray()
+* Color::purple()
+
+In `apps/ui_newapp.cpp` you'll need to add the `my_label` pointer to add_child() or add_children():
+```
+NewAppView::NewAppView(NavigationView &nav) {
+
+    // Widget pointers
+    add_children({
+        &my_label,
+    });
+
+}
+```
 
 #### LiveDateTime
 
