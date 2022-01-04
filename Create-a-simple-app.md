@@ -194,8 +194,8 @@ NewAppView::NewAppView(NavigationView &nav) {
 
     // When checkbox is toggled do...
     my_checkbox.on_select = [this](Checkbox&, bool v) {
-        if(v){                                           // If checkbox is selected (green check mark) 
-            do_a();
+        if(v){
+            do_a();                                      // If checkbox is selected (green check mark) 
         } else {
             do_b();                                      // If checkbox is NOT selected (red X)  
         }
