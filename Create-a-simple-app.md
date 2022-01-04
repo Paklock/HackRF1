@@ -242,6 +242,10 @@ Note that the number following the "option_x" string value, should be the value 
 
 ## Access radio hardware
 
+### TX
+
+### RX
+
 ## Dialogs
 
 # Wrap up
