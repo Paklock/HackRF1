@@ -22,6 +22,8 @@ Original research can be found [HERE](https://github.com/notpike/The-Fonz) and o
 
 * **Brute force a command:** Select the “Scan” option (green check mark) then transmit. This option will transmit the command 256 times starting with PIN 000 to 255. (PIN will change to 255 after all commands are transmitted)
 
+* **EW Mode (Experimental):** EW (Electronic Warfare) Mode will prevent others from sending commands to your target jukebox while still allowing you to have control. When the "EW Mode" is selected (green check mark), a continuous CW at 433.92MHz will be transmitted in an attempt to jam the jukebox's receiver. You can still transmit commands while "EW Mode" is active. The jamming signal will automatically turn off / turn on when you transmit commands.  
+
 # TouchTunes Message Structure
 
 Below is all the technical data regarding the wireless message structure.
