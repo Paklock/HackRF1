@@ -128,7 +128,7 @@ Button my_button(
 
 Labels are a text element that can be used to describe other widgets. Here you can find it's declaration and prototype:
 ```
-Labels my_label {
+Labels my_label_widget{
     Point pos,
     std::string text,
     ui::Color color
