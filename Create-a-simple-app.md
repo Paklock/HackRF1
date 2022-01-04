@@ -94,7 +94,7 @@ set(CPPSRC
 
 ``` 
 
-In this moment you should be able to compile and test the app in your device. It should appear in the main menu and show an empty app upon entering to it.
+In this moment you should be able to compile and test the app in your device. For your reference here's the link to the [Compile-firmware](https://github.com/eried/portapack-mayhem/wiki/Compile-firmware) wiki. The new app should appear in the menu you picked in `ui_navigation.cpp`.
 
 # Adding functionality
 
