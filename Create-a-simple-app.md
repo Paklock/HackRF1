@@ -80,6 +80,20 @@ TransmittersMenuView::TransmittersMenuView(NavigationView& nav) {
 
 Remember to add your `apps/ui_newapp.cpp` to `firmware\application\CMakeLists.txt`
 
+#### firmware\application\CMakeLists.txt
+```
+# C++ sources that can be compiled in ARM or THUMB mode depending on the global
+# setting.
+set(CPPSRC
+    main.cpp
+
+    ...
+
+    apps/ui_newapp.cpp
+)
+
+``` 
+
 In this moment you should be able to compile and test the app in your device. It should appear in the main menu and show an empty app upon entering to it.
 
 # Adding functionality
