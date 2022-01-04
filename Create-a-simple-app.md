@@ -22,7 +22,7 @@ The following structure is the base of any application. Following the general st
         class NewAppView : public View
         {
         public:
-            NewAppGameView(NavigationView &nav);
+            NewAppView(NavigationView &nav);
             std::string title() const override { return "Block Game"; };
 
         private:
