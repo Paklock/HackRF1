@@ -183,7 +183,7 @@ my_checkbox.set_value(true);  // Checkbox selected (green check mark)
 my_checkbox.set_value(false); // Checkbox deselected (red X)
 ``` 
 
-If you want your checkbox to automatically perform an action when toggled you can add the following to `apps/ui_newapp.cpp`:  
+If you want your checkbox to automatically perform an action when toggled you can add this [Lambda](https://www.geeksforgeeks.org/lambda-expression-in-c/) to `apps/ui_newapp.cpp`:  
 ```
 NewAppView::NewAppView(NavigationView &nav) {
 
