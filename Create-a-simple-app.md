@@ -56,7 +56,25 @@ The following structure is the base of any application. Following the general st
 
 ## Entry in the main menu
 
-For triggering your new app, you need to add an entry on the main menu. This menu resides on [`firmware\application\ui_navigation.cpp`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/ui_navigation.cpp). Check the current entries, and add a new one in a section you think is suitable for your new app. 
+For triggering your new app, you need to add an entry on the main menu. This menu resides on [`firmware\application\ui_navigation.cpp`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/ui_navigation.cpp). Check the current entries, and add a new one in a section you think is suitable for your new app.
+
+#### firmware\application\ui_navigation.cpp 
+```
+// Add this to the top to link your new app's header file
+#include "ui_newapp.hpp"
+
+...
+
+// Adding NewApp to the Transmitters Menu
+TransmittersMenuView::TransmittersMenuView(NavigationView& nav) {
+    add_items({
+
+        ...
+
+        { "NewApp", ui::Color::red(), &bitmap_icon_remote, [&nav](){ nav.push<NewAppView>(); } },
+    });
+}
+``` 
 
 ## Early test
 
