@@ -56,7 +56,7 @@ The following structure is the base of any application. Following the general st
 
 ## Entry in the main menu
 
-For triggering your new app, you need to add an entry on the main menu. This menu resides on `firmware\application\ui_navigation.cpp`. Check the current entries, and add a new one in a section you think is suitable for your new app. 
+For triggering your new app, you need to add an entry on the main menu. This menu resides on [`firmware\application\ui_navigation.cpp`](https://github.com/sharebrained/portapack-hackrf/blob/master/firmware/application/ui_navigation.cpp). Check the current entries, and add a new one in a section you think is suitable for your new app. 
 
 ## Early test
 
@@ -67,8 +67,8 @@ In this moment you should be able to compile and test the app in your device. It
 # Adding functionality
 
 ## Widgets
-Widgets are the elements that compose the UI of your custom app. Widgets are defined inside `firmware\common\ui_widget.hpp.txt`, so in order to be able to use them, you must `#include "ui_widget.hpp"` into your app .hpp file.
-There are different type of widget. here you will find a list of available widget, with their respecting constructor. For all the methods available, you should go and see the ui_widget.hpp file.
+Widgets are the elements that compose the UI of your custom app. Widgets are defined inside [`firmware\common\ui_widget.hpp`](https://github.com/sharebrained/portapack-hackrf/blob/master/firmware/common/ui_widget.hpp) and widget functions can be found inside [`firmware\common\ui_widget.cpp`](https://github.com/sharebrained/portapack-hackrf/blob/master/firmware/common/ui_widget.cpp). In order to be able to use them, you must `#include "ui_widget.hpp"` into your app .hpp file.
+There are different type of widget. here you will find a list of available widget, with their respecting constructor. For all the methods available, you should go and see the [ui_widget.hpp](https://github.com/sharebrained/portapack-hackrf/blob/master/firmware/common/ui_widget.hpp) file.
 
 ### Attach a generic widget to you application
 
