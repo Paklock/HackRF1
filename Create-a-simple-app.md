@@ -287,6 +287,73 @@ OptionsField my_optionsField{
 };
 ```
 Note that the number following the "option_x" string value, should be the value that you could retrieve from the optionField with the function `my_optionsField.selected_index_value();`
+
+#### NumberField
+
+NumberField is similar to the OptionsField widget except that it only deals with numbers. You can change its value with the wheel on your portapack. Here you can find it's declaration and prototype:
+```
+NumberField my_NumberField_widget{
+    Point parent_pos, 
+    int length, 
+    range_t range, 
+    int32_t step, 
+    char fill_char, 
+    bool can_loop
+};
+```
+
+For example, let's say you want a NumberField called `my_numberField`. You will need to add this to `apps/ui_newapp.hpp`:
+```
+// Example 3 digit number starting at "000", ends at "255"
+NumberField my_numberField(
+    {10, 10},          // Coordinates are: int:x, int:y
+    3,                 // Length
+    {0, 255},          // MIN -> MAX Range
+    1,                 // Step
+    '0',               // Fill Char
+    false              // Can Loop
+);
+```
+
+In `apps/ui_newapp.cpp` you'll need to add the `my_numberField` pointer to add_child() or add_children():
+```
+NewAppView::NewAppView(NavigationView &nav) {
+
+    // Widget pointers
+    add_children({
+        &my_numberField,
+    });
+
+}
+```
+
+Functions within `apps/ui_newapp.cpp` are able to lookup the value of `my_numberField` with NumberField's `value()` function:
+```
+int number = my_numberField.value();
+```
+
+You can also set the value for `my_numberField` with the `set_value(int32_t new_value, bool trigger_change)` function:
+```
+my_numberField.set_value(123);
+```
+
+If you want your NumberField to change a value (int number for example) you'll need to add this [Lambda](https://www.geeksforgeeks.org/lambda-expression-in-c/) to `apps/ui_newapp.cpp`:  
+```
+NewAppView::NewAppView(NavigationView &nav) {
+
+    // Add widget pointers
+    add_children({
+        &my_numberField,
+    });
+
+    // When NumberField is changed
+    my_numberField.on_change = [this](int32_t v) {
+        number = v;
+    };
+
+}
+```
+
 #### Waveform
 
 #### VuMeter
