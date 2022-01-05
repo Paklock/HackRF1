@@ -214,6 +214,42 @@ NewAppView::NewAppView(NavigationView &nav) {
 
 #### ProgressBar
 
+Progress bars are a visual representation of progress that let us know how far a long a task is. Here you can find it's declaration and prototype:
+```
+Labels my_progressBar_widget{
+    Rect parent_rect
+};
+```
+
+For example, let's say you want a label called `my_progressBar`. You will need to add this to `apps/ui_newapp.hpp`:
+```
+ProgressBar my_progressBar {
+    { 2, 10, 208, 16 },    // Coordinates are: int:x, int:y, int:width, int:height
+};
+```
+
+In `apps/ui_newapp.cpp` you'll need to add the `my_progressBar` pointer to add_child() or add_children():
+```
+NewAppView::NewAppView(NavigationView &nav) {
+
+    // Widget pointers
+    add_children({
+        &my_progressBar,
+    });
+
+}
+```
+
+To set the maximum value for the progress bar use the `set_max(const uint32_t max)` function:
+```
+my_progressBar.set_max(10); // 10 is 100%
+```
+
+To change the value of progress for the progress bar use the `set_value(const uint32_t value)` function:
+```
+my_progressBar.set_value(5); // 50% Complete
+```
+
 #### Console
 
 #### Checkbox
