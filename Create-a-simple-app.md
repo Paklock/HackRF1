@@ -173,26 +173,7 @@ Labels my_label(
 );
 ```
 
-Colors are defined in [`firmware/common/ui.hpp`](https://github.com/eried/portapack-mayhem/blob/next/firmware/common/ui.hpp) and the predefined colors include...  
-* Color::black()
-* Color::red()
-* Color::dark_red()
-* Color::orange()
-* Color::dark_orange()
-* Color::yellow()
-* Color::dark_yellow()
-* Color::green()
-* Color::dark_green()
-* Color::blue()
-* Color::dark_blue()
-* Color::cyan()
-* Color::magenta()
-* Color::dark_magenta()
-* Color::white()
-* Color::light_grey()
-* Color::gray()
-* Color::dark_gray()
-* Color::purple()
+**Note:** Colors are defined in [`firmware/common/ui.hpp`](https://github.com/eried/portapack-mayhem/blob/next/firmware/common/ui.hpp).
 
 In `apps/ui_newapp.cpp` you'll need to add the `my_label` pointer to add_child() or add_children():
 ```
@@ -350,13 +331,58 @@ NewAppView::NewAppView(NavigationView &nav) {
 }
 ```
 
-
-
-
-
-
-
 #### Image
+
+Images can be displayed within your app. Here you can find it's declaration and prototype:
+```
+Image my_Image_widget{
+    Rect parent_rect,
+    Bitmap* bitmap,
+    Color foreground,
+    Color background
+};
+```
+
+Images need to be a Bitmap object before they can be displayed. Bellow is an example of the code needed to create a Bitmap from [`firmware/application/bitmap.hpp`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/bitmap.hpp).
+```
+static constexpr uint8_t bitmap_stripes_data[] = {
+	0xFF, 0x03, 0xC0, 
+	0xFF, 0x01, 0xE0, 
+	0xFF, 0x00, 0xF0, 
+	0x7F, 0x00, 0xF8, 
+	0x3F, 0x00, 0xFC, 
+	0x1F, 0x00, 0xFE, 
+	0x0F, 0x00, 0xFF, 
+	0x07, 0x80, 0xFF, 
+};
+static constexpr Bitmap bitmap_stripes {
+	{ 24, 8 }, bitmap_stripes_data
+};
+```
+
+With the Bitmap object created we can now define the image `my_image`. You will need to add this to `apps/ui_newapp.hpp`:
+```
+Image my_image(
+    {10, 10, 24, 8}, // Coordinates are: int:x, int:y, int width (px), int hight (px)
+    &Bitmap,            // Pointer to your bitmap
+    Color::white(),     // Color Foreground
+    Color::black()      // Color Background
+);
+```
+**Note:** Colors are defined in [`firmware/common/ui.hpp`](https://github.com/eried/portapack-mayhem/blob/next/firmware/common/ui.hpp)
+
+
+In `apps/ui_newapp.cpp` you'll need to add the `my_image` pointer to add_child() or add_children():
+```
+NewAppView::NewAppView(NavigationView &nav) {
+
+    // Widget pointers
+    add_children({
+        &my_image,
+    });
+
+}
+```
 
 #### OptionsField
 
