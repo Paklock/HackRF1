@@ -208,6 +208,36 @@ NewAppView::NewAppView(NavigationView &nav) {
 
 #### LiveDateTime
 
+LiveDateTime gives you the dynamic date and time. Here you can find it's declaration and prototype:
+```
+LiveDateTime my_liveDateTime_widget{
+    Rect parent_rect
+};
+```
+
+For example, let's say you want a label called `my_liveDateTime`. You will need to add this to `apps/ui_newapp.hpp`:
+```
+LiveDateTime my_liveDateTime {
+    { 2, 10, 19*8, 16 },    // Coordinates are: int:x, int:y, int:width, int:height
+};
+```
+
+In `apps/ui_newapp.cpp` you'll need to add the `my_liveDateTime` pointer to add_child() or add_children():
+```
+NewAppView::NewAppView(NavigationView &nav) {
+
+    // Widget pointers
+    add_children({
+        &my_liveDateTime,
+    });
+
+}
+```
+
+If you want to enable seconds you'll need use the `set_seconds_enabled(bool new_value)` function:
+```
+my_liveDateTime.set_seconds_enabled(true);
+```
 #### BigFrequency
 
 #### ProgressBar
