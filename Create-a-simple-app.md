@@ -160,18 +160,16 @@ Button my_button(
 Labels are a text element that can be used to describe other widgets. Here you can find it's declaration and prototype:
 ```
 Labels my_label_widget{
-    Point pos,
-    std::string text,
-    ui::Color color
+    std::initializer_list<Label> labels
 };
 ```
 
-For example, let's say you want a label called `my_label`. You will need to add this to `apps/ui_newapp.hpp`:
+For example, let's say you want a label called `my_label`. Because the constructor is looking for  list you'll need to add a set of brackets `{}` around each label.  You will need to add this to `apps/ui_newapp.hpp`:
 ```
 Labels my_label(
-    {10, 10},           // Coordinates are: int:x, int:y
+    {{10, 10},           // Coordinates are: int:x, int:y
     "my_label_text:",   // Label text
-    Color::light_grey() // Label color
+    Color::light_grey()}, // Label color
 );
 ```
 
