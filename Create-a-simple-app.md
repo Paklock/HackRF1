@@ -132,7 +132,7 @@ Text my_text_widget{
 To be noted that `Rect parent_rect` has it's own definition inside another file, but let's say that you would like to add a text widget with the text "Hello World", positioned at the top left corner (spaced 10 from both top margin and left margin), with width 100 and height 24, you cold do it in this way:
 ```
 Text hello_world_text_widget(
-  {10, 10, 100, 24}, // be aware that the coordinates are: int:x, int:y, int:width, int:height
+  {10, 10, 100, 24},          // Coordinates are: int:x (px), int:y (px), int:width (px), int:height (px)
   "Hello world!"
 );
 ```
@@ -150,7 +150,7 @@ Be aware that every time you create a button, you then have to implement this me
 For example, let's say you want a button called `my_button`, with the same dimensions as the previous widget. You will then do:
 ```
 Button my_button(
-   {10, 10, 100, 24}, // be aware that the coordinates are: int:x, int:y, int:width, int:height
+   {10, 10, 100, 24}, // Coordinates are: int:x (px), int:y (px), int:width (px), int:height (px)
    "my_button_text"
 );
 ```
@@ -167,8 +167,8 @@ Labels my_label_widget{
 For example, let's say you want a label called `my_label`. Because the constructor is looking for  list you'll need to add a set of brackets `{}` around each label.  You will need to add this to `apps/ui_newapp.hpp`:
 ```
 Labels my_label(
-    {{10, 10},           // Coordinates are: int:x, int:y
-    "my_label_text:",   // Label text
+    {{10, 10},            // Coordinates are: int:x (px), int:y (px)
+    "my_label_text:",     // Label text
     Color::light_grey()}, // Label color
 );
 ```
@@ -199,7 +199,7 @@ LiveDateTime my_liveDateTime_widget{
 For example, let's say you want a label called `my_liveDateTime`. You will need to add this to `apps/ui_newapp.hpp`:
 ```
 LiveDateTime my_liveDateTime {
-    { 2, 10, 19*8, 16 },    // Coordinates are: int:x, int:y, int:width, int:height
+    { 2, 10, 19*8, 16 },       // Coordinates are: int:x (px), int:y (px), int:width (px), int:height (px)
 };
 ```
 
@@ -232,7 +232,7 @@ Labels my_bigFrequency_widget{
 For example, let's say you want a label called `my_bigFrequency`. You will need to add this to `apps/ui_newapp.hpp`:
 ```
 Labels my_bigFrequency(
-    {10, 10, 28*8, 52}, // Coordinates are: int:x, int:y, int width (px), int height (px)
+    {10, 10, 28*8, 52}, // Coordinates are: int:x (px), int:y (px), int:width (px), int:height (px)
     0                   // Beginning frequency in hz
 );
 ```
@@ -266,7 +266,7 @@ Labels my_progressBar_widget{
 For example, let's say you want a label called `my_progressBar`. You will need to add this to `apps/ui_newapp.hpp`:
 ```
 ProgressBar my_progressBar {
-    { 2, 10, 208, 16 },    // Coordinates are: int:x, int:y, int:width, int:height
+    { 2, 10, 208, 16 },      // Coordinates are: int:x (px), int:y (px), int:width (px), int:height (px)
 };
 ```
 
@@ -304,7 +304,7 @@ Console my_console_widget{
 For example, let's say you want a label called `my_console`. You will need to add this to `apps/ui_newapp.hpp`:
 ```
 Console my_console {
-    { 2*8, 10, 208, 200 },    // Coordinates are: int:x, int:y, int:width, int:height
+    { 2*8, 10, 208, 200 },    // Coordinates are: int:x (px), int:y (px), int:width (px), int:height (px)
 };
 ```
 
@@ -353,7 +353,7 @@ Checkbox my_checkbox_widget{
 For example, let's say you want a checkbox called `my_checkbox`. You will need to add this to `apps/ui_newapp.hpp`:
 ```
 Checkbox my_checkbox(
-    {10, 20},           // Coordinates are: int:x, int:y
+    {10, 20},           // Coordinates are: int:x (px), int:y (px)
     4,                  // Length
     "my_checkbox_text", // Title
     false               // Checkbox Size: true == small(16X16px), false == regular(24X24px) 
@@ -440,7 +440,7 @@ static constexpr Bitmap bitmap_stripes {
 With the Bitmap object created we can now define the image `my_image`. You will need to add this to `apps/ui_newapp.hpp`:
 ```
 Image my_image(
-    {10, 10, 24, 8}, // Coordinates are: int:x, int:y, int width (px), int hight (px)
+    {10, 10, 24, 8},    // Coordinates are: int:x (px), int:y (px), int:width (px), int:height (px)
     &Bitmap,            // Pointer to your bitmap
     Color::white(),     // Color Foreground
     Color::black()      // Color Background
@@ -504,7 +504,7 @@ For example, let's say you want a NumberField called `my_numberField`. You will 
 ```
 // Example 3 digit number starting at "000", ends at "255"
 NumberField my_numberField(
-    {10, 10},          // Coordinates are: int:x, int:y
+    {10, 10},          // Coordinates are: int:x (px), int:y (px)
     3,                 // Length
     {0, 255},          // MIN -> MAX Range
     1,                 // Step
