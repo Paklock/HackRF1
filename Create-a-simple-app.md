@@ -476,7 +476,7 @@ For example, let's say you want an optionsFild called `my_optionsField`, with 3 
 ```
 OptionsField my_optionsField{
     {10,10},                   // Coordinates are: int:x (px), int:y (px)
-    3,                         // Length 
+    7,                         // Char length for option title
     {
       {"option1",0},  
       {"option2",1},           // Options {"KEY", int VALUE}
