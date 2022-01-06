@@ -221,6 +221,39 @@ my_liveDateTime.set_seconds_enabled(true);
 ```
 #### BigFrequency
 
+BigFrequency is similar to the NumberField widget however it's built specifically for inputting a radio frequency. Here you can find it's declaration and prototype:
+```
+Labels my_bigFrequency_widget{
+    Rect parent_rect, 
+    rf::Frequency frequency
+};
+```
+
+For example, let's say you want a label called `my_bigFrequency`. You will need to add this to `apps/ui_newapp.hpp`:
+```
+Labels my_bigFrequency(
+    {10, 10, 28*8, 52}, // Coordinates are: int:x, int:y, int width (px), int height (px)
+    0                   // Beginning frequency in hz
+);
+```
+
+In `apps/ui_newapp.cpp` you'll need to add the `my_bigFrequency` pointer to add_child() or add_children():
+```
+NewAppView::NewAppView(NavigationView &nav) {
+
+    // Widget pointers
+    add_children({
+        &my_bigFrequency,
+    });
+
+}
+```
+
+To set a frequency you can use the function `set(const rf::Frequency frequency)`:
+```
+my_bigFrequency(433000000); // 433MHz
+```
+
 #### ProgressBar
 
 Progress bars are a visual representation of progress that let us know how far a long a task is. Here you can find it's declaration and prototype:
