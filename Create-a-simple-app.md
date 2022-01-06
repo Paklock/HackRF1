@@ -475,11 +475,11 @@ parent_pos is an array of two integer which tells where the top left corner of t
 For example, let's say you want an optionsFild called `my_optionsField`, with 3 options, positioned at 10 from top and 10 from left:
 ```
 OptionsField my_optionsField{
-    {10,10}, 
-    3, 
+    {10,10},                   // Coordinates are: int:x (px), int:y (px)
+    3,                         // Length 
     {
       {"option1",0},  
-      {"option2",1},
+      {"option2",1},           // Options {"KEY", int VALUE}
       {"option3",2}
     }
 };
