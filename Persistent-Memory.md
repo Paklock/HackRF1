@@ -2,7 +2,7 @@ This is part of the **RTC (Real Time Clock) subsystem**, inside the LPC43xx chip
 
 # RTC Subsystem
 
-The RTC subsystem keeps the actual clock (date / time) running, powered by a CR2032 battery, (which needs to be installed on the portapack board!), even when the unit is not connected to an USB power source. 
+The RTC subsystem keeps the actual clock (date / time) running, powered by a battery (which needs to be [installed](https://github.com/eried/portapack-mayhem/wiki/Hardware-overview#portapack-internals) on the portapack board), even when the unit is not connected to an USB power source. 
 
 The persistent memory map is defined at `/firmware/chibios-portapack/os/hal/platforms/LPC43xx/lpc43xx.inc`:
 
