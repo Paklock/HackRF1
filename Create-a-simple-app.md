@@ -702,7 +702,7 @@ namespace ui
         // Widgets
         // Usable screen space is 240x304px
         // Note: Each char takes up 8x8px so you can multiply 
-        //       the amount of spaces or rows you want by 8.
+        //       the amount of spaces and rows you want by 8.
         //       This gives you 30x38 char
         Button button_helloWorld{
             {70, 128, 100, 24},             // Coordinates are: int:x (px), int:y (px), int:width (px), int:height (px)
