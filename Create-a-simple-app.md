@@ -294,6 +294,50 @@ my_progressBar.set_value(5); // 50% Complete
 
 #### Console
 
+Console can be used as large text field where you can output mutable lines of text. Here you can find it's declaration and prototype:
+```
+Console my_console_widget{
+    Rect parent_rect
+};
+```
+
+For example, let's say you want a label called `my_console`. You will need to add this to `apps/ui_newapp.hpp`:
+```
+Console my_console {
+    { 2*8, 10, 208, 200 },    // Coordinates are: int:x, int:y, int:width, int:height
+};
+```
+
+In `apps/ui_newapp.cpp` you'll need to add the `my_console` pointer to add_child() or add_children():
+```
+NewAppView::NewAppView(NavigationView &nav) {
+
+    // Widget pointers
+    add_children({
+        &my_console,
+    });
+
+}
+```
+
+To write to 'my_console' you'll need to use the `write(std::string message)` function:
+```
+my_console.write("Hello World");
+```
+
+For automatic new line, you can also use the `writeln(std::string message)` function if you don't want to add a `\n' at the end of every string:
+```
+my_console.writeln("Hello World but on a new line!");
+``` 
+
+To enable scrolling you can use the `enable_scrolling(bool enable)` function::
+```
+my_console.enable_scrolling(true);
+```
+
+
+
+
 #### Checkbox
 
 Checkboxs are a boolean (True/False) widget that allows you chose between one of two options . Here you can find it's declaration and prototype:
