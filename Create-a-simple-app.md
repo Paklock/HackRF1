@@ -251,7 +251,7 @@ NewAppView::NewAppView(NavigationView &nav) {
 
 To set a frequency you can use the function `set(const rf::Frequency frequency)`:
 ```
-my_bigFrequency(433000000); // 433MHz
+my_bigFrequency.set(433000000); // 433MHz
 ```
 
 #### ProgressBar
