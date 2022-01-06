@@ -616,7 +616,40 @@ my_waveform.set_length(9001) // THAT'S OVER 18KB!!
 
 #### VuMeter
 
+VuMeters are used to visually represent the sound intensity of an audio source. Here you can find it's declaration and prototype:
+```
+Labels my_vuMeter_widget{
+    Rect parent_rect,
+    uint32_t LEDs,
+    bool show_max
+};
+```
 
+For example, let's say you want a VuMeter called `my_vuMeter`. You will need to add this to `apps/ui_newapp.hpp`:
+```
+VuMeter my_vuMeter(
+    { 0*8, 1*8, 2*8, 33*},  // Coordinates are: int:x (px), int:y (px), int:width (px), int:height (px)
+    12,                     // LEDs
+    true                    // Show max
+);
+```
+
+In `apps/ui_newapp.cpp` you'll need to add the `my_vuMeter` pointer to add_child() or add_children():
+```
+NewAppView::NewAppView(NavigationView &nav) {
+
+    // Widget pointers
+    add_children({
+        &my_vuMeter,
+    });
+
+}
+```
+
+To set the value for `my_vuMeter` use the `set_value(const uint32_t new_value)` function:
+```
+my_vuMeter.set_value(123); // Max is 255
+```
 
 ## Access radio hardware
 
