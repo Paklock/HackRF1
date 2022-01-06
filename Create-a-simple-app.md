@@ -166,11 +166,11 @@ Labels my_label_widget{
 
 For example, let's say you want a label called `my_label`. Because the constructor is looking for  list you'll need to add a set of brackets `{}` around each label.  You will need to add this to `apps/ui_newapp.hpp`:
 ```
-Labels my_label(
+Labels my_label{
     {{10, 10},            // Coordinates are: int:x (px), int:y (px)
     "my_label_text:",     // Label text
     Color::light_grey()}, // Label color
-);
+};
 ```
 
 **Note:** Colors are defined in [`firmware/common/ui.hpp`](https://github.com/eried/portapack-mayhem/blob/next/firmware/common/ui.hpp).
