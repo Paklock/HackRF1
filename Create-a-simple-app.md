@@ -221,7 +221,7 @@ my_liveDateTime.set_seconds_enabled(true);
 ```
 #### BigFrequency
 
-BigFrequency is similar to the NumberField widget however it's built specifically for inputting a radio frequency. Here you can find it's declaration and prototype:
+BigFrequency is used for displaying a radio frequency. Here you can find it's declaration and prototype:
 ```
 Labels my_bigFrequency_widget{
     Rect parent_rect, 
@@ -554,7 +554,69 @@ NewAppView::NewAppView(NavigationView &nav) {
 
 #### Waveform
 
+Waveforms are used to display a sign wave from a signal source. **Note:** The X axes represents time while the Y axes represents amplitude. Here you can find it's declaration and prototype:
+```
+Labels my_waveform_widget{
+    Rect parent_rect,
+    int16_t * data,
+    uint32_t length,
+    int32_t offset,
+    bool digital,
+    Color color
+};
+```
+
+For example, let's say you want a Waveform called `my_waveform`. You will need to add this to `apps/ui_newapp.hpp`:
+```
+Waveform my_waveform(
+    {0, 5*16, 240, 64},  // Coordinates are: int:x (px), int:y (px), int:width (px), int:height (px)
+    waveform_buffer,     // RX data
+    128,                 // Length, how many elements in the waveform_buffer array
+    0,                   // Offset
+    false,               // Digital
+    Color::white()       // Sine wave color
+);
+```
+**Note:** Colors are defined in [`firmware/common/ui.hpp`](https://github.com/eried/portapack-mayhem/blob/next/firmware/common/ui.hpp).
+
+
+The data being displayed by `my_waveform` needs to be a `int16_t` array. You can declare this variable in `apps/ui_newapp.hpp`:
+```
+class NewAppView : public View
+{
+    public:
+
+        ...
+
+    private:
+        int16_t waveform_buffer[128];  // Data for Waveform
+
+        ...
+
+};
+```
+
+
+In `apps/ui_newapp.cpp` you'll need to add the `my_waveform` pointer to add_child() or add_children():
+```
+NewAppView::NewAppView(NavigationView &nav) {
+
+    // Widget pointers
+    add_children({
+        &my_waveform,
+    });
+
+}
+```
+
+If your input data has a variable length you can use the `set_length(const uint32_t new_length)` function to update the Waveform:
+```
+my_waveform.set_length(9001) // THAT'S OVER 18KB!!
+```
+
 #### VuMeter
+
+
 
 ## Access radio hardware
 
