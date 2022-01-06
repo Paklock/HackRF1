@@ -710,8 +710,8 @@ namespace ui
         };
 
         LiveDateTime timestamp {
-		    {6*8, 22*8, 19*8, 20 }          // Coordinates and Dimensions
-	    };
+	    {6*8, 22*8, 19*8, 20 }          // Coordinates and Dimensions
+	};
 
         Labels label_progress {
             {{8*8, 33*8},                  // Coordinates are: int:x(px), int:y(px)
