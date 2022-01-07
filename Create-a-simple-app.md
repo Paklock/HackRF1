@@ -628,7 +628,7 @@ Labels my_vuMeter_widget{
 For example, let's say you want a VuMeter called `my_vuMeter`. You will need to add this to `apps/ui_newapp.hpp`:
 ```
 VuMeter my_vuMeter(
-    { 0*8, 1*8, 2*8, 33*},  // Coordinates are: int:x (px), int:y (px), int:width (px), int:height (px)
+    { 0*8, 1*8, 2*8, 33*8},  // Coordinates are: int:x (px), int:y (px), int:width (px), int:height (px)
     12,                     // LEDs
     true                    // Show max
 );
