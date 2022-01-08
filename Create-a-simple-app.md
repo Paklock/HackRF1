@@ -19,14 +19,14 @@ The following structure is the base of any application. Following the general st
 
     namespace ui
     {
-        class NewAppView : public View
+        class NewAppView : public View                                // App class declaration
         {
         public:
-            NewAppView(NavigationView &nav);
-            std::string title() const override { return "New App"; };
+            NewAppView(NavigationView &nav);                          // App class init function declaration
+            std::string title() const override { return "New App"; }; // App title
 
         private:
-            void update();
+            void update();                                            // Function declaration
             MessageHandlerRegistration message_handler_update{
                 Message::ID::DisplayFrameSync,
                 [this](const Message *const) {
@@ -45,8 +45,10 @@ The following structure is the base of any application. Following the general st
 
     namespace ui
     {
-        NewAppView::NewAppView(NavigationView &nav)
+
+        NewAppView::NewAppView(NavigationView &nav) // Application Main
         {
+             // App code
         }
 
         void NewAppView::update()
@@ -675,21 +677,21 @@ Bellow is an example "Hello World" application that shows off a few widgets and 
 
 namespace ui
 {
-    class NewAppView : public View
+    class NewAppView : public View                          // App class declaration
     {
     public:
 
     	void focus() override;
 
-        NewAppView(NavigationView &nav);
+        NewAppView(NavigationView &nav);                   // App class init function declaration
         std::string title() const override { 
-            return "New App";                 // App Title
+            return "New App";                              // App Title
         };
 
     private:
 
-        void update();
-        MessageHandlerRegistration message_handler_update{
+        void update();                                     // Function declaration
+        MessageHandlerRegistration message_handler_update{ 
             Message::ID::DisplayFrameSync,
             [this](const Message *const) {
                 this->update();
