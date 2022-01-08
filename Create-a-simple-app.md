@@ -46,14 +46,12 @@ The following structure is the base of any application. Following the general st
     namespace ui
     {
 
-        // Application Main
         NewAppView::NewAppView(NavigationView &nav) // Application Main
         {
              // App code
         }
 
-        // Every time you get a DisplayFrameSync message this function will be ran
-        void NewAppView::update()
+        void NewAppView::update()                   // Every time you get a DisplayFrameSync message this function will be ran
         {
              // Message code
         }
@@ -684,6 +682,7 @@ namespace ui
     {
     public:
 
+        // Public declarations
     	void focus() override;                              // ui::View function override
 
         NewAppView(NavigationView &nav);                    // App class init function declaration
@@ -693,6 +692,7 @@ namespace ui
 
     private:
 
+        // Private declarations
         void update();                                      // Function declaration
         MessageHandlerRegistration message_handler_update{  // Example, not required: MessageHandlerRegistration class
             Message::ID::DisplayFrameSync,                  // relays machine states to your app code. Every time you 
@@ -705,10 +705,11 @@ namespace ui
         uint32_t progress = 0; 
 
         // Widgets
-        // Usable screen space is 240x304px
+        // Note: Usable screen space is 240x304px
         // Note: Each char takes up 8x8px so you can multiply 
         //       the amount of spaces and rows you want by 8.
         //       This gives you 30x38 char
+
         Button button_helloWorld{
             {70, 128, 100, 24},            // Coordinates are: int:x (px), int:y (px), int:width (px), int:height (px)
             "Hello World!"                 // Title
@@ -751,17 +752,15 @@ using namespace portapack;
 
 namespace ui
 {
-    // Default selection to button_helloWorld when app starts
-    void NewAppView::focus() {
+
+    void NewAppView::focus() {                               // Default selection to button_helloWorld when app starts
 	    button_helloWorld.focus();
     }
 
-    // Application Main 
-    NewAppView::NewAppView(NavigationView &nav)
+    NewAppView::NewAppView(NavigationView &nav)              // Application Main 
     {
      
-        // Add pointers for widgets
-        add_children({
+        add_children({                                       // Add pointers for widgets
             &button_helloWorld,
             &label_progress,
             &numberField_progress,
@@ -769,31 +768,26 @@ namespace ui
             &timestamp,
         });
 
-        // Set max for progress bar
-        progressBar_progress.set_max(PROGRESS_MAX);
+        progressBar_progress.set_max(PROGRESS_MAX);          // Set max for progress bar
 
-        // Button Logic
-        button_helloWorld.on_select = [this](Button &){
+        button_helloWorld.on_select = [this](Button &){      // Button logic
             if(progress < 100) { 
-                numberField_progress.set_value(100);   // Because numberField_progress has an on_change function,
-            } else {                                   // progressBar_progress will update automatically.
+                numberField_progress.set_value(100);         // Because numberField_progress has an on_change function,
+            } else {                                         // progressBar_progress will update automatically.
                 numberField_progress.set_value(0);
             }
         };                                                  
 
-        // When NumberField is changed
-        numberField_progress.on_change = [this](int32_t v) {
+        numberField_progress.on_change = [this](int32_t v) { // When NumberField is changed
             progress = v;
             progressBar_progress.set_value(progress);
         };
 
-        // DateTime enable seconds
-        timestamp.set_seconds_enabled(true);
+        timestamp.set_seconds_enabled(true);                 // DateTime enable seconds
     }
 
-    // Every time you get a DisplayFrameSync message this function will be ran
-    void NewAppView::update()
-    {
+    void NewAppView::update()                                // Every time you get a DisplayFrameSync message this
+    {                                                        // function will be ran.
          // Message code
     }
 }
