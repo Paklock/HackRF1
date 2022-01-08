@@ -8,7 +8,7 @@ There is a lot of flexibility, but for now we are going to follow patterns alrea
 
 ## Application code
 
-The following structure is the base of any application. Following the general structure, this files in this example will be created on `\firmware\application\apps\`
+The following structure is the base of any application. Following the general structure, this files in this example will be created on `firmware\application\apps\`
 
 ### ui_newapp.hpp
 
@@ -656,7 +656,68 @@ my_vuMeter.set_value(123); // Max is 255
 
 ## Access radio hardware
 
+Accessing the HackRF's radio hardware has been simplified with helper classes such as the [`TransmitterModel`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/transmitter_model.cpp) and [`ReceiverModel`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/receiver_model.cpp). Both of these classes interface with lower level functions and gives us a more piratical way to control the radio.
+
+Data being transmitted and received from the HackRF have their own set of helper classes and structs shuch as [`baseband`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/baseband_api.cpp) and [`SharedMemory`](https://github.com/eried/portapack-mayhem/blob/next/firmware/common/portapack_shared_memory.hpp). Classes found in `firmware/application/protocols/` like [`encoders`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/protocols/encoders.cpp) for example can also handle data being transmitted and received from the radio.       
+
+There are also predefined TX and RX based widgets in found in [`firmware/application/ui/ui_transmitter.cpp`](https://github.com/eried/portapack-mayhem/blob/f161e85f960cff0c166173f4f7a4244b8c625375/firmware/application/ui/ui_transmitter.cpp) and [`firmware/application/ui/ui_receiver.cpp`](https://github.com/eried/portapack-mayhem/blob/f161e85f960cff0c166173f4f7a4244b8c625375/firmware/application/ui/ui_receiver.cpp). 
+
 ### TX
+
+#### ui_newapp.hpp
+
+    ....
+
+    // Include TransmitterModel
+    #include "transmitter_model.hpp"
+
+    namespace ui
+    {
+        class NewAppView : public View                                // App class declaration
+        {
+        public:
+
+            ....
+
+        private:
+
+            ....
+
+            void start_tx();                                                             // Function declarations
+            void stop_tx();
+            void on_tx_progress(const uint32_t progress, const bool done); 
+
+            MessageHandlerRegistration message_handler_tx_progress {                     // MessageHandlerRegistration class which relays 
+                Message::ID::TXProgress,                                                 // Message::ID::TXProgress machine states. The 
+                [this](const Message* const p) {                                         // Ternary Operator passes an uint32_t progress  
+                    const auto message = *reinterpret_cast<const TXProgressMessage*>(p); // value and a bool stating if TX progress has 
+                    this->on_tx_progress(message.progress, message.done);                // be complete.
+		}};
+
+        };
+    } 
+
+#### ui_newapp.cpp
+
+    #include "ui_newapp.hpp"
+    #include "portapack.hpp"
+    #include <cstring>
+
+    using namespace portapack;
+
+    namespace ui
+    {
+
+        NewAppView::NewAppView(NavigationView &nav) // Application Main
+        {
+             // App code
+        }
+
+        void NewAppView::on_tx_progress(progress, done)       
+        {
+             // Message code
+        }
+    }
 
 ### RX
 
