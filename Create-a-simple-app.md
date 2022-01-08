@@ -713,7 +713,7 @@ There are also predefined TX and RX based widgets in found in [`firmware/applica
              // App code
         }
 
-        void NewAppView::on_tx_progress(progress, done)       
+        void NewAppView::on_tx_progress(const uint32_t progress, const bool done)       
         {
              // Message code
         }
