@@ -660,7 +660,7 @@ Accessing the HackRF's radio hardware has been simplified with helper classes su
 
 Data being transmitted and received from the HackRF have their own set of helper classes and structs shuch as [`baseband`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/baseband_api.cpp) and [`SharedMemory`](https://github.com/eried/portapack-mayhem/blob/next/firmware/common/portapack_shared_memory.hpp). Classes found in `firmware/application/protocols/` like [`encoders`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/protocols/encoders.cpp) for example can also handle data being transmitted and received from the radio.       
 
-There are also predefined TX and RX based widgets in found in [`firmware/application/ui/ui_transmitter.cpp`](https://github.com/eried/portapack-mayhem/blob/f161e85f960cff0c166173f4f7a4244b8c625375/firmware/application/ui/ui_transmitter.cpp) and [`firmware/application/ui/ui_receiver.cpp`](https://github.com/eried/portapack-mayhem/blob/f161e85f960cff0c166173f4f7a4244b8c625375/firmware/application/ui/ui_receiver.cpp). 
+There are also predefined TX and RX based widgets and functions in found in [`firmware/application/ui/ui_transmitter.cpp`](https://github.com/eried/portapack-mayhem/blob/f161e85f960cff0c166173f4f7a4244b8c625375/firmware/application/ui/ui_transmitter.cpp) and [`firmware/application/ui/ui_receiver.cpp`](https://github.com/eried/portapack-mayhem/blob/f161e85f960cff0c166173f4f7a4244b8c625375/firmware/application/ui/ui_receiver.cpp). 
 
 ### TX
 
