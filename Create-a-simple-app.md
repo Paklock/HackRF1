@@ -664,6 +664,8 @@ There are also predefined TX and RX based widgets in found in [`firmware/applica
 
 ### TX
 
+The code bellow is an example OOK TX application using [`TransmitterModel`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/transmitter_model.cpp), [`encoders`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/protocols/encoders.cpp), and [`baseband`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/baseband_api.cpp).  To prevent code duplication the functions below can be found in [`firmware/application/ui/ui_transmitter.cpp`](https://github.com/eried/portapack-mayhem/blob/f161e85f960cff0c166173f4f7a4244b8c625375/firmware/application/ui/ui_transmitter.cpp) but this is here to show the TX flow more clearly. 
+
 #### ui_newapp.hpp
 
     ....
@@ -673,7 +675,7 @@ There are also predefined TX and RX based widgets in found in [`firmware/applica
 
     namespace ui
     {
-        class NewAppView : public View                                // App class declaration
+        class NewAppView : public View                                                   // App class declaration
         {
         public:
 
@@ -683,7 +685,7 @@ There are also predefined TX and RX based widgets in found in [`firmware/applica
 
             ....
 
-            void start_tx();                                                             // Function declarations
+            void start_tx(std::string& message);                                         // Function declarations
             void stop_tx();
             void on_tx_progress(const uint32_t progress, const bool done); 
 
@@ -699,23 +701,58 @@ There are also predefined TX and RX based widgets in found in [`firmware/applica
 
 #### ui_newapp.cpp
 
-    #include "ui_newapp.hpp"
-    #include "portapack.hpp"
-    #include <cstring>
+    ....
+
+    // Include encoders and baseband
+    #include "encoders.hpp"
+    #include "baseband_api.hpp"
 
     using namespace portapack;
 
     namespace ui
     {
-
-        NewAppView::NewAppView(NavigationView &nav) // Application Main
-        {
-             // App code
+         void NewAppView::start_tx(std::string& message)           // Message input as "101101"
+         {
+             size_t bitstream_length = make_bitstream(message);    // Function from encoders.hpp. Sets message to
+                                                                   // TX data pointer via... 	
+                                                                   // uint8_t * bitstream = shared_memory.bb_data.data; 
+                                                                   // on line 34 of encoders.cpp and returns length. 
+	
+             transmitter_model.set_tuning_frequency(433920000);    // Center frequency
+             transmitter_model.set_sampling_rate(OOK_SAMPLERATE);  // (2280000) Value from encoders.hpp
+             transmitter_model.set_rf_amp(true);                   // RF amp on
+             transmitter_model.set_baseband_bandwidth(1750000);    // Bandwidth
+             transmitter_model.enable();                           // Radio enable
+	
+             baseband::set_ook_data(                               // ASK/OOK TX function
+                 bitstream_length,                                 // Length of message
+                 OOK_SAMPLERATE / 1766,                            // Symble period (560us), Sample Rate / Baud 
+                 4,                                                // Repeat transmissions
+                 100                                               // Pause symbles
+             );
         }
 
-        void NewAppView::on_tx_progress(const uint32_t progress, const bool done)       
+        void NewAppView::stop_tx()                                 // Stop TX function
         {
-             // Message code
+            transmitter_model.disable();                           // Disable transmitter_model
+
+            // Add UI logic to let the user know the TX has stoped 
+        } 
+ 
+        NewAppView::NewAppView(NavigationView &nav)                // Application Main
+        {
+
+             ....
+             
+        }
+
+        void NewAppView::on_tx_progress(const uint32_t progress, const bool done)  // Function logic for when the message handler       
+        {                                                                          // sends a TXProgressMessage.
+             if(done) {
+                 stop_tx();
+             } else {
+                 // UI logic, update ProgressBar with progress var
+             }
         }
     }
 
