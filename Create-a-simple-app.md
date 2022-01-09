@@ -713,8 +713,8 @@ The code bellow is an example OOK TX application using [`TransmitterModel`](http
     {
          void NewAppView::start_tx(std::string& message)           // Message input as "101101"
          {
-             size_t bitstream_length = make_bitstream(message);    // Function from encoders.hpp. Sets message to
-                                                                   // TX data pointer via... 	
+             size_t bitstream_length = make_bitstream(message);    // Function from encoders.hpp. Encodes then 
+                                                                   // sets message to TX data pointer via... 	
                                                                    // uint8_t * bitstream = shared_memory.bb_data.data; 
                                                                    // on line 34 of encoders.cpp and returns length. 
 	
