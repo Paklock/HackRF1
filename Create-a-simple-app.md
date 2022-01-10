@@ -758,7 +758,7 @@ The code bellow is an example OOK TX application using [`TransmitterModel`](http
 
 ### RX
 
-## Dialogs
+// TODO 🙃
 
 # Wrap up
 
