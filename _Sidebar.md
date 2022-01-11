@@ -85,6 +85,7 @@
 * [Compile from source](Compile-firmware)
 * Description of the structure
    * [At first glance](At-first-glance)
+   * [Boot Process](Boot-Process)
    * [Firmware Architecture](Firmware-Architecture)
    * [Persistent Memory](Persistent-Memory)
 * Tools
