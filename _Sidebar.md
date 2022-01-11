@@ -88,6 +88,7 @@
    * [Boot Process](Boot-Process)
    * [Firmware Architecture](Firmware-Architecture)
    * [Persistent Memory](Persistent-Memory)
+   * [ChibiOS Notes](ChibiOS-Notes)
 * Tools
    * [make_airlines_db.py](Make-airlines-db)
    * [world_map.bin](World-map-generation)
