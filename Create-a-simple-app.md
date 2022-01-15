@@ -829,6 +829,7 @@ public:
         ....
 
     };
+}
 
     ....
 
@@ -870,10 +871,6 @@ class AFSKDataMessage : public Message {
         bool is_data;
         uint32_t value;
 };
-
-    ....
-
-}
 ```   
 
 
