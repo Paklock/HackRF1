@@ -781,7 +781,7 @@ set(MODE_CPPSRC
 DeclareTargets(PAFR afskrx)
 ``` 
 
-In `firmware/baseband`, process or "proc" code for the M4 processor like [`proc_afskrx.cpp`](https://github.com/eried/portapack-mayhem/blob/next/firmware/baseband/proc_afskrx.cpp) for example can be found here. These proc classes are ran by [`BasebandThread`](https://github.com/eried/portapack-mayhem/blob/next/firmware/baseband/baseband_thread.cpp) All proc classes inherent [`BasebandProcessor`](https://github.com/eried/portapack-mayhem/blob/next/firmware/baseband/baseband_processor.hpp) and must include the parent functions. 
+In `firmware/baseband`, process or "proc" code for the M4 processor like [`proc_afskrx.cpp`](https://github.com/eried/portapack-mayhem/blob/next/firmware/baseband/proc_afskrx.cpp) for example can be found here. These proc classes are ran by [`BasebandThread`].(https://github.com/eried/portapack-mayhem/blob/next/firmware/baseband/baseband_thread.cpp) All proc classes inherent [`BasebandProcessor`](https://github.com/eried/portapack-mayhem/blob/next/firmware/baseband/baseband_processor.hpp) and must include the parent functions. 
 
 #### baseband_processor.hpp
 ```
