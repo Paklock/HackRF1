@@ -658,7 +658,7 @@ my_vuMeter.set_value(123); // Max is 255
 
 Now we’re going to dive into something a little more complex and bring radios into the mix. If you’re not familiar with the LPC43xx please read up on the [Firmware Architecture](https://github.com/eried/portapack-mayhem/wiki/Firmware-Architecture) before continuing. 
 
-So far we’ve only been dealing with application code with is ran on the M0 of the LPC43xx. Now we’re going to start working with the baseband side of the codebase which is ran on the LPC43xx’s M4 processor. Both of these processors use 8k worth of shared memory at `0x1008_8000 0x1008_a000` to pass messages to and from each other. The M0 controls all operations of the portapack while the M4 handles radio functions.  
+So far we’ve only been dealing with application code with is ran on the M0 of the LPC43xx. Now we’re going to start working with the baseband side of the codebase which is ran on the LPC43xx’s M4 processor. Both of these processors use 8k worth of shared memory from `0x1008_8000` to `0x1008_a000` to pass messages to and from each other. The M0 controls all operations of the portapack while the M4 handles radio functions.  
 
 Accessing the HackRF's radio hardware has been simplified with helper classes such as the [`TransmitterModel`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/transmitter_model.cpp) and [`ReceiverModel`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/receiver_model.cpp). Both of these classes interface with lower level functions and gives us a more piratical way to control the radio.
 
