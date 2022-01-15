@@ -658,13 +658,12 @@ my_vuMeter.set_value(123); // Max is 255
 
 Now we’re going to dive into something a little more complex and bring radios into the mix. If you’re not familiar with the LPC43xx please read up on the [Firmware Architecture](https://github.com/eried/portapack-mayhem/wiki/Firmware-Architecture) before continuing. 
 
-So far we’ve only been dealing with application code with is ran on the M0 of the LPC43xx. Now we’re going to start working with the baseband side of the codebase which is ran on the LPC43xx’s M4 processor. Both of these processors use 8k worth of shared memory from `0x1008_8000` to `0x1008_a000` to pass messages to and from each other. The M0 controls all operations of the portapack while the M4 handles radio functions.  
+So far we’ve only been dealing with application code with is ran on the M0 of the LPC43xx. Now we’re going to start working with the baseband side of the codebase which is ran on the LPC43xx’s M4 processor. Both of these processors use 8k worth of shared memory from `0x1008_8000` to `0x1008_a000` to pass messages to and from each other. The M0 controls **ALL** operations of the portapack while the M4 mostly handles the DSP and radio functions.  
 
-Accessing the HackRF's radio hardware has been simplified with helper classes such as the [`TransmitterModel`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/transmitter_model.cpp) and [`ReceiverModel`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/receiver_model.cpp). Both of these classes interface with lower level functions and gives us a more piratical way to control the radio.
+Complexitys aside with the two processors, accessing the HackRF's radio hardware has been simplified with helper classes such as the [`TransmitterModel`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/transmitter_model.cpp) and [`ReceiverModel`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/receiver_model.cpp). Both of these classes interface with the M4 baseband processes and gives us a more piratical way to control the radio.
 
-Data being transmitted and received from the HackRF have their own set of helper classes and structs shuch as [`baseband`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/baseband_api.cpp) and [`SharedMemory`](https://github.com/eried/portapack-mayhem/blob/next/firmware/common/portapack_shared_memory.hpp). Classes found in `firmware/application/protocols/` like [`encoders`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/protocols/encoders.cpp) for example can also handle data being transmitted and received from the radio.       
+Other classes and structs such as [`baseband api`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/baseband_api.cpp) and [`SharedMemory`](https://github.com/eried/portapack-mayhem/blob/next/firmware/common/portapack_shared_memory.hpp) also bridge the gap between the M0 and M4. Even though the M4's primary responsability is to handle DSP with the radio hardware the M0 can still be used to decode data. For example, classes found in `firmware/application/protocols/` like [`encoders`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/protocols/encoders.cpp) still send data too and from the two processors but also encodes and decodes messages at the higher level protocols. 
 
-There are also predefined TX and RX based widgets and functions in found in [`firmware/application/ui/ui_transmitter.cpp`](https://github.com/eried/portapack-mayhem/blob/f161e85f960cff0c166173f4f7a4244b8c625375/firmware/application/ui/ui_transmitter.cpp) and [`firmware/application/ui/ui_receiver.cpp`](https://github.com/eried/portapack-mayhem/blob/f161e85f960cff0c166173f4f7a4244b8c625375/firmware/application/ui/ui_receiver.cpp). 
 
 ### TX
 
@@ -715,37 +714,39 @@ The code bellow is an example OOK TX application using [`TransmitterModel`](http
 
     namespace ui
     {
-         void NewAppView::start_tx(std::string& message)           // Message input as "101101"
+         void NewAppView::start_tx(std::string& message)              // Message input as "101101"
          {
-             size_t bitstream_length = make_bitstream(message);    // Function from encoders.hpp. Encodes then 
-                                                                   // sets message to TX data pointer via... 	
-                                                                   // uint8_t * bitstream = shared_memory.bb_data.data; 
-                                                                   // on line 34 of encoders.cpp and returns length. 
+             size_t bitstream_length = make_bitstream(message);       // Function from encoders.hpp. Encodes then 
+                                                                      // sets message to TX data pointer via... 	
+                                                                      // uint8_t * bitstream = shared_memory.bb_data.data; 
+                                                                      // on line 34 of encoders.cpp and returns length. 
 	
-             transmitter_model.set_tuning_frequency(433920000);    // Center frequency
-             transmitter_model.set_sampling_rate(OOK_SAMPLERATE);  // (2280000) Value from encoders.hpp
-             transmitter_model.set_rf_amp(true);                   // RF amp on
-             transmitter_model.set_baseband_bandwidth(1750000);    // Bandwidth
-             transmitter_model.enable();                           // Radio enable
+             transmitter_model.set_tuning_frequency(433920000);       // Center frequency
+             transmitter_model.set_sampling_rate(OOK_SAMPLERATE);     // (2280000) Value from encoders.hpp
+             transmitter_model.set_rf_amp(true);                      // RF amp on
+             transmitter_model.set_baseband_bandwidth(1750000);       // Bandwidth
+             transmitter_model.enable();                              // Radio enable
 	
-             baseband::set_ook_data(                               // ASK/OOK TX function
-                 bitstream_length,                                 // Length of message
-                 OOK_SAMPLERATE / 1766,                            // Symble period (560us), Sample Rate / Baud 
-                 4,                                                // Repeat transmissions
-                 100                                               // Pause symbles
+             baseband::set_ook_data(                                  // ASK/OOK TX function
+                 bitstream_length,                                    // Length of message
+                 OOK_SAMPLERATE / 1766,                               // Symble period (560us), Sample Rate / Baud 
+                 4,                                                   // Repeat transmissions
+                 100                                                  // Pause symbles
              );
         }
 
-        void NewAppView::stop_tx()                                 // Stop TX function
+        void NewAppView::stop_tx()                                    // Stop TX function
         {
-            transmitter_model.disable();                           // Disable transmitter_model
+            transmitter_model.disable();                              // Disable transmitter_model
 
             // Add UI logic to let the user know the TX has stoped 
         } 
  
-        NewAppView::NewAppView(NavigationView &nav)                // Application Main
+        NewAppView::NewAppView(NavigationView &nav)                   // Application Main
         {
-
+            baseband::run_image(portapack::spi_flash::image_tag_ook); // M4 processor is being told to run proc_ook.cpp
+                                                                      // found in the firmware/baseband/ folder. M4 is 
+                                                                      // then reset after this command.
              ....
              
         }
@@ -763,6 +764,100 @@ The code bellow is an example OOK TX application using [`TransmitterModel`](http
 ### RX
 
 // TODO 🙃
+
+Building from the example code for TX lets talk about how the baseband processes are started on the M4. The application code on the M0 uses the baseband api `baseband::run_image` to tell the M4 to run a process. The baseband images are defined in [`spi_image.hpp`](https://github.com/eried/portapack-mayhem/blob/next/firmware/common/spi_image.hpp) as the struct `image_tag_t`. These structs and have a 4 char array tag being used as an ID. Below is an example `image_tag_t` for AFSK RX.
+
+```
+constexpr image_tag_t image_tag_afsk_rx { 'P', 'A', 'F', 'R' };
+```
+
+Under  [`firmware/baseband/CMakeLists.txt`](https://github.com/eried/portapack-mayhem/blob/next/firmware/baseband/CMakeLists.txt) the following code snippet shows how the baseband processes are linked to the images defined in [`spi_image.hpp`](https://github.com/eried/portapack-mayhem/blob/next/firmware/common/spi_image.hpp).
+
+```
+### AFSK RX
+set(MODE_CPPSRC
+    proc_afskrx.cpp
+)
+DeclareTargets(PAFR afskrx)
+``` 
+
+In `firmware/baseband`, process or "proc" code for the M4 processor like [`proc_afskrx.cpp`](https://github.com/eried/portapack-mayhem/blob/next/firmware/baseband/proc_afskrx.cpp) for example can be found here. These proc classes are ran by [`BasebandThread`](https://github.com/eried/portapack-mayhem/blob/next/firmware/baseband/baseband_thread.cpp) All proc classes inherent [`BasebandProcessor`](https://github.com/eried/portapack-mayhem/blob/next/firmware/baseband/baseband_processor.hpp) and must include the parent functions. 
+
+#### baseband_processor.hpp
+```
+#ifndef __BASEBAND_PROCESSOR_H__
+#define __BASEBAND_PROCESSOR_H__
+
+#include "dsp_types.hpp"
+#include "channel_stats_collector.hpp"
+#include "message.hpp"
+
+class BasebandProcessor {
+public:
+    virtual ~BasebandProcessor() = default;               // Constructor 
+
+    virtual void execute(const buffer_c8_t& buffer) = 0;  // DSP code for TX/RX, shared_memory messages can be sent to
+                                                          // M0 application code from this function.
+
+    virtual void on_message(const Message* const) { };    // Shared_memory messages from M0 application code
+
+protected:
+    void feed_channel_stats(const buffer_c16_t& channel);
+
+private:
+    ChannelStatsCollector channel_stats { };
+};
+```
+
+Now that we have a better idea how M0 can drive the M4 lets talk about the Messaging between the two processors. The [`Message`](https://github.com/eried/portapack-mayhem/blob/next/firmware/common/message.hpp) class found under `firmware/common/`. Common code is used both by application (M0) and baseband (M4). Within the same file `firmware/commen/message.hpp` you can find definitions for spacific message classes and ID. Bellow is an example message class for AFSK RX. 
+
+
+#### message.hpp
+```
+class Message {
+public:
+    static constexpr size_t MAX_SIZE = 512;
+
+    enum class ID : uint32_t {
+        /* Assign consecutive IDs. IDs are used to index array. */
+
+        ....
+
+        AFSKRxConfigure = 22,
+
+        ....
+
+    };
+
+    ....
+
+class AFSKRxConfigureMessage : public Message {
+    public:
+        constexpr AFSKRxConfigureMessage(
+            const uint32_t baudrate,
+            const uint32_t word_length,
+            const uint32_t trigger_value,
+            const bool trigger_word
+        ) : Message { ID::AFSKRxConfigure },
+            baudrate(baudrate),
+            word_length(word_length),
+            trigger_value(trigger_value),
+            trigger_word(trigger_word)
+        {
+        }
+	
+        const uint32_t baudrate;
+        const uint32_t word_length;
+        const uint32_t trigger_value;
+        const bool trigger_word;
+    };
+
+    ....
+
+}
+```   
+
+
 
 # Wrap up
 
