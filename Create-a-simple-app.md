@@ -824,6 +824,7 @@ public:
         ....
 
         AFSKRxConfigure = 22,
+	AFSKData = 47,
 
         ....
 
@@ -831,6 +832,7 @@ public:
 
     ....
 
+// Application Messages (M0) -> Baseband (M4)
 class AFSKRxConfigureMessage : public Message {
     public:
         constexpr AFSKRxConfigureMessage(
@@ -851,6 +853,23 @@ class AFSKRxConfigureMessage : public Message {
         const uint32_t trigger_value;
         const bool trigger_word;
     };
+
+
+// Baseband Messages (M4) -> Application (M0)
+class AFSKDataMessage : public Message {
+    public:
+        constexpr AFSKDataMessage(
+            const bool is_data,
+            const uint32_t value
+        ) : Message { ID::AFSKData },
+            is_data { is_data },
+            value { value }
+        {
+        }
+	
+        bool is_data;
+        uint32_t value;
+};
 
     ....
 
