@@ -809,7 +809,7 @@ private:
 };
 ```
 
-Now that we have a better idea how M0 can drive the M4 lets talk about the Messaging between the two processors. The [`Message`](https://github.com/eried/portapack-mayhem/blob/next/firmware/common/message.hpp) class found under `firmware/common/`. Common code is used both by application (M0) and baseband (M4). Within the same file `firmware/commen/message.hpp` you can find definitions for spacific message classes and ID. Bellow is an example message class for AFSK RX. 
+Now that we have a better idea how M0 can drive the M4 lets talk about the Messaging between the two processors. The [`Message`](https://github.com/eried/portapack-mayhem/blob/next/firmware/common/message.hpp) class found under `firmware/common/`. Common code is used both by application (M0) and baseband (M4). Messages are handled by EventDispatcher found in [`event_m4.cpp`](https://github.com/eried/portapack-mayhem/blob/next/firmware/baseband/event_m4.cpp) for the baseband code and [`event_m0.cpp`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/event_m0.cpp) for the application code. Within the same file `firmware/commen/message.hpp` you can find definitions for spacific message classes and ID. Bellow is an example message class for AFSK RX. 
 
 
 #### message.hpp
@@ -873,7 +873,22 @@ class AFSKDataMessage : public Message {
 };
 ```   
 
+[`SharedMemory`](https://github.com/eried/portapack-mayhem/blob/next/firmware/common/portapack_shared_memory.hpp) found in `firmware/common/` is used to pass data inbetween the application code (M0) to the baseband code (M4). Below is an example from [`proc_afskrx.cpp`](https://github.com/eried/portapack-mayhem/blob/next/firmware/baseband/proc_afskrx.cpp) on how data is sent back to the application [`AFSKRxView`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/apps/ui_afsk_rx.cpp). 
 
+#### proc_afskrx.cpp
+```
+#include "portapack_shared_memory.hpp"
+
+void AFSKRxProcessor::execute(const buffer_c8_t& buffer) {
+
+    ....                                                 // RX Logic
+
+    shared_memory.application_queue.push(data_message);  // data_message is an AFSKDataMessage object
+
+    ....                                                 // MORE RX Logic
+
+};
+```
 
 # Wrap up
 
