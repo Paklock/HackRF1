@@ -668,7 +668,7 @@ There are also predefined TX and RX based widgets and functions in found in [`fi
 
 ### TX
 
-The code bellow is an example OOK TX application using [`TransmitterModel`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/transmitter_model.cpp), [`encoders`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/protocols/encoders.cpp), and [`baseband`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/baseband_api.cpp).  To prevent code duplication the functions below can be found in [`firmware/application/ui/ui_transmitter.cpp`](https://github.com/eried/portapack-mayhem/blob/f161e85f960cff0c166173f4f7a4244b8c625375/firmware/application/ui/ui_transmitter.cpp) but this is here to show the TX flow more clearly. 
+The code bellow is an example OOK TX application using [`TransmitterModel`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/transmitter_model.cpp), [`encoders`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/protocols/encoders.cpp), and [`baseband`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/baseband_api.cpp). 
 
 #### ui_newapp.hpp
 
