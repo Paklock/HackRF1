@@ -808,7 +808,7 @@ private:
 };
 ```
 
-Now that we have a better idea how M0 can drive the M4 lets talk about the Messaging between the two processors. The [`Message`](https://github.com/eried/portapack-mayhem/blob/next/firmware/common/message.hpp) class found under `firmware/common/`. Common code is used both by application (M0) and baseband (M4). Messages are handled by EventDispatcher found in [`event_m4.cpp`](https://github.com/eried/portapack-mayhem/blob/next/firmware/baseband/event_m4.cpp) for the baseband code and [`event_m0.cpp`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/event_m0.cpp) for the application code. Within the same file `firmware/commen/message.hpp` you can find definitions for spacific message classes and ID. Bellow is an example message class for AFSK RX. 
+Now that we have a better idea how M0 can drive the M4 lets talk about the Messaging between the two processors. The [`Message`](https://github.com/eried/portapack-mayhem/blob/next/firmware/common/message.hpp) class found under `firmware/common/`. Common code is used both by application (M0) and baseband (M4). Messages are handled by EventDispatcher found in [`event_m4.cpp`](https://github.com/eried/portapack-mayhem/blob/next/firmware/baseband/event_m4.cpp) for the baseband code and [`event_m0.cpp`](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/event_m0.cpp) for the application code. Within the same file [`firmware/commen/message.hpp`](https://github.com/eried/portapack-mayhem/blob/next/firmware/common/message.hpp) you can find definitions for spacific message classes and ID. Bellow is an example message class for AFSK RX. 
 
 
 #### message.hpp
