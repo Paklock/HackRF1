@@ -28,7 +28,7 @@ The following structure is the base of any application. Following the general st
         private:
             void update();                                            // Function declaration
             MessageHandlerRegistration message_handler_update{        // Example, not required: MessageHandlerRegistration class
-                Message::ID::DisplayFrameSync,                        // relays machine states to your app code. Every time you 
+                Message::ID::DisplayFrameSync,                        // relays messages to your app code from baseband. Every time you 
                 [this](const Message *const) {                        // get a  DisplayFrameSync message the update() function will
                     this->update();                                   // be triggered.  
                 }};
@@ -693,10 +693,10 @@ The code bellow is an example OOK TX application using [`TransmitterModel`](http
             void on_tx_progress(const uint32_t progress, const bool done); 
 
             MessageHandlerRegistration message_handler_tx_progress {                     // MessageHandlerRegistration class which relays 
-                Message::ID::TXProgress,                                                 // Message::ID::TXProgress machine states. The 
-                [this](const Message* const p) {                                         // Ternary Operator passes an uint32_t progress  
-                    const auto message = *reinterpret_cast<const TXProgressMessage*>(p); // value and a bool stating if TX progress has 
-                    this->on_tx_progress(message.progress, message.done);                // be complete.
+                Message::ID::TXProgress,                                                 // Message::ID::TXProgress messages to your app 
+                [this](const Message* const p) {                                         // code from baseband. The Ternary Operator passes   
+                    const auto message = *reinterpret_cast<const TXProgressMessage*>(p); // an uint32_t progressvalue and a bool stating if  
+                    this->on_tx_progress(message.progress, message.done);                // TX progress has be complete.
 		}};
 
         };
@@ -721,7 +721,7 @@ The code bellow is an example OOK TX application using [`TransmitterModel`](http
                                                                       // uint8_t * bitstream = shared_memory.bb_data.data; 
                                                                       // on line 34 of encoders.cpp and returns length. 
 	
-             transmitter_model.set_tuning_frequency(433920000);       // Center frequency
+             transmitter_model.set_tuning_frequency(433920000);       // Center frequency in hz
              transmitter_model.set_sampling_rate(OOK_SAMPLERATE);     // (2280000) Value from encoders.hpp
              transmitter_model.set_rf_amp(true);                      // RF amp on
              transmitter_model.set_baseband_bandwidth(1750000);       // Bandwidth
@@ -747,7 +747,8 @@ The code bellow is an example OOK TX application using [`TransmitterModel`](http
             baseband::run_image(portapack::spi_flash::image_tag_ook); // M4 processor is being told to run proc_ook.cpp
                                                                       // found in the firmware/baseband/ folder. M4 is 
                                                                       // then reset after this command.
-             ....
+             // UI widget logic and calls to
+             // start_tx() goes here.
              
         }
 
@@ -762,8 +763,6 @@ The code bellow is an example OOK TX application using [`TransmitterModel`](http
     }
 
 ### RX
-
-// TODO 🙃
 
 Building from the example code for TX lets talk about how the baseband processes are started on the M4. The application code on the M0 uses the baseband api `baseband::run_image` to tell the M4 to run a process. The baseband images are defined in [`spi_image.hpp`](https://github.com/eried/portapack-mayhem/blob/next/firmware/common/spi_image.hpp) as the struct `image_tag_t`. These structs and have a 4 char array tag being used as an ID. Below is an example `image_tag_t` for AFSK RX.
 
@@ -889,6 +888,105 @@ void AFSKRxProcessor::execute(const buffer_c8_t& buffer) {
 
 };
 ```
+
+Continuing to use the same AFSK RX proc code above, below is an example of an RX AFSK application.
+
+
+#### ui_newapp.hpp
+
+    ....
+
+    // Include ReceiverModel
+    #include "receiver_model.hpp"
+
+    namespace ui
+    {
+        class NewAppView : public View                                            // App class declaration
+        {
+        public:
+
+            ....
+
+        private:
+
+            ....
+
+            void start_rx();                                                      // Function declarations
+            void stop_rx();
+            void on_data();                   
+            MessageHandlerRegistration message_handler_packet {                   // MessageHandlerRegistration class which relays
+                Message::ID::AFSKData,                                            // relays messages to your app code from baseband.
+                [this](Message* const p) {                                        // Every time you get a AFSKData message the
+                    const auto message = static_cast<const AFSKDataMessage*>(p);  // on_data() function will be triggered. 
+                    this->on_data(message->value, message->is_data);
+            }};
+
+        };
+    } 
+
+#### ui_newapp.cpp
+
+    ....
+
+    #include "modems.hpp"
+    #include "audio.hpp"
+    #include "string_format.hpp"
+    #include "baseband_api.hpp"
+    #include "portapack_persistent_memory.hpp"
+
+    using namespace portapack;
+    using namespace modems;
+
+    namespace ui
+    {
+        void NewAppView::start_rx()                                                // Start RX function
+        {
+            auto def_bell202 = &modem_defs[0];                                     // Bell202 baud rate
+            persistent_memory::set_modem_baudrate(def_bell202->baudrate);          // Set RX modem to 1200 baud
+
+            serial_format_t serial_format;                                         // Declare packet format for message
+            serial_format.data_bits = 7;                                           // Bit length
+            serial_format.parity = EVEN;                                           // Even or odd parity bit
+            serial_format.stop_bits = 1;                                           // Stop bit
+            serial_format.bit_order = LSB_FIRST;                                   // LSB or MSB first
+            persistent_memory::set_serial_format(serial_format);                   // Set RX packet format
+
+            baseband::set_afsk(persistent_memory::modem_baudrate(), 8, 0, false);  // Baud rate, word length, trigger value, trigger word
+
+            receiver_model.set_tuning_frequency(433920000);                        // Center frequency in hz
+            receiver_model.set_sampling_rate(3072000);                             // Sampling rate
+            receiver_model.set_baseband_bandwidth(1750000);                        // Bandwidth
+            receiver_model.set_modulation(ReceiverModel::Mode::NarrowbandFMAudio); // Modulation
+            receiver_model.enable();                                               // Start RX
+
+            audio::set_rate(audio::Rate::Hz_24000);                                // Play RX audio to headphone jack
+            audio::output::start();
+        }
+
+        void NewAppView::stop_rx()                                                 // Stop RX function
+        {
+            audio::output::stop();                                                 // Stop Audio
+            receiver_model.disable();                                              // Stop RX
+            baseband::shutdown();                                                  // Stop M4 proc process
+        } 
+ 
+        NewAppView::NewAppView(NavigationView &nav)                       // Application Main
+        {
+            baseband::run_image(portapack::spi_flash::image_tag_afsk_rx); // M4 processor is being told to run proc_afskrx.cpp
+                                                                          // found in the firmware/baseband/ folder. M4 is 
+                                                                          // then reset after this command.
+             // UI widget logic and calls to start_rx()
+             // and stop_rx() goes here.
+             
+        }
+
+        void NewAppView::on_data(uint32_t value, bool is_data)            // Function logic for when the message handler       
+        {                                                                 // sends a AFSKData.
+             if(is_data) {
+                // RX data handling Logic
+             }
+        }
+    }
 
 # Wrap up
 
