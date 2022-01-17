@@ -81,22 +81,23 @@
       * Buttons Test
     * HackRF
       * [Updating the CPLD](Updating-the-CPLD)
-## Developer manual
-* [Compile from source](Compile-firmware)
-* Description of the structure
-   * [At first glance](At-first-glance)
+## Developer Manual
+* [Compile From Source](Compile-firmware)
+* Description of the Structure
+   * [At First Glance](At-first-glance)
    * [Boot Process](Boot-Process)
    * [Firmware Architecture](Firmware-Architecture)
    * [Persistent Memory](Persistent-Memory)
    * [ChibiOS Notes](ChibiOS-Notes)
+* Software Dev Guides
+   * [Create a Simple App](Create-a-simple-app)
+   * UI Widgets
+   * Access Radio Hardware 
+   * Create a Complex App
 * Tools
    * [make_airlines_db.py](Make-airlines-db)
    * [world_map.bin](World-map-generation)
    * [converter](Splash-and-other-images)
-* Example guides
-   * [Create a custom splash screen](Create-a-custom-splash-screen)
-   * [Create a simple app](Create-a-simple-app)
-   * Create a complex app
 * Research
    * [Dissecting the Temperature Logger](Dissecting-the-Temperature-logger)
    * [Differences between H1 and H2](Differences-Between-H1-and-H2-models)
