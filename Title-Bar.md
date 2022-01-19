@@ -14,7 +14,7 @@ The sections of Title Bar, along with functionality are (from left to right):
 |![CameraIcon](https://github.com/eried/portapack-mayhem/blob/master/firmware/graphics/icon_camera.png)    |Take [Screenshot](screenshots)  | Yes|
 |![MoonIcon](https://github.com/eried/portapack-mayhem/blob/master/firmware/graphics/icon_sleep.png)|Activate [Sleep Mode](sleep-mode)| Yes|
 |![BlastOffIcon](https://github.com/eried/portapack-mayhem/blob/master/firmware/graphics/icon_biast_off.png)|Activate/Deactivate DC Power on Antenna port| Yes |
-|![ExtClockOffIcon](https://github.com/eried/portapack-mayhem/blob/master/firmware/graphics/icon_clk_ext.png)|Indicate status of external clock|No|
+|![ExtClockOffIcon](https://github.com/eried/portapack-mayhem/blob/master/firmware/graphics/icon_clk_ext.png)|Indicate status of external clock| Yes |
 |![SDCardOKIcon](https://github.com/eried/portapack-mayhem/blob/master/firmware/graphics/sd_card_ok.png)|Indicate presence of SD Card|No|
 
 
