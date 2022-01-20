@@ -1,8 +1,6 @@
-This analog TV receiver supports PAL only.
+This analog TV receiver supports PAL only. This signal used to be widely adopted for television broadcasts.
 
-The signal used to be widely adopt to broadcast television. Nowadays, you will still find it on FPV drone.
-
-Due to hardware limitation, this app can only show black and white image.
+Due to hardware limitations, this app can only show black and white images.
 
 ## References:
 
