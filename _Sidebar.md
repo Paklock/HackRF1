@@ -92,8 +92,10 @@
 * Software Dev Guides
    * [Create a Simple App](Create-a-simple-app)
    * [Widgets](Widgets)
+   * SD Card
    * [Access Radio Hardware](Access-Radio-Hardware) 
    * Create a Complex App
+   * Debug via SWD
 * Tools
    * [make_airlines_db.py](Make-airlines-db)
    * [world_map.bin](World-map-generation)
