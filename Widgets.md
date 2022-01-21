@@ -22,7 +22,7 @@ add_children({
 ## Available widgets
 There are several different widgets, and more might be added, so you should always go and check whether new widgets have been added or not. Here you will find a list of most basic widgets.
 
-#### Text
+### Text
 The text widgets add a simple text area to your app. Here you can find it's declaration and prototype:
 ```
 Text my_text_widget{
@@ -38,7 +38,7 @@ Text hello_world_text_widget(
   "Hello world!"
 );
 ```
-#### Button
+### Button
 
 Buttons allows you to do something when you press them. Here you can find it's declaration and prototype:
 ```
@@ -57,7 +57,7 @@ Button my_button(
 );
 ```
 
-#### Labels
+### Labels
 
 Labels are a text element that can be used to describe other widgets. Here you can find it's declaration and prototype:
 ```
@@ -89,7 +89,7 @@ NewAppView::NewAppView(NavigationView &nav) {
 }
 ```
 
-#### LiveDateTime
+### LiveDateTime
 
 LiveDateTime gives you the dynamic date and time. Here you can find it's declaration and prototype:
 ```
@@ -121,7 +121,7 @@ If you want to enable seconds you'll need use the `set_seconds_enabled(bool new_
 ```
 my_liveDateTime.set_seconds_enabled(true);
 ```
-#### BigFrequency
+### BigFrequency
 
 BigFrequency is used for displaying a radio frequency. Here you can find it's declaration and prototype:
 ```
@@ -156,7 +156,7 @@ To set a frequency you can use the function `set(const rf::Frequency frequency)`
 my_bigFrequency.set(433000000); // 433MHz
 ```
 
-#### ProgressBar
+### ProgressBar
 
 Progress bars are a visual representation of progress that let us know how far a long a task is. Here you can find it's declaration and prototype:
 ```
@@ -194,7 +194,7 @@ To change the value of progress for the progress bar use the `set_value(const ui
 my_progressBar.set_value(5); // 50% Complete
 ```
 
-#### Console
+### Console
 
 Console can be used as large text field where you can output mutable lines of text. Here you can find it's declaration and prototype:
 ```
@@ -237,10 +237,7 @@ To enable scrolling you can use the `enable_scrolling(bool enable)` function::
 my_console.enable_scrolling(true);
 ```
 
-
-
-
-#### Checkbox
+### Checkbox
 
 Checkboxs are a boolean (True/False) widget that allows you chose between one of two options . Here you can find it's declaration and prototype:
 ```
@@ -310,7 +307,7 @@ NewAppView::NewAppView(NavigationView &nav) {
 }
 ```
 
-#### Image
+### Image
 
 Images can be displayed within your app. Here you can find it's declaration and prototype:
 ```
@@ -363,7 +360,7 @@ NewAppView::NewAppView(NavigationView &nav) {
 }
 ```
 
-#### OptionsField
+### OptionsField
 
 OptionsField is a widget that allows you to create a field, in which you can change its value with the wheel on your portapack. Here you can find it's declaration and prototype:
 ```
@@ -388,7 +385,7 @@ OptionsField my_optionsField{
 ```
 Note that the number following the "option_x" string value, should be the value that you could retrieve from the optionField with the function `my_optionsField.selected_index_value();`
 
-#### NumberField
+### NumberField
 
 NumberField is similar to the OptionsField widget except that it only deals with numbers. You can change its value with the wheel on your portapack. Here you can find it's declaration and prototype:
 ```
@@ -454,7 +451,7 @@ NewAppView::NewAppView(NavigationView &nav) {
 }
 ```
 
-#### Waveform
+### Waveform
 
 Waveforms are used to display a sign wave from a signal source. **Note:** The X axes represents time while the Y axes represents amplitude. Here you can find it's declaration and prototype:
 ```
@@ -516,7 +513,7 @@ If your input data has a variable length you can use the `set_length(const uint3
 my_waveform.set_length(9001) // THAT'S OVER 18KB!!
 ```
 
-#### VuMeter
+### VuMeter
 
 VuMeters are used to visually represent the sound intensity of an audio source. Here you can find it's declaration and prototype:
 ```
