@@ -91,7 +91,7 @@
    * [ChibiOS Notes](ChibiOS-Notes)
 * Software Dev Guides
    * [Create a Simple App](Create-a-simple-app)
-   * UI Widgets
+   * [Widgets](Widgets)
    * Access Radio Hardware 
    * Create a Complex App
 * Tools
