@@ -316,7 +316,7 @@ NewAppView::NewAppView(NavigationView &nav) {
 }
 ```
 
-# Wrap up
+## Wrap up
 
 Bellow is an example "Hello World" application that shows off a few widgets and logic that controls their functions.
 
