@@ -22,3 +22,20 @@ The ADSB RX app will log each frame including the following columns:
 Example:
 
 `20171103100227 8DADBEEFDEADBEEFDEADBEEFDEADBEEF ICAO:nnnnnn callsign Alt:nnnnnn Latnnn.nn Lonnnn.nn`
+
+## Screenshots
+Main ADS-B View
+
+![Main View of ADS-B](https://i.ibb.co/ZN5vhN1/SCR-0005.png)
+
+Aircraft View
+
+![Aircraft View](https://i.ibb.co/pwzdgD0/SCR-0006.png)
+
+Map View
+
+![Map View](https://i.ibb.co/SrD1gbv/SCR-0007.png)
+
+A/C Details
+
+![A/C Details](https://i.ibb.co/SRq38gJ/SCR-0008.png)
