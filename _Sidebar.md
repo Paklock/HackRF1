@@ -89,7 +89,7 @@
    * [Firmware Architecture](Firmware-Architecture)
    * [Persistent Memory](Persistent-Memory)
    * [ChibiOS Notes](ChibiOS-Notes)
-* Software Dev Guides
+* [Software Dev Guides](Software-Dev-Guides)
    * [Create a Simple App](Create-a-simple-app)
    * [Widgets](Widgets)
    * [SD Card](SD-Card-(DEV))
