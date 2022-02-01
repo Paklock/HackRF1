@@ -237,6 +237,8 @@ To enable scrolling you can use the `enable_scrolling(bool enable)` function::
 my_console.enable_scrolling(true);
 ```
 
+* Note: Buffer size is limited to 256 char
+
 ### Checkbox
 
 Checkboxs are a boolean (True/False) widget that allows you chose between one of two options . Here you can find it's declaration and prototype:
