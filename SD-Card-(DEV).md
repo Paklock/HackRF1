@@ -55,19 +55,19 @@ struct file_entry {
 
 Below is an function that will return a [Vector](https://www.geeksforgeeks.org/vector-in-cpp-stl/) (simmer to a list) of `file_entry` Struts. The input for this function needs a `std::filesystem::path` which can be `UTF-16 string literal`. The root of the SD Card is `u""` and any directory beyond that is `u"DIRECTORY/SUB_DIRECTORY"`. 
 
-This function will also place any directorys at the front of the Vector and files in the back. This will also skip any files that are hidden as in anything with a `.` in front of the file name.     
+This function will also place any directories at the front of the Vector and files in the back. This will also skip any files that are hidden as in anything with a `.` in front of the file name.     
 
 #### ui_newapp.cpp
 ```
-// Lists all files and directorys in path
+// Lists all files and directories in path
 std::vector<file_entry> NewAppView::list_dir(const std::filesystem::path& path) {
 
     // Files and directories list
     std::vector<file_entry> entry_list { };
 
     // For each entry in the file system's directory
-    // Adds files in directorys into entry_list{} 
-    // Directorys are inserted infront of files
+    // Adds files in directories into entry_list{} 
+    // Directories are inserted in front of files
     for (const auto& entry : std::filesystem::directory_iterator(path, u"*")) {
 
         // Dose not add directorys or files starting with '.' (hidden / tmp)
@@ -151,7 +151,105 @@ if(check_sd_card()) {                       // Check to see if SD Card is mounte
 
 ### Read File   
 
+To read to a file the `read_file()` function from the [File](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/file.cpp) class can be used. The helper function below will return true if the class object `File` opens the file successfully. Success from this append function will have a `is_valid()` function which will return a 0, other values means failure. Inputs for file path and directory name. Again the input for the file path is a `std::filesystem::path` which can be `UTF-16 string literal`. The root of the SD Card is `u""` and any directory beyond that is `u"DIRECTORY/SUB_DIRECTORY"` 
+
+**Note: The below sample code dose not handle large files, memory management needs to be implemented.**
+
+#### ui_newapp.cpp
+```
+    std::string NewAppView::read_file(const std::filesystem::path& path, std::string name) { // Read file
+        std::string return_string = "";                                                      // String to be returned
+        File file;                                                                           // Create File object
+        auto success = file.open(path.string() + "/" + name);                                // Open file to write
+
+        if(!success.is_valid()) {                                                            // 0 is success
+            char one_char[1];                                                                // Read file char by char
+            for(size_t pointer = 0; pointer < file.size() ; pointer++) {                     // Example won't work for large files
+                file.seek(pointer);                                                          // Sets file to next pointer
+                file.read(one_char, 1);                                                      // sets char to one_char[]
+                return_string += one_char[0];				                     // Add it to the return_string               
+            }
+        } else {
+            return "0";                                                                      // Basic error handling
+        }
+        return return_string;
+    }
+```
+
+#### ui_newapp.cpp
+```
+if(check_sd_card()) {                                        // Check to see if SD Card is mounted
+    std::string data = "";                                   // Create output string
+    data = read_file(u"", "NEWER_FILE.TXT");                 // read_file()
+    if(data != "0") {                                        // Success is anything but 0
+        // Logic if data is present
+    } else {
+        // Logic if there's no data
+    }
+} else {                                                     // Else, check_sd_card() returned false
+    // Logic else SD Card is NOT mounted
+}
+```
+
 ### Write File  
+
+To write to a file the `write_line()` or `write()` function from the [File](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/file.cpp) class can be used. The helper function below will return true if the class object `File` appends to the target file successfully. Success from this append function will have a `is_valid()` function which will return a 0, other values means failure. Inputs for file path and directory name. Again the input for the file path is a `std::filesystem::path` which can be `UTF-16 string literal`. The root of the SD Card is `u""` and any directory beyond that is `u"DIRECTORY/SUB_DIRECTORY"`
+
+#### ui_newapp.cpp
+```
+bool NewAppView::write_file(const std::filesystem::path& path, std::string name, std::string data) {
+    File file;                                                                     // Create File object
+    auto sucess = file.append(path.string() + "/" + name);                         // Open file
+    if(!sucess.is_valid()) {                                                       // 0 is success
+        file.write_line(data);
+        return true;
+    } else {
+        return false;
+    }
+}
+```
+
+#### ui_newapp.cpp
+```
+if(check_sd_card()) {                                        // Check to see if SD Card is mounted
+    std::string data = "Your mother was a hamster!";
+    if(write_file(u"", "NEWER_FILE.TXT", data)) {            // Success is anything but 0
+        // Logic if write was successful 
+    } else {
+        // Logic if write failed
+    }
+} else {                                                     // Else, check_sd_card() returned false
+    // Logic else SD Card is NOT mounted
+}
+```
+
+### Rename File or Directory
+
+**NOTE: Code below reflects future update, current implementation of delete_file() dose not return a value.**
+
+To rename a file or directory the `rename_file()` function from [File](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/file.cpp) can be used. The helper function below will return true if `rename_file()` succeeds (Success from `rename_file()` returns a 0, other values means failure) and takes two variable inputs for file path and directory name. Again the input for the file path is a `std::filesystem::path` which can be `UTF-16 string literal`. The root of the SD Card is `u""` and any directory beyond that is `u"DIRECTORY/SUB_DIRECTORY"`
+
+#### ui_newapp.cpp
+```
+bool NewAppView::rename_dir_or_file(const std::filesystem::path& path, std::string old_name, std::string new_name) {
+    return !(rename_file(path.string() + "/" + old_name, new_name));                              // 0 is success
+}
+```
+
+#### ui_newapp.cpp
+```
+// Rename directory or file
+if(check_sd_card()) {                                       // Check to see if SD Card is mounted
+    if(rename_dir_or_file(u"", "NEW_DIR", "NEWER_DIR")) {   // Renames dir or file in root of SD Card, returns true if successful
+        // Logic if rename is successful 
+    } else {                                                // Else new dir or file renamed failed
+        // Logic if rename failed
+    }   
+} else {                                                    // Else, check_sd_card() returned false
+    // Logic else SD Card is NOT mounted
+}
+```
+
 
 ### Delete File or Directory
 
@@ -183,7 +281,7 @@ if(check_sd_card()) {                                         // Check to see if
 
 ## Wrap Up
 
-Below is example demo of all basic CRUD functions for files and directorys. 
+Below is example demo of all basic CRUD functions for files and directories. 
 
 ### ui_newapp.hpp
 ```
@@ -263,7 +361,7 @@ namespace ui
         return true;
     }
 
-    // Lists all files and directorys in path
+    // Lists all files and directories in path
     std::vector<file_entry> NewAppView::list_dir(const std::filesystem::path& path) {
 
         // Files and directories list
@@ -296,26 +394,26 @@ namespace ui
     }
 
 
-    // Creates dir, returns true if sucessfull 
-    bool NewAppView::create_dir(const std::filesystem::path& path, std::string name) {  // make_new_directory() returns 0 for sucess
+    // Creates dir, returns true if successful 
+    bool NewAppView::create_dir(const std::filesystem::path& path, std::string name) {  // make_new_directory() returns 0 for success
         return !(make_new_directory(path.string() + "/" + name));                       // and other values means failure. Not operation  
     }                                                                                   // will return true only when 0 is returned. 
                                                                                             
 
     bool NewAppView::delete_dir_or_file(const std::filesystem::path& path, std::string name) { // Deletes file or dir.
-        return !(delete_file(path.string() + "/" + name));                                     // 0 is sucess.
+        return !(delete_file(path.string() + "/" + name));                                     // 0 is success.
     }
 
 
     bool NewAppView::create_file(const std::filesystem::path& path, std::string name) {
         File file = { };                                                                // Create File object
         Optional<File::Error> sucess = file.create(path.string() + "/" + name);         // Create File
-        return !(sucess.is_valid());                                                    // 0 is sucess
+        return !(sucess.is_valid());                                                    // 0 is success
     }
 
 
     bool NewAppView::rename_dir_or_file(const std::filesystem::path& path, std::string old_name, std::string new_name) {
-        return !(rename_file(path.string() + "/" + old_name, new_name));                              // 0 is sucess
+        return !(rename_file(path.string() + "/" + old_name, new_name));                              // 0 is success
     }
 
 
@@ -324,7 +422,7 @@ namespace ui
         File file;                                                                           // Create File object
         auto sucess = file.open(path.string() + "/" + name);                               // Open file to write
 
-        if(!sucess.is_valid()) {                                                             // 0 is sucess
+        if(!sucess.is_valid()) {                                                             // 0 is success
             char one_char[1];                                                                // Read file char by char
             for(size_t pointer = 0; pointer < file.size() ; pointer++) {                     // Example won't work for large files
                 file.seek(pointer);                                                          // Sets file to next pointer
@@ -340,8 +438,8 @@ namespace ui
 
     bool NewAppView::write_file(const std::filesystem::path& path, std::string name, std::string data) {
         File file;                                                                     // Create File object
-        auto sucess = file.append(path.string() + "/" + name);                         // Open file
-        if(!sucess.is_valid()) {                                                       // 0 is sucess
+        auto success = file.append(path.string() + "/" + name);                        // Open file
+        if(!success.is_valid()) {                                                      // 0 is success
             file.write_line(data);
             return true;
         } else {
@@ -368,7 +466,7 @@ namespace ui
 
         // New directory
         if(check_sd_card()) {                                        // Check to see if SD Card is mounted
-            if(create_dir(u"", "NEW_DIR")) {                         // New dir in root of SD Card, returns true if sucessfull
+            if(create_dir(u"", "NEW_DIR")) {                         // New dir in root of SD Card, returns true if successful
                 my_console.writeln("+ New directory created");       // If new dir succeeded 
             } else {
                 my_console.writeln("- New directory FAILED");        // Else new dir failed
@@ -381,7 +479,7 @@ namespace ui
         std::string dir_contents = "";                                   // String var that displays the dir contents
         std::vector<file_entry> files = { };                             // file_entry Vector
         if(check_sd_card()) {                                            // Check to see if SD Card is mounted
-            files = list_dir(u"");                                       // dir of SD Card, u"" is root, u"DIRECTORY_NAME" for other directorys
+            files = list_dir(u"");                                       // dir of SD Card, u"" is root, u"DIRECTORY_NAME" for other directories
                                                                          // Vector has a capacity of 64 objects
             if(files.size()) {                                           // If files are not empty
                 dir_contents += "+ dir SD Card: ";
@@ -400,7 +498,7 @@ namespace ui
 
         // Rename directory
         if(check_sd_card()) {                                       // Check to see if SD Card is mounted
-            if(rename_dir_or_file(u"", "NEW_DIR", "NEWER_DIR")) {   // Renames dir in root of SD Card, returns true if sucessfull
+            if(rename_dir_or_file(u"", "NEW_DIR", "NEWER_DIR")) {   // Renames dir in root of SD Card, returns true if successful
                 my_console.writeln("+ Directory renamed");          // If dir renamed succeeded 
             } else {
                 my_console.writeln("- Directory renamed FAILED");   // Else new dir renamed failed
@@ -411,7 +509,7 @@ namespace ui
 
         // Delete file or directory 
         if(check_sd_card()) {                                         // Check to see if SD Card is mounted
-            if(delete_dir_or_file(u"", "NEWER_DIR")) {                  // New dir in root of SD Card
+            if(delete_dir_or_file(u"", "NEWER_DIR")) {                // New dir in root of SD Card
                 my_console.writeln("+ New directory deleted");
             } else {
                 my_console.writeln("- New directory deleted FAILED");
@@ -422,7 +520,7 @@ namespace ui
 
         // New file
         if(check_sd_card()) {                                        // Check to see if SD Card is mounted
-            if(create_file(u"", "NEW_FILE.txt")) {                   // New dir in root of SD Card, returns true if sucessfull
+            if(create_file(u"", "NEW_FILE.txt")) {                   // New dir in root of SD Card, returns true if successful
                 my_console.writeln("+ New file created");            // If new file succeeded 
             } else {
                 my_console.writeln("- New file FAILED");             // Else new file failed
@@ -433,7 +531,7 @@ namespace ui
 
         // Rename file
         if(check_sd_card()) {                                               // Check to see if SD Card is mounted
-            if(rename_dir_or_file(u"", "NEW_FILE.txt", "NEWER_FILE.TXT")) { // Renames file, returns true if sucessfull
+            if(rename_dir_or_file(u"", "NEW_FILE.txt", "NEWER_FILE.TXT")) { // Renames file, returns true if successful
                 my_console.writeln("+ File renamed");                       // If file renamed succeeded 
             } else {
                 my_console.writeln("- File renamed FAILED");                // Else new file renamed failed
@@ -445,7 +543,7 @@ namespace ui
         // Write file
         if(check_sd_card()) {                                         // Check to see if SD Card is mounted
             std::string data = "Your mother was a hamster!";
-            if(write_file(u"", "NEWER_FILE.TXT", data)) {             // Sucess is anything but 0
+            if(write_file(u"", "NEWER_FILE.TXT", data)) {             // Success is anything but 0
                 my_console.writeln("+ Write File");                   // Write data to my_console
             } else {
                 my_console.writeln("- Write file FAILED");
@@ -458,7 +556,7 @@ namespace ui
         if(check_sd_card()) {                                        // Check to see if SD Card is mounted
             std::string data = "";                                   // Create output string
             data = read_file(u"", "NEWER_FILE.TXT");                 // read_file()
-            if(data != "0") {                                        // Sucess is anything but 0
+            if(data != "0") {                                        // Success is anything but 0
                 my_console.writeln("+ Read file: " + data);          // Write data to my_console
             } else {
                 my_console.writeln("- Read file FAILED");
