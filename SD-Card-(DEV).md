@@ -4,7 +4,7 @@ Reading and writing to the SD card is a great way for your application to save p
 
 ## File Class
 
-Most of the heavy lifting for working with files on the SD Card is done by the [File](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/file.cpp) class. This helper class which simplifies the `FatFs - Generic FAT file system module` which can found at [`firmware/chibios-portapack/ext/fatfs/src/ff.c`](https://github.com/eried/portapack-mayhem/blob/next/firmware/chibios-portapack/ext/fatfs/src/ff.c). Below are some examples on how to read and write files to the SD card.
+Most of the heavy lifting for working with files on the SD Card is done by the [File](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/file.cpp) class. This helper class which simplifies the `FatFs - Generic FAT file system module` which can found at [`firmware/chibios-portapack/ext/fatfs/src/ff.c`](https://github.com/eried/portapack-mayhem/blob/next/firmware/chibios-portapack/ext/fatfs/src/ff.c). This wiki will go over some examples on how to read and write files to the SD card.
 
 Continuing with the [Create a Simple App](Create-a-simple-app) the code bellow will outline what is required to manipulate the file system. The first thing you'll need to do is include the File class and SD Card helper functions to your application's hpp file. 
 
@@ -17,7 +17,7 @@ Continuing with the [Create a Simple App](Create-a-simple-app) the code bellow w
 
 ### Check SD Card
 
-Before reading and writing from the SD Card it's ideal to do a quick check to see if the SD card is mounted on the device. There is error handing working in the background that keeps things from crashing however this will give people a better idea if there's a problem or not. The function below dose a quick check to see if the SD Card is showing a status of being Mounted. This will return true if sd_card::status() returns "Mounted" or false if sd_card::status() returns any other status. SD Card statuses are defined in [firmware/application/sd_card.hpp](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/sd_card.hpp).    
+Before reading and writing from the SD Card it's ideal to do a quick check to see if the SD card is mounted. There is error handing working in the background that keeps things from crashing however this will give people a better idea if there's a problem or not. The function below dose a quick check to see if the SD Card is showing a status of "Mounted". This will return true if sd_card::status() returns "Mounted" or false if sd_card::status() returns any other status. SD Card statuses are defined in [firmware/application/sd_card.hpp](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/sd_card.hpp).    
 
 
 #### ui_newapp.cpp
@@ -41,7 +41,7 @@ if(check_sd_card()) {                                       // Check to see if S
 
 ### List Directory Contents
 
-To make things easier to use we're going to use a method from [firmware/application/apps/ui_fileman.cpp](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/apps/ui_fileman.cpp) to list the contents of the SD Card. First thing we'll need to do is create a Struct that outlines the pertinent information of the SD Card's contents. Each struct will include the file path, size, and if the item is a directory or not.  
+To make things easier to use we're going to use a method from [firmware/application/apps/ui_fileman.cpp](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/apps/ui_fileman.cpp) to list the contents of the SD Card. First thing we'll need to do is create a Struct that outlines the pertinent information of files and directories. Each struct will include the file path, size, and if the item is a directory or not.  
 
 #### ui_newapp.hpp
 ```
@@ -151,29 +151,29 @@ if(check_sd_card()) {                       // Check to see if SD Card is mounte
 
 ### Read File   
 
-To read to a file the `read_file()` function from the [File](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/file.cpp) class can be used. The helper function below will return true if the class object `File` opens the file successfully. Success from this append function will have a `is_valid()` function which will return a 0, other values means failure. Inputs for file path and directory name. Again the input for the file path is a `std::filesystem::path` which can be `UTF-16 string literal`. The root of the SD Card is `u""` and any directory beyond that is `u"DIRECTORY/SUB_DIRECTORY"` 
+To read to a file the `read_file()` function from the [File](https://github.com/eried/portapack-mayhem/blob/next/firmware/application/file.cpp) class can be used. The helper function below will return true if the class object `File` opens the file successfully. Success from this open function will have a `is_valid()` function which will return a 0, other values means failure. Inputs for file path and directory name. Again the input for the file path is a `std::filesystem::path` which can be `UTF-16 string literal`. The root of the SD Card is `u""` and any directory beyond that is `u"DIRECTORY/SUB_DIRECTORY"` 
 
 **Note: The below sample code dose not handle large files, memory management needs to be implemented.**
 
 #### ui_newapp.cpp
 ```
-    std::string NewAppView::read_file(const std::filesystem::path& path, std::string name) { // Read file
-        std::string return_string = "";                                                      // String to be returned
-        File file;                                                                           // Create File object
-        auto success = file.open(path.string() + "/" + name);                                // Open file to write
+std::string NewAppView::read_file(const std::filesystem::path& path, std::string name) { // Read file
+    std::string return_string = "";                                                      // String to be returned
+    File file;                                                                           // Create File object
+    auto success = file.open(path.string() + "/" + name);                                // Open file to write
 
-        if(!success.is_valid()) {                                                            // 0 is success
-            char one_char[1];                                                                // Read file char by char
-            for(size_t pointer = 0; pointer < file.size() ; pointer++) {                     // Example won't work for large files
-                file.seek(pointer);                                                          // Sets file to next pointer
-                file.read(one_char, 1);                                                      // sets char to one_char[]
-                return_string += one_char[0];				                     // Add it to the return_string               
-            }
-        } else {
-            return "0";                                                                      // Basic error handling
+    if(!success.is_valid()) {                                                            // 0 is success
+        char one_char[1];                                                                // Read file char by char
+        for(size_t pointer = 0; pointer < file.size() ; pointer++) {                     // Example won't work for large files
+            file.seek(pointer);                                                          // Sets file to next pointer
+            file.read(one_char, 1);                                                      // sets char to one_char[]
+            return_string += one_char[0];				                 // Add it to the return_string               
         }
-        return return_string;
+    } else {
+        return "0";                                                                      // Basic error handling
     }
+    return return_string;
+}
 ```
 
 #### ui_newapp.cpp
