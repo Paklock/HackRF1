@@ -357,8 +357,7 @@ namespace ui
     
     // Checks SD Card, returns true if Mounted, false if otherwise
     bool NewAppView::check_sd_card() {
-        //return (sd_card::status() == sd_card::Status::Mounted) ? true : false; 
-        return true;
+        return (sd_card::status() == sd_card::Status::Mounted) ? true : false; 
     }
 
     // Lists all files and directories in path
