@@ -7,5 +7,5 @@ https://raw.githubusercontent.com/kx1t/planefence-airlinecodes/main/airlinecodes
 ## Build database
 * Download the latest version from location above.
 * Download script [make_airlines_db.py](https://github.com/eried/portapack-mayhem/blob/next/firmware/tools/make_airlines_db/make_airlines_db.py).
-* Put them in the same folder and run script.
+* Put them in the same folder and run script. Note: Python 3 required.
 * Copy database to /ADSB folder on sdcard.
