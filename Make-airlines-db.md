@@ -1,3 +1,7 @@
-This tool creates [airlines.db](https://github.com/eried/portapack-mayhem/blob/master/firmware/sdcard/ADSB/airlines.db), containing 
+This tool creates [airlines.db](https://github.com/eried/portapack-mayhem/blob/next/sdcard/ADSB/airlines.db). This database can be used to find the airline name and country based on the three-letter ICAO code.
+This database is currently only used by ADS-B receiver application. 
 
-used for ADS-B receiver application, using https://raw.githubusercontent.com/kx1t/planefence-airlinecodes/main/airlinecodes.txt as a source.
+Source for this database is:
+https://raw.githubusercontent.com/kx1t/planefence-airlinecodes/main/airlinecodes.txt
+
+You can build the database, by downloading the latest version from the location above and run [make_airlines_db.py] (https://github.com/eried/portapack-mayhem/blob/next/firmware/tools/make_airlines_db/make_airlines_db.py).
