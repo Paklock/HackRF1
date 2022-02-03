@@ -4,4 +4,8 @@ This database is currently only used by ADS-B receiver application.
 Source for this database is:
 https://raw.githubusercontent.com/kx1t/planefence-airlinecodes/main/airlinecodes.txt
 
-You can build the database, by downloading the latest version from the location above and run [make_airlines_db.py](https://github.com/eried/portapack-mayhem/blob/next/firmware/tools/make_airlines_db/make_airlines_db.py).
+## build database
+* download the latest version from the location above.
+* download script [make_airlines_db.py](https://github.com/eried/portapack-mayhem/blob/next/firmware/tools/make_airlines_db/make_airlines_db.py).
+* Put them in the same folder and run script.
+* Copy database to /ADSB folder on sdcard.
