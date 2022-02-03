@@ -1,4 +1,4 @@
-This tool creates [airlines.db](https://github.com/eried/portapack-mayhem/blob/next/sdcard/ADSB/airlines.db). This database can be used to find the airline name and country based on the three-letter ICAO code.
+This tool creates [airlines.db](https://github.com/eried/portapack-mayhem/blob/next/sdcard/ADSB/airlines.db). This database can be used to find the _airline name_ and _country_ based on the three-letter ICAO code.
 This database is currently only used by ADS-B receiver application. 
 
 Source for this database is:
