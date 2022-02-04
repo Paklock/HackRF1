@@ -8,5 +8,6 @@ https://opensky-network.org/datasets/metadata/aircraftDatabase.csv
 
 ## Build database
  * Copy file from: https://opensky-network.org/datasets/metadata/aircraftDatabase.csv
- * Run Python 3 script: `./make_icao24_db.py` 
+ * 
+ * Run Python 3 [script](https://github.com/eried/portapack-mayhem/blob/next/firmware/tools/make_airlines_db/make_icao24_db.py): `./make_icao24_db.py` 
  * Copy file to /ADSB folder on SDCARD
