@@ -1,4 +1,4 @@
-This tool creates [icao.db](https://github.com/eried/portapack-mayhem/blob/next/sdcard/ADSB/icao25.db).
+This tool creates [icao24.db](https://github.com/eried/portapack-mayhem/blob/next/sdcard/ADSB/icao24.db).
  
 This database is used to find aircraft-related information based on the 24-bit ICAO transponder code.
 This database is currently only used by ADS-B receiver application. 
