@@ -4,10 +4,9 @@ This database is used to find aircraft-related information based on the 24-bit I
 This database is currently only used by ADS-B receiver application. 
 
 Source for this database is:
-https://raw.githubusercontent.com/kx1t/planefence-airlinecodes/main/airlinecodes.txt
+https://opensky-network.org/datasets/metadata/aircraftDatabase.csv
 
 ## Build database
-* Download the latest version from location above.
-* Download script [make_airlines_db.py](https://github.com/eried/portapack-mayhem/blob/next/firmware/tools/make_airlines_db/make_airlines_db.py).
-* Put them in the same folder and run script. Note: Python 3 required.
-* Copy database to /ADSB folder on sdcard.
+ * Copy file from: https://opensky-network.org/datasets/metadata/aircraftDatabase.csv
+ * Run Python 3 script: `./make_icao24_db.py` 
+ * Copy file to /ADSB folder on SDCARD
