@@ -98,6 +98,7 @@
    * Debug via SWD
 * Tools
    * [make_airlines_db.py](Make-airlines-db)
+   * [make_icao24_db.py](Make-icao24-db)
    * [world_map.bin](World-map-generation)
    * [converter](Splash-and-other-images)
 * Research
