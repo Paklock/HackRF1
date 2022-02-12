@@ -230,7 +230,8 @@ Resources for use on the documentation:
 
 `[[img/screenshots/Transmit_Soundbrd.png]]`
 
-[[img/screenshots/Transmit_Soundbrd.png]]
+[[https://user-images.githubusercontent.com/164560/153706892-d8b97b59-8480-4215-af29-cbcd7afe6380.png]]
+
 
 `[[img/screenshots/Transmit_SSTV.png]]`
 
