@@ -8,8 +8,8 @@ The sections of Title Bar, along with functionality are (from left to right):
 
 |Image|Function|Actionable|
 |-----|--------|----------|
-|Back |Back to previous screen/Return to menu| Yes |
-|Name|Application or Firmware name & version| No |
+|Back |Back arrow to previous screen/Return to menu| Yes |
+|Name|Application name| No |
 |![StealthIcon](https://github.com/eried/portapack-mayhem/blob/master/firmware/graphics/icon_stealth.png)    |Activate [Stealth Mode](stealth-mode)  | Yes|
 |![CameraIcon](https://github.com/eried/portapack-mayhem/blob/master/firmware/graphics/icon_camera.png)    |Take [Screenshot](screenshots)  | Yes|
 |![MoonIcon](https://github.com/eried/portapack-mayhem/blob/master/firmware/graphics/icon_sleep.png)|Activate [Sleep Mode](sleep-mode)| Yes|
