@@ -22,7 +22,7 @@
 * [Applications](Applications)
    * Receivers
       * [ADS-B](Automatic-dependent-surveillance–broadcast-(ADS-B))
-      * [AIS Boats](AIS Boats)
+      * [AIS Boats](AIS_Boats)
       * AFSK
       * [BTLE](Bluetooth-Low-Energy-Receiver)
       * [NRF](https://github.com/eried/portapack-mayhem/wiki/decoder-for-NRF24L01)
