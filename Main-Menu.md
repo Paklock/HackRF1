@@ -12,6 +12,6 @@ The Main Menu of Mayhem comprises a number of buttons to access the various func
 |Scanner|Step through a list of pre-defined frequencies, stopping if squelch is broken (signal detected)|
 |Tools||
 |Options||
-|Debug||
+|Debug|Covers Memory use,SD Card info,Peripherals use,Temperature,Button and Encoder Test|
 |HackRF|Switch to HackRF mode for use from a USB Host device (eg. computer)|
 
