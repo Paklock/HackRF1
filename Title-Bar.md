@@ -10,9 +10,9 @@ The sections of Title Bar, along with functionality are (from left to right):
 |-----|--------|----------|
 |Back |Back arrow to previous screen/Return to menu| Yes |
 |Name|Application name| No |
-|![StealthIcon](https://github.com/eried/portapack-mayhem/blob/master/firmware/graphics/icon_stealth.png)    |Activate [Stealth Mode](stealth-mode) 
+|![StealthIcon](https://github.com/eried/portapack-mayhem/blob/master/firmware/graphics/icon_stealth.png)|Activate [Stealth Mode](stealth-mode) 
  Green if selected| Yes|
-|![CameraIcon](https://github.com/eried/portapack-mayhem/blob/master/firmware/graphics/icon_camera.png)    |Take [Screenshot](screenshots)  | Yes|
+|![CameraIcon](https://github.com/eried/portapack-mayhem/blob/master/firmware/graphics/icon_camera.png)|Take [Screenshot](screenshots)  | Yes|
 |![MoonIcon](https://github.com/eried/portapack-mayhem/blob/master/firmware/graphics/icon_sleep.png)|Activate [Sleep Mode](sleep-mode)| Yes|
 |![BlastOffIcon](https://github.com/eried/portapack-mayhem/blob/master/firmware/graphics/icon_biast_off.png)|Activate/Deactivate DC Power on Antenna port, Yellow if selected| Yes |
 |![ExtClockOffIcon](https://github.com/eried/portapack-mayhem/blob/master/firmware/graphics/icon_clk_ext.png)|Indicate status of external clock , Green if Selected | Yes |
