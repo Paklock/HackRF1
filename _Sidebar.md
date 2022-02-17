@@ -14,7 +14,7 @@
    * [Splash screen](Create-a-custom-splash-screen)
    * [Title bar](title-bar)
    * [Main menu](main-menu)
-* [Powering the PortaPack](Powering the PortaPack)
+* [Powering the PortaPack](Powering-the-PortaPack)
 * Troubleshooting
    * [Firmware upgrade](https://github.com/eried/portapack-mayhem/wiki/Update-firmware-troubleshooting)
    * [Receive Quality Issues](https://github.com/eried/portapack-mayhem/wiki/Help!-Im-not-receiving-anything!---Receive-Quality-Issues)
