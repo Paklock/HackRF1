@@ -1,6 +1,6 @@
 [[img/main-menu.png]]
 
-The Main Menu of Mayhem comprises a number of buttons to access the various functionality groups of the firmware.
+The Main Menu page of Mayhem comprises a number of buttons to access the various functionality groups of the firmware, a Title bar giving functions and at the bottom of page, the version number and if enabled in options the time.
 
 |Button|Functional Group|
 |------|----------------|
