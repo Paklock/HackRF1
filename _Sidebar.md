@@ -14,7 +14,7 @@
    * [Splash screen](Create-a-custom-splash-screen)
    * [Title bar](title-bar)
    * [Main menu](main-menu)
-   * [Gain Controls](Gain_Controls)
+   * [Gain Controls](Gain-Controls)
 * [Powering the PortaPack](Powering-the-PortaPack)
 * Troubleshooting
    * [Firmware upgrade](https://github.com/eried/portapack-mayhem/wiki/Update-firmware-troubleshooting)
