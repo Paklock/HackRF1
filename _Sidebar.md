@@ -40,7 +40,7 @@
       * [TPMS Cars](TPMS-Cars)   
    * Transmitters
       * ADS-B(S)
-      * [APRS](APRS)
+      * [APRS](APRS-TX)
       * BHT Xy/EP
       * [GPS Sim](GPS-Sim)
       * Jammer
