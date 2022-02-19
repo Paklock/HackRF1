@@ -23,7 +23,7 @@
 * [Applications](Applications)
    * Receivers
       * [ADS-B](Automatic-dependent-surveillance–broadcast-(ADS-B))
-      * [AIS Boats](AIS_Boats)
+      * [AIS Boats](AIS-Boats)
       * AFSK
       * [APRS](APRS-RX)
       * [BTLE](Bluetooth-Low-Energy-Receiver)
