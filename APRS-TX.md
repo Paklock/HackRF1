@@ -1,4 +1,3 @@
-# APRS TX
 
 [Automatic Packet Reporting System](Information-on-ARPS) TX App sends messages on selected Frequency. The App allows the configuration of the APRS Stream. 
 The App is marked as Beta but it  appears that it does  send messages in AFSK.
