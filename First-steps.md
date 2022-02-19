@@ -13,11 +13,11 @@ The main difference are the controls and the screen, but the H2 usually has extr
 # Power on/off
 The original H1 powers instantly when you plug a power supply to the USB port. To turn it off, just unplug it. Similar to the issues with some USB cables while [upgrading the firmware](Update-firmware), the quality of your cable might affect the performance. 
 
-To power on/off the H2, you need to hold the middle button (knob or pushbutton) for few seconds. 
+To power on/off the H2, you need to hold the middle button (knob or pushbutton) for few seconds. See more details [here](https://github.com/eried/portapack-mayhem/wiki/Powering-the-PortaPack).
 
 # Extra functionality (H2)
 ## Charging
-This version can charge the internal lipo battery via the USB. There is a led indicator that turns off when the charging is done, but it might flicker. 
+This version can charge the internal lipo battery via the USB. There is a led indicator that turns off when the charging is done, but it might flicker.On some models there are 4 leds below the knob that represent the state of the battery charge 25%,50%,75%,100%.When charging one will flash dependant on the current charge state of the battery. See more details [here](https://github.com/eried/portapack-mayhem/wiki/Powering-the-PortaPack). 
 
 ## Battery life
 An internal battery between 1000 and 2000 mAh should last a couple of hours of use, depending for how long you are transmitting. The standby consumption is [very low](https://github.com/eried/Research/blob/master/HackRF/PortaPack/h2_standby_consumption.jpg), around 52 µA, so you do not need to worry to remove/disconnect the battery in normal circumstances.
