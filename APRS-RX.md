@@ -1,4 +1,4 @@
-[Automatic Packet Reporting System](Information on APRS) RX App displays messages received on the selected channel.  The App allows the configuration of the APRS Stream  with settings for:
+[Automatic Packet Reporting System](Information-on-APRS) RX App displays messages received on the selected channel.  The App allows the configuration of the APRS Stream  with settings for:
 * The Selected pre_configured geographic area such as North America (NA), Europe/Uk (EUR) Australia (AUS) 
 * Frequency input, if not using Pre-Configured setting
 * Gain Settings  "0" or "1"- AMP,IF,Baseband
