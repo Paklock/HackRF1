@@ -25,7 +25,7 @@
       * [ADS-B](Automatic-dependent-surveillance–broadcast-(ADS-B))
       * [AIS Boats](AIS_Boats)
       * AFSK
-      * [APRS](APRS_RX)
+      * [APRS](APRS-RX)
       * [BTLE](Bluetooth-Low-Energy-Receiver)
       * [NRF](https://github.com/eried/portapack-mayhem/wiki/decoder-for-NRF24L01)
       * [Audio](Audio-Receivers)
