@@ -76,7 +76,7 @@
       * Interface
       * Date/Time
       * Touchscreen
-   * Debug
+   * [Debug](Debug)
       * Memory
       * SD Card
       * Peripherals
