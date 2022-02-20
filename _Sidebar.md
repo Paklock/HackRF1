@@ -70,7 +70,7 @@
       * Wave viewer
       * [Antenna length](antennas)
       * Wipe SD card
-   * Options
+   * [Options](Options)
       * Audio
       * Radio
       * Interface
