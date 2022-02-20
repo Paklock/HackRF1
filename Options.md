@@ -1,4 +1,3 @@
-# Options
 This section provides a set of utilities  that can be used to configure some aspects of the PortaPack and are described below:
 ## Audio
 This allow the setting of the tone Key mixer setting as a % of the audio level.
