@@ -83,8 +83,8 @@
       * Temperature
       * Buttons Test
    * [HackRF Mode](HackRF)
-    * Additional Information
-      * [Updating the CPLD](Updating-the-CPLD)
+* Additional Information
+   * [Updating the CPLD](Updating-the-CPLD)
 ## Developer Manual
 * [Compile From Source](Compile-firmware)
 * Description of the Structure
