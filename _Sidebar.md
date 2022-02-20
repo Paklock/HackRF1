@@ -57,10 +57,8 @@
       * [Soundboard](Soundboard)
    * [Capture](Capture)
       * [C16 Format](C16-format)
-   * Replay
-      * [Features](Replay)
-   * Calls
-      * [Features](Calls)
+   * [Replay](Replay)
+   * [Calls](Calls)
    * [Scanner](Scanner)
    * [Tools](Tools)
       * Freq manager
