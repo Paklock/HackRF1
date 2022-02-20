@@ -82,7 +82,8 @@
       * Peripherals
       * Temperature
       * Buttons Test
-    * HackRF
+   * [HackRF Mode](HackRF)
+    * Additional Information
       * [Updating the CPLD](Updating-the-CPLD)
 ## Developer Manual
 * [Compile From Source](Compile-firmware)
