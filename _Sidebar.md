@@ -55,8 +55,7 @@
       * [RDS](RDS)
       * [OOK](OOK)
       * [Soundboard](Soundboard)
-   * Capture
-      * [Features](Capture)
+   * [Capture](Capture)
       * [C16 Format](C16-format)
    * Replay
       * [Features](Replay)
