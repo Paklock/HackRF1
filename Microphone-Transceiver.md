@@ -1,6 +1,6 @@
 The Microphone App provides a Narrow band  FM  transmitter application, that allows the transmission of voice and when not transmitting allows you to receive in a simplex way. 
 
-# Key Controls
+## # Key Controls
 
 * **MIC. GAIN: **Cursor selection and use rotary encoder is used to select a fixed gain of x0.5, x1.0, x1.5, x2.0. The setting needs to be selected based, on the Microphone used which is connected via the Headset/ Microphone socket (standard smartphone 4 segment 3.5mm connector). The sensitivity of the microphone is shown on the lefthand side and should be configured so the range is green for most of the audio and never hits red to limit over deviation of the signal.
 
