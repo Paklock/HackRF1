@@ -60,7 +60,7 @@
    * [Replay](Replay)
    * [Calls](Calls)
    * [Scanner](Scanner)
-   * [Microphone Audio Tranceiver](Microphone-Audio-Tranceiver)
+   * [Microphone Tranceiver](Microphone-Tranceiver)
    * [Looking Glass](Looking-Glass)
    * [Tools](Tools)
       * Freq manager
