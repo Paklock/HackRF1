@@ -60,6 +60,8 @@
    * [Replay](Replay)
    * [Calls](Calls)
    * [Scanner](Scanner)
+   * Microphone
+   * [Looking Glass](Looking-Glass)
    * [Tools](Tools)
       * Freq manager
       * File manager
