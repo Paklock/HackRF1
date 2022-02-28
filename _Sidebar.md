@@ -46,7 +46,7 @@
       * Jammer
       * Key Fob
       * LGE Tool
-      * Morse
+      * [Morse](Morse)
       * Burger Pager
       * POCSAG
       * [SSTV](https://github.com/eried/portapack-mayhem/wiki/SSTV)
