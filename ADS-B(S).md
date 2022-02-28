@@ -1,4 +1,4 @@
-## **This is a potentially dangerous App, if the HackRF is used to generate valid ADS-B messages and these radiated then it could affect both how aircraft and navigation systems see each other. Therefore, it should only be used in a closed RF environment or when there is no direct transmission.**
+## **This is a potentially dangerous App. The HackRF could be used to generate valid ADS-B messages and if these are radiated then it could effect both how aircraft and navigation systems see each other. Therefore, it should only be used in a closed RF environment or when there is no direct transmission.**
 
 The Key Items on the App that can be selected with the cursor and changed with the encoder knob are:
 
@@ -18,7 +18,7 @@ Transmit position: this is a tick box to enable the transmission of Alt. Lat. Lo
 
 ## Speed Tab
 * **Transmit speed:** This is a tick box to turn on the transmission of the speed. 
-* **Speed: ** The value is selected and the rotary encoder is used to select the value 0-999km.
+* **Speed:** The value is selected and the rotary encoder is used to select the value 0-999km.
 * **Bearing:** The value is selected and the rotary encoder is used to select the value 0-999km. 0-359 Degrees.
 
 ## Squark Tab 
