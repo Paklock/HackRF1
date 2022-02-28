@@ -16,7 +16,7 @@ The Receivers Apps have a variable sensitivity to radio signals, and it should b
 These specifications can be used to roughly determine the suitability of HackRF for a given application. Testing is required to finely measure performance in an application. Performance can typically be enhanced significantly by selecting an appropriate antenna, external amplifier, and/or external filter for the application.
 
 ## What is the Receive Power of HackRF?
-The maximum RX power of HackRF One is -5 dBm. Exceeding -5 dBm can result in permanent damage! This is often seen see notes on [Preamplifier IC replacement.](https://github.com/eried/portapack-mayhem/wiki/Preamplifier IC replacement)
+The maximum RX power of HackRF One is -5 dBm. Exceeding -5 dBm can result in permanent damage! This is often seen, see notes on [Preamplifier IC replacement.](Preamplifier IC replacement)
 
 In theory, HackRF One can safely accept up to 10 dBm with the front-end RX amplifier disabled. **However, a simple software or user error could enable the amplifier, resulting in permanent damage.** It is better to use an external attenuator than to risk damage.
 
