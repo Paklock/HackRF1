@@ -21,7 +21,7 @@
    * [Receive Quality Issues](https://github.com/eried/portapack-mayhem/wiki/Help!-Im-not-receiving-anything!---Receive-Quality-Issues)
    * [Preamplifier IC replacement](https://github.com/eried/portapack-mayhem/wiki/preamplifier-ic-replacement)
 * [Applications](Applications)
-   * Receivers
+   * [Receivers](Receivers)
       * [ADS-B](Automatic-dependent-surveillance–broadcast-(ADS-B))
       * [AIS Boats](AIS-Boats)
       * AFSK
