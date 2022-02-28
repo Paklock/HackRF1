@@ -14,7 +14,7 @@ Through most of the frequency range up to 4 GHz, the maximum TX power is between
 HackRF  provides two TX gain controls are  LNA (I)  (0 to 47 dB in 1 dB steps) and RF AMP (0 or 14 dB)
 
 ## Use of HackRF 
-Overall, the output power is enough to perform over-the-air experiments at close range or to drive an external amplifier. If you connect an external amplifier, you should also use an external bandpass filter for your operating frequency.
+Overall, the output power is enough to perform over-the-air experiments at close range or to drive an external amplifier. If you connect an external amplifier, you should also use an external bandpass filter for your operating frequency.Note there are no Filters in the HackRF to limit spurious transmissions  and this must be provided by external circuitry.
 
 ## WARNING
 **_Before you transmit, know your laws. HackRF One has not been tested for compliance with regulations governing transmission of radio signals. You are responsible for using your HackRF One legally._**
