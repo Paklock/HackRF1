@@ -6,7 +6,7 @@ The Key Items on the App that can be selected with the cursor and changed with t
 * **Open file:** this allows you to select a file form the SD card folders to replay.
 * **File Information:** is given next to the “Open file” button giving the file name, length and the speed. Transmission.
 * **File progress bar:** To the righthand side of the “Open file” Button is the progress bar this show the progress of the file being transmitted 
-* **Frequency:** Which is the first item on the third line below the title bar. This brings up the normal frequency keypad.
+* **Frequency:** Which is the first item on the third line below the title bar. This brings up the normal frequency keypad.The information is keep in persistant memory and is avalable from the settings in the Capture App.
 * **Gain:** Next in the second line is the LNA (IF) (0-47) and Amp gain A: 0dB or 14dB.
 * **Loop:** A tick box that selects that when the file reaches the end of the transmission that it will start the file again.
 
