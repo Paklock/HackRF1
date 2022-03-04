@@ -15,6 +15,7 @@
    * [Title bar](title-bar)
    * [Main menu](main-menu)
    * [Gain Controls](Gain-Controls)
+   * [SD Card content and modification](SD-Card-Content)
 * [Powering the PortaPack](Powering-the-PortaPack)
 * Troubleshooting
    * [Firmware upgrade](https://github.com/eried/portapack-mayhem/wiki/Update-firmware-troubleshooting)
