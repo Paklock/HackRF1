@@ -1,6 +1,6 @@
 The SD Card provides a memory resourse  that can be taylored to the specific user. Technical detail of the card are given here. The SD card Standard image is supplied as part of the standard firmware download.And instruction for its use are supplied elsewhere. The SD card holds information  in relation to Specific Apps or as general list of items such as frequenciesas follows:
 
-* **ADSB:**  The ADBS Folder has a databases of Airlines,IACO and is where the world map is located. See separate secion on how to generate the map.
+* **ADSB:**  The ADBS Folder has a databases of Airlines,IACO and is where the world map is located. See separate ton how to generate the map.
 * **FREQMAN:**  This is the main arer used as it hold the   While on the face of it list of frequencies used that can be loaded when using the frequency key pad or the load button in specific Apps.While on the face of it, the alteration or creation of personal SD card taylored to the specific country or region there are some important consideration.
      * **Calls:**  In the call App The frequency range load can not be more than  80MHz and is made up of 32 slices of 2.4Mhz. Due to the Apps Speed Its recommened to lime the size of the ranges.
 More to be added......
