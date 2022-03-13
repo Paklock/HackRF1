@@ -14,7 +14,7 @@
    * [Splash screen](Create-a-custom-splash-screen)
    * [Title bar](title-bar)
    * [Main menu](main-menu)
-   * [Gain Controls](Gain-Controls)
+   * [Main Controls](Main-Controls)
    * [SD Card content and modification](SD-Card-Content)
 * [Powering the PortaPack](Powering-the-PortaPack)
 * Troubleshooting
