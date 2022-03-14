@@ -16,6 +16,8 @@ It is often the case that the PortaPack user does not know the filter bandwidth 
 * _2K80J3E for AM Lower Side Band USB 0 - 3kHz._
 * _150HA1A / 150HJ2A for AM Continuous Wave. The filter is 200 Hz wide and centred around 700Hz._
 
+* **TPMS:** This is a non standard specialized shaped filter that is 200kHz wide. 
+
 ## Gain Controls 
 **The Gain Controls are  critical to the best use of the PortaPack / HackRf.**  HackRF provides three different analogue gain controls on RX and two on TX. The three RX gain controls are  RF “amp”, 0bB or +14 dB),”IF“ 0 to 40 dB in 8 dB steps), and baseband Vga ( 0 to 62 dB in 2 dB steps). The two TX gain controls are at the RF (0 or 14 dB) and IF (0 to 47 dB in 1 dB steps) stages.
  
