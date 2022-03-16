@@ -3,5 +3,11 @@
 
 The PortaPack AIS receiver decodes information coming from vessels and base stations, on one of two selectable VHF frequencies, 161.975 MHz (channel 87B) or 162.025 MHz (channel 88B).Others frequencies can be added to the SD Card Under AIS.
 
-The App page shows two columns, the [Maritime Mobile Service Identity](https://en.wikipedia.org/wiki/Maritime_Mobile_Service_Identity) and the vessel name or call sign, if it was received. by selecting the  received data line this opens a detailed view, giving the most recent details received from the vessel. It should be noted that dependant on the activity of the vessel that the information will be sent every few minutes to every few seconds if traveling at speed.
+The Key Items on the App that can be selected with the cursor and changed with the encoder knob are:
+
+* **Title bar:** The usual Items may be changed and displayed.
+* **Gain:** Setting are shown in order of Amp 0=0db or 1=14dB, LNA(IF) (0-40) and VGA (Baseband Gain) (0-62). 
+
+
+The App page shows two columns of received data, the [Maritime Mobile Service Identity](https://en.wikipedia.org/wiki/Maritime_Mobile_Service_Identity) and the vessel name or call sign, if it was received. By selecting the  received data line this opens a detailed view, giving the most recent details received from the vessel. It should be noted that dependant on the activity of the vessel that the information will be sent every few minutes to every few seconds if traveling at speed.
 
