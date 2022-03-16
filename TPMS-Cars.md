@@ -16,4 +16,4 @@ The TPMS App display is configured to display the decoded data received from the
 * **Cnt:** This is the count of messages received from each sensor.
 * **Flags:** Information on the type of sensor is only for Schrader and have decode for: fsk_19k, ook_8k192, ook_8k4.
 
-
+If a FAT-formatted micro SD card is present when this mode is entered, the receiver will log received packets to a file named "TPMS.TXT". The log file contains one line per packet received. Each line consists of a timestamp in sortable "YYYYMMDDHHMMSS" format, receiver frequency, modulation, deviation, symbol rate, and data. The data field consists of Manchester-decoded data bits, a "/", and a per-bit Manchester coding error indicator ("1" if the data bit is in error).
