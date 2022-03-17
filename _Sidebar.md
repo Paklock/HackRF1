@@ -43,7 +43,7 @@
       * [GPS Sim](GPS-Sim)
       * [Jammer](Jammer)
       * Key Fob
-      * LGE Tool
+      * [LGE Tool](LGE Tool)
       * [Morse](Morse)
       * Burger Pager
       * POCSAG
