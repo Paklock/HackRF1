@@ -48,7 +48,7 @@
       * Burger Pager
       * POCSAG
       * [SSTV](https://github.com/eried/portapack-mayhem/wiki/SSTV)
-      * [TEDI/LCR](TEDI/LCR)
+      * [TEDI/LCR](LCR)
       * [TouchTunes](https://github.com/eried/portapack-mayhem/wiki/TouchTunes)
       * [RDS](RDS)
       * [OOK](OOK)
