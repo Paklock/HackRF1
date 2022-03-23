@@ -38,6 +38,7 @@ Open Github Desktop, and click "Open with Github Desktop" from the main page of 
 Finally, create a `build` folder inside of the repository. From Github Desktop, just click "Repository / Show in Explorer" and create an empty folder named `build`. This folder will be used for the compilation output.
 
 ## Step 3: Prepare the Docker container
+_Note: You need to make sure you have also cloned the hackrf folder. to do that run: ```git submodule update --init --recursive```_
 Open up a terminal in the root of the cloned git repo and run: ```docker run -t portapack-dev -f dockerfile-nogit . ```
 
 After its built the docker image, go back to docker and you should see this screen under images
