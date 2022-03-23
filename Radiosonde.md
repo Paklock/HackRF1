@@ -1,6 +1,6 @@
 # Radio Types + Values Implemented
 
-https://radiosondy.info/index.php
+https://radiosondy.info/
 
 ### MeteoModem M10 
 * Latitude
