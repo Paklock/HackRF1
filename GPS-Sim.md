@@ -73,6 +73,7 @@ If the device runs Android, follow your attempts with [GPS Test](https://play.go
 | Phone      | Xiaomi  | Mi5          | **Yes**               | No                 | Works with WIFI on         |
 | Phone      | Samsung | S20+ 4G      | **Yes**               | No                 | WIFI must be off           |
 | Smartwatch | Samsung | Gear S3 WiFi | **Yes**               | No                 | Location over GPS only     |
+| Phone      | OnePlus | 7 Pro        | No                    | No                 | Doesn't seem to do anything|
 
 
 ## References
