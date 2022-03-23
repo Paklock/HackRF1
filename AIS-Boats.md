@@ -1,7 +1,7 @@
 # AIS
 [Automatic Identification System (AIS)](https://en.wikipedia.org/wiki/Automatic_identification_system) is a tracking system used by water-going vessels. It is described in [ITU Recommendation M.1371.](https://www.itu.int/rec/R-REC-M.1371/en).
 
-The PortaPack AIS receiver decodes information coming from vessels and base stations, on one of two selectable VHF frequencies, 161.975 MHz (channel 87B) or 162.025 MHz (channel 88B).Others frequencies can be added to the SD Card Under AIS.
+The PortaPack AIS receiver decodes information coming from vessels and base stations, on one of two selectable VHF frequencies, 161.975 MHz (channel 87B) or 162.025 MHz (channel 88B). Others frequencies can be added to the SD Card Under AIS.
 
 The Key Items on the App that can be selected with the cursor and changed with the encoder knob are:
 
