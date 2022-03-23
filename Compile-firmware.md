@@ -38,6 +38,7 @@ Open Github Desktop, and click "Open with Github Desktop" from the main page of 
 Finally, create a `build` folder inside of the repository. From Github Desktop, just click "Repository / Show in Explorer" and create an empty folder named `build`. This folder will be used for the compilation output.
 
 ## Step 3: Prepare the Docker container
+Open up a terminal in the root of the cloned git repo and run: ```docker run -t portapack-dev -f dockerfile-nogit . ```
 [[img/Kitematic_MChWCyp6g1.png]]
 
 You need to configure the path to the source code from the Volumes of the container as show in the image below. 
