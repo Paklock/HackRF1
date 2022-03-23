@@ -39,11 +39,15 @@ Finally, create a `build` folder inside of the repository. From Github Desktop, 
 
 ## Step 3: Prepare the Docker container
 Open up a terminal in the root of the cloned git repo and run: ```docker run -t portapack-dev -f dockerfile-nogit . ```
-[[img/Kitematic_MChWCyp6g1.png]]
+After its built the docker image, go back to docker and you should see this screen under images
+![image](https://user-images.githubusercontent.com/4393979/159808543-bac63e5f-8fe3-48af-a469-f940e4690767.png)
+Click on the blue run button and then click the dropdown to expand Optional Settings.
 
-You need to configure the path to the source code from the Volumes of the container as show in the image below. 
+Make sure they look like this:
+![image](https://user-images.githubusercontent.com/4393979/159808716-b9956308-5f76-4efa-bc89-8fc6f79752b8.png)
+`Host path` is the root of your repo.
 
-[[img/Kitematic_VL5an8rufV.png]]
+After that click run!
 
 ## Step 4: Compile!
 
