@@ -41,7 +41,7 @@ Finally, create a `build` folder inside of the repository. From Github Desktop, 
 _Note: You need to make sure you have also cloned the hackrf folder. to do that run: ```git submodule update --init --recursive```_
 
 
-Open up a terminal in the root of the cloned git repo and run: ```docker run -t portapack-dev -f dockerfile-nogit . ```
+Open up a terminal in the root of the cloned git repo and run: ```docker build -t portapack-dev -f dockerfile-nogit . ```
 
 After its built the docker image, go back to docker and you should see this screen under images
 ![image](https://user-images.githubusercontent.com/4393979/159808543-bac63e5f-8fe3-48af-a469-f940e4690767.png)
