@@ -56,6 +56,9 @@ Make sure they look like this:
 
 After that click run!
 
+Come across a `/usr/bin/env: ‘python\r’: No such file or directory` error? RTFM and go back to step 2 https://github.com/eried/portapack-mayhem/wiki/Compile-firmware#step-2-clone-the-repository
+
+
 ## Step 4: Compile!
 
 Everytime you run the container you prepared in the previous step, it will compile the source and (if successful) leave the results in `build/firmware/`
