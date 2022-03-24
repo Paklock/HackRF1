@@ -27,7 +27,7 @@ y
 
 You can also check the current configuration by omitting the `false` at the end of the command.
 
-[[img/git_linefeed.png|600px]
+[[img/git_linefeed.png|600px]]
 
 **Important:** If you want to collaborate to the project, [Fork the repository](How-to-collaborate#fork-the-repository) to your own account and continue this instructions from your own fork.
 
