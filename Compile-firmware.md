@@ -56,7 +56,7 @@ Make sure they look like this:
 
 After that click run!
 
-Come across a `/usr/bin/env: ‘python\r’: No such file or directory` error? RTFM and go back to step 2 https://github.com/eried/portapack-mayhem/wiki/Compile-firmware#step-2-clone-the-repository
+_Note: Come across a `/usr/bin/env: ‘python\r’: No such file or directory` error? RTFM and go back to step 2 https://github.com/eried/portapack-mayhem/wiki/Compile-firmware#step-2-clone-the-repository_
 
 
 ## Step 4: Compile!
