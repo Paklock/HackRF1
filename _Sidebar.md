@@ -84,7 +84,7 @@
    * [Updating the CPLD](Updating-the-CPLD)
 ## Developer Manual
 * [Compile From Source](Compile-firmware)
-   * [How to compile faster with-WSL 2](How-to-compile-faster-with-WSL-2)
+   * [How to compile faster with WSL 2](How-to-compile-faster-with-WSL-2)
 * Description of the Structure
    * [At First Glance](At-first-glance)
    * [Boot Process](Boot-Process)
