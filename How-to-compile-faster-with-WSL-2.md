@@ -1,4 +1,6 @@
-The steps on the __ page work fine for compiling, but you may find it takes around 35 minutes each time.
+_**Note: This is for Windows only**_
+
+The steps on the [Compile-firmware](https://github.com/eried/portapack-mayhem/wiki/Compile-firmware#step-3-prepare-the-docker-container) page work fine for compiling, but you may find it takes around 35 minutes each time.
 In this guide I will show you how to get that time down to 2 seconds - 1 minute depending on your hardware.
 
 
