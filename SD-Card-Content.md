@@ -1,16 +1,16 @@
-The SD Card provides a memory resourse  that can be taylored to the specific user. Technical detail of the card are given [here.](https://github.com/eried/portapack-mayhem/wiki/SD-Card-(DEV)) The SD card Standard image is supplied as part of the standard firmware download.And instruction for its use are supplied elsewhere. The SD card holds information  in relation to Specific Apps or as general list of items such as frequenciesas follows:
+The SD Card provides a memory resource that can be tailored to the specific user. Technical details of the card are given [here.](https://github.com/eried/portapack-mayhem/wiki/SD-Card-(DEV)) The SD card Standard image is supplied as part of the standard firmware download. Instructions for its use are supplied elsewhere. The SD card holds information in relation to Specific Apps or as general list of items such as frequencies follows:
 
-* **ADSB:**  The ADBS Folder has a databases of Airlines,IACO and is where the world map is located. See separate ton how to generate the map.
-* **FREQMAN:**  This is the main arer used as it hold the   While on the face of it list of frequencies used that can be loaded when using the frequency key pad or the load button in specific Apps.While on the face of it, the alteration or creation of personal SD card taylored to the specific country or region: there are some important considerations.
+* **ADSB:**  The ADBS Folder has databases of Airlines, IACO and is where the world map is located. See separate page on how to generate the map.
+* **FREQMAN:**  This is the main area used. While on the face of it, the list of frequencies used that can be loaded when using the frequency key pad or the load button in specific Apps. While on the face of it, the alteration or creation of personal SD card tailored to the specific country or region: there are some important considerations.
      *  **Fixed frequencies in Apps:** It should be noted that in some Apps that the frequency ranges are fixed in the App and are not selectable in from FREQMAN lists. Example of this are "AIS" and TPMS.
-     * **Calls:**  In the call App The frequency range load can not be more than  80MHz and is made up of 32 slices of 2.4Mhz. Due to the Apps Speed Its recommened to lime the size of the ranges.
+     * **Calls:**  In the call App the frequency range load can not be more than  80MHz and is made up of 32 slices of 2.4Mhz. Due to the Apps speed it is recommended to limit the size of the ranges.
      * **Jammer:** The Jammer App can only have a Jamming frequency range of 24MHz for either a  single range or a combination of all three ranges. When setting the  frequency ranges in the SD card, this should be considered.
-* **GPS:** This file Hold information on How to generate GPS-Simulation files.
-* **LOOKINGGLASS:** This folder holds a text file that is used in the LOOKINGGLASS App and is a list of the frequency scan ranges  and a description. It should be noted that this APP can have only have ranges that are a minimum of 240MHz in size.Inaddition the range must start form 10MHz. the nominal Miniumum operational frequency of HackRF. There fore you need to consider this in planning the frequency range listed. For example you could not have a rane for  VHF amature band , Yu can only have a range from 10-250 MHz. These are very wide ranges  i keeping with the Ap concept of Wide Scan of the spectrum.
-* **REMOTES:** This folder hold information used in the TouchTune App.
-* **SAMPLES:** This folder holds an example of some setting for the use in OOK TX App
+* **GPS:** This file holds information on how to generate GPS-Simulation files.
+* **LOOKINGGLASS:** This folder holds a text file that is used in the LOOKINGGLASS App and is a list of the frequency scan ranges  and a description. It should be noted that this APP can have only have ranges that are a minimum of 240MHz in size.In addition the range must start form 10MHz. the nominal Miniumum operational frequency of HackRF. Therefore you need to consider this in planning the frequency range listed. For example you could not have a rane for  VHF amature band , Yu can only have a range from 10-250 MHz. These are very wide ranges  i keeping with the Ap concept of Wide Scan of the spectrum.
+* **REMOTES:** This folder holds information used in the TouchTune App.
+* **SAMPLES:** This folder holds an example of some settings for the use in OOK TX App
 * **SSTV:** This folder holds some Standard Images for the use in the SSTV app.
-* **WAV:** This folder holds sound files  that ar esued in SoundBoard.
-* **WHIPCALC:** This folder hold information on the  Whip lenghts that is used in the App calculation. Addition Whips can be added with there specific details.
+* **WAV:** This folder holds sound files  that are used in SoundBoard.
+* **WHIPCALC:** This folder holds information on the  Whip lengths that are used in the App calculation. Additional Whips can be added with their specific details.
 
- In addition to the  Standard information the SD card stores Items suh as the logfile generated by the Apps and alos the Snap shot imaged off screen.
+ In addition to the  Standard information the SD card stores Items such as the logfile generated by the Apps and also the Snap shot imaged off screen.
