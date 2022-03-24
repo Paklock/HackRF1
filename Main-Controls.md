@@ -19,7 +19,7 @@ It is often the case that the PortaPack user does not know the filter bandwidth 
 * **TPMS:** This is a non standard specialized shaped filter that is 200kHz wide. 
 
 ## Gain Controls 
-**The Gain Controls are  critical to the best use of the PortaPack / HackRf.**  HackRF provides three different analogue gain controls on RX and two on TX. The three RX gain controls are  RF “amp”, 0bB or +14 dB),”IF“ 0 to 40 dB in 8 dB steps), and baseband Vga ( 0 to 62 dB in 2 dB steps). The two TX gain controls are at the RF (0 or 14 dB) and IF (0 to 47 dB in 1 dB steps) stages.
+**The Gain Controls are  critical to the best use of the PortaPack / HackRf.**  HackRF provides three different analogue gain controls on RX and two on TX. The three RX gain controls are  RF “amp”, 0dB or +14 dB),”IF“ 0 to 40 dB in 8 dB steps), and baseband Vga ( 0 to 62 dB in 2 dB steps). The two TX gain controls are at the RF (0 or 14 dB) and IF (0 to 47 dB in 1 dB steps) stages.
  
 HackRF has two RF amplifiers close to the antenna port, one for TX and one for RX. These amplifiers have two settings: on or off. In the off state, the amps are completely bypassed. They nominally provide 14 dB of gain when on, but the actual amount of gain varies by frequency. In general, expect less gain at higher frequencies. For fine control of gain, use the IF and/or baseband gain options.
  
