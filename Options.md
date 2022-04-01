@@ -8,7 +8,7 @@ In the radio section  there  are two options,
 ## Interface
 The UI interface  setting for the following can be Enabled (tick) or Disabled (x) or selected value for the backlight timeout:
 * Hide the speaker
-* Backlight off after 5 seconds( default) or can be set to 5,15,30 seconds or 1,3,5,10 minutes.
+* Backlight off after 5 seconds( default) or can be set to 5,15,30 seconds or 1,3,5,10 minutes , the value is held in persistent memory.
 * Show the Splash screen
 * Show the clock - This allows the date and time to be updated by moving the cursor to the select item and use the rotary knob to adjust the value. 
 ## Touchscreen
