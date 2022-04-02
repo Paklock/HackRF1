@@ -125,7 +125,7 @@ my_liveDateTime.set_seconds_enabled(true);
 
 BigFrequency is used for displaying a radio frequency. Here you can find it's declaration and prototype:
 ```
-Labels my_bigFrequency_widget{
+BigFrequency my_bigFrequency_widget{
     Rect parent_rect, 
     rf::Frequency frequency
 };
@@ -133,7 +133,7 @@ Labels my_bigFrequency_widget{
 
 For example, let's say you want a label called `my_bigFrequency`. You will need to add this to `apps/ui_newapp.hpp`:
 ```
-Labels my_bigFrequency(
+BigFrequency my_bigFrequency(
     {10, 10, 28*8, 52}, // Coordinates are: int:x (px), int:y (px), int:width (px), int:height (px)
     0                   // Beginning frequency in hz
 );
