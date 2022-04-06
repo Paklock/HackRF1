@@ -12,6 +12,6 @@ Once that is done you should be able to reboot normally without any issues.
 * DOWN key = LCD driver 2
 * OK/SELECT key = Reset/Automatic detection
 
-_**Note:** H2+ usually require you to hold down the UP key on the first boot to configure them._
+_**Note:** H2+ usually require you to hold the **UP key** on the first boot to configure them._
 
 _This is valid from nightly version **n_220406** and stable release version: _**No stable release yet**__
