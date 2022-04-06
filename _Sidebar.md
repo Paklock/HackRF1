@@ -18,6 +18,7 @@
    * [SD Card content and modification](SD-Card-Content)
 * [Powering the PortaPack](Powering-the-PortaPack)
 * Troubleshooting
+   * [Wont boot](https://github.com/eried/portapack-mayhem/wiki/Wont-boot)
    * [Firmware upgrade](https://github.com/eried/portapack-mayhem/wiki/Update-firmware-troubleshooting)
    * [Receive Quality Issues](https://github.com/eried/portapack-mayhem/wiki/Help!-Im-not-receiving-anything!---Receive-Quality-Issues)
    * [Preamplifier IC replacement](https://github.com/eried/portapack-mayhem/wiki/preamplifier-ic-replacement)
