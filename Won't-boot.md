@@ -11,3 +11,5 @@ Once that is done you should be able to reboot normally without any issues.
 * OK/SELECT key = Reset/Automatic detection
 
 _**Note:** H2+ usually require you to hold down the UP key on the first boot to configure them._
+
+This is valid from nightly version n_220406 and stable release version: _No stable release yet_
