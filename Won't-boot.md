@@ -2,7 +2,7 @@ If you device won't boot and leaves you on a black or white screen, then you wil
 
 If this does not work, then try the same thing but this time holding the down button (Remembering to wait up to 10 seconds).
 
-What this is doing is loading a different LCD driver to get your device to work.
+What this is doing is loading a different LCD driver to get your devices screen to work.
 
 Once that is done you should be able to reboot normally without any issues.
 
