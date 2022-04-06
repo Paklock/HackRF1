@@ -1,1 +1,1 @@
-### [Moved to here https://github.com/eried/portapack-mayhem/wiki/Won't-boot](https://github.com/eried/portapack-mayhem/wiki/Won't-boot)
+### [Moved to here: https://github.com/eried/portapack-mayhem/wiki/Won't-boot](https://github.com/eried/portapack-mayhem/wiki/Won't-boot)
