@@ -9,7 +9,7 @@ What this is doing is loading a different LCD driver to get your devices screen 
 
 Once that is done you should be able to reboot normally without any issues.
 
-# Black screen
+## Black screen
 If you device won't boot and leaves you on a black screen, then you will need to power off the device and then hold down the **LEFT** button while you power it on. This could take up to 10 seconds.
 
 
