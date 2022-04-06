@@ -1,1 +1,1 @@
-Someone deleted this, so I will re type it out again later
+Moved to here https://github.com/eried/portapack-mayhem/wiki/Won't-boot
