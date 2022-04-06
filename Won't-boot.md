@@ -12,4 +12,4 @@ Once that is done you should be able to reboot normally without any issues.
 
 _**Note:** H2+ usually require you to hold down the UP key on the first boot to configure them._
 
-_This is valid from nightly version **n_220406** and stable release version: _No stable release yet__
+_This is valid from nightly version **n_220406** and stable release version: _**No stable release yet**__
