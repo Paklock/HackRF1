@@ -1,4 +1,4 @@
-If you device wont boot and leaves you on a black or white screen, then you will need to power off the device and then hold down the UP button while you power it on.
+If you device won't boot and leaves you on a black or white screen, then you will need to power off the device and then hold down the UP button while you power it on.
 
 If this does not work, then try the same thing but this time holding the down button.
 
