@@ -5,7 +5,7 @@ If this does not work, then try the same thing but this time holding the down bu
 
 What this is doing is loading a different LCD driver to get your devices screen to work.
 
-Once that is done you should be able to reboot normally without any issues.
+Once that is done you should be able to reboot normally without any issues.  Configuration is saved across restarts by writing to a file on the SD card, so if you do not have an SD card in your device, you might have to hold the up / down button each time.
 
 # Description
 * UP key = LCD driver 1
