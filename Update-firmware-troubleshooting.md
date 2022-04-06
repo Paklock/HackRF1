@@ -1,5 +1,8 @@
 One of the main sources of problems while [updating the firmware](Update-firmware) is the quality of the USB cable. Try with several ones just to be sure before trying any other solution.
 
+## Black or white screen?
+If you get a black or white screen after updating, please check the wiki here: [Won't boot](https://github.com/eried/portapack-mayhem/wiki/Won't-boot)
+
 ## DFU
 
 This is a special mode to update the firmware in case of problems. To enable this, you should reset your device holding the RESET and DFU buttons at the same time, while doing this, release RESET, and then release DFU. The leds should be ON and the screen wont show anything.
